@@ -31,7 +31,7 @@
               src="img/logo.png"
               alt="Logo"
               width="200px"
-              class="d-inline-block align-top"
+              class="d-inline-block align-top logo"
               loading="lazy"
             />
           </a>
@@ -55,16 +55,16 @@
           >
             <ul class="navbar-nav">
               <li class="nav-item me-2">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="/#about">About</a>
               </li>
               <li class="nav-item me-2">
-                <a class="nav-link" href="#services">Services</a>
+                <a class="nav-link" href="/#services">Services</a>
               </li>
               <li class="nav-item me-2">
-                <a class="nav-link" href="#">Clients</a>
+                <a class="nav-link" href="/#clients">Clients</a>
               </li>
               <li class="nav-item me-3">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="/#contact">Contact</a>
               </li>
               <!-- <li class="nav-item">
                 <a class="nav-link me-2" href="#">Login</a>
@@ -79,9 +79,10 @@
       <section class="hero-section">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 mt-5">
+            <div class="col-lg-6 mt-5">
+
               <!-- Left Side: Heading and CTA -->
-              <div class="hero-content ms-5">
+              <div class="hero-content ms-lg-5 text-center text-lg-start">
                 <h1 class="hero-heading">Patient Engagement</h1>
                 <h1 class="hero-heading">Software Solutions</h1>
                 <h1 class="hero-heading">Digital Marketing</h1>
@@ -91,15 +92,15 @@
                   <span class="italics"> doctors </span>
                 </h4>
                 <br />
-                <p>
+                <p class="px-5 px-lg-0">
                   Elevate your healthcare practice with our holistic digital
                   solutions. We offer marketing, content and software solutions
                   for healthcare providers.
                 </p>
-                <a href="#" class="btn btn-cta mb-2">Get in touch</a>
+                <a href="/#contact" class="btn btn-cta mb-2">Get in touch</a>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-6">
               <!-- Right Side: Image -->
               <div class="hero-image">
                 <img
@@ -129,10 +130,10 @@
     </main>
 
     <!-- about us section -->
-    <section class="about-section py-md-5 mt-5">
+    <section id="about" class="about-section py-md-5 mt-lg-5">
       <div class="container">
         <div class="row px-4">
-          <div class="col-md-7 mt-5 pe-md-5">
+          <div class="col-lg-7 mt-5 pe-md-5">
             <div class="about-content">
               <h1 class="about-heading pb-2">
                 Professional doctors whom you can
@@ -149,12 +150,12 @@
               </p>
             </div>
           </div>
-          <div class="col-md-5 pt-5">
+          <div class="col-lg-5 pt-5">
             <div class="about-image">
               <img
                 src="img/about-us.jpg"
                 alt="About Photo"
-                class="img-fluid about-img"
+                class="img-fluid"
                 loading="lazy"
                 style="border-radius: 10px;"
               />
@@ -166,9 +167,9 @@
 
     <!-- digital section -->
     <section class="digital-section">
-      <div class="container py-5">
+      <div class="container py-lg-5">
         <div class="row px-4">
-          <div class="col-md-5 pe-md-5">
+          <div class="col-lg-5 pe-md-5 order-2 order-lg-1">
             <div class="digital-image">
               <img
                 src="img/digital-pic-1.png"
@@ -178,7 +179,7 @@
               />
             </div>
           </div>
-          <div class="col-md-7 mt-5">
+          <div class="col-lg-7 mt-5 order-1 order-lg-2">
             <div class="digital-content">
               <h1 class="digital-heading mb-3">
                 Propel Your Medical Practice
@@ -198,7 +199,7 @@
         </div>
 
         <div class="row px-4 py-md-5">
-          <div class="col-md-7 mt-5 pe-md-5">
+          <div class="col-lg-7 mt-5 pe-md-5">
             <div class="digital-content">
               <h1 class="digital-heading mb-3">
                 Streamline Patient Care with
@@ -217,7 +218,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-5">
+          <div class="col-lg-5">
             <div class="digital-image">
               <img
                 src="img/digital-pic-2.png"
@@ -235,7 +236,7 @@
     <section class="services-section my-5" id="services">
       <div class="container py-md-5 py-3">
         <div class="row">
-          <div class="col-md-5 py-5">
+          <div class="col-lg-5 py-5">
             <h1 class="pt-md-5">Our Offerings</h1>
             <p
               style="max-width: 350px; color: rgb(82, 82, 82); font-weight: 500"
@@ -243,11 +244,11 @@
               With our suite of digital solutions, doctors can streamline
               operations, engage patients, and drive practice success.
             </p>
-            <button class="btn btn-cta d-none d-md-block">Get started</button>
+            <a href="#contact" style="width:120px" class="btn btn-cta d-none d-md-block">Get started</a>
           </div>
-          <div class="col-md-7">
+          <div class="col-lg-7">
             <div class="row justify-content-between">
-              <div class="col-md-6">
+              <div class="col-sm-6">
                 <div class="service-card pb-md-5 pb-4">
                   <img
                     src="img/social-media.png"
@@ -260,10 +261,10 @@
                     Boost your online presence with our solutions that are
                     tailored to optimize your digital presence and reputation.
                   </p>
-                  <a href="/service1.html" class="btn btn-cta"> Read More </a>
+                  <a href="/service1.html" target="_blank" class="btn btn-cta"> Read More </a>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-sm-6">
                 <div class="service-card pb-md-5 pb-4">
                   <img
                     src="img/content-creator.png"
@@ -276,12 +277,12 @@
                     Our team led by doctors is uniquely positioned to create
                     trustworthy healthcare content for your practice.
                   </p>
-                  <a href="/service2.html" class="btn btn-cta"> Read More </a>
+                  <a href="/service2.html" target="_blank" class="btn btn-cta"> Read More </a>
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-sm-6">
                 <div class="service-card pb-md-5 pb-4">
                   <img
                     src="img/medical-checkup.png"
@@ -294,10 +295,10 @@
                     Ensure student well-being and parental involvement with our
                     digitally enabled school health program.
                   </p>
-                  <a href="/service3.html" class="btn btn-cta"> Read More </a>
+                  <a href="/service3.html" target="_blank" class="btn btn-cta"> Read More </a>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-sm-6">
                 <div class="service-card pb-md-5 pb-4">
                   <img
                     src="img/software-development.png"
@@ -310,7 +311,7 @@
                     Tailored software solutions for individual practices and
                     hospitals. Designed by a team of doctors and IT specialists.
                   </p>
-                  <button class="btn btn-cta">Read More</button>
+                  <a href="/service4.html"  target="_blank" class="btn btn-cta"> Read More </a>
                 </div>
               </div>
             </div>
@@ -332,11 +333,11 @@
     </section>
 
     <!-- testimonial section -->
-    <section class="testimonial-section py-md-5">
+    <section id="clients" class="testimonial-section py-md-5">
       <h1 class="testimonial-heading text-center">
         What Our Clients Say About Us
       </h1>
-      <div class="d-flex py-5 mx-3">
+      <div class="d-flex py-5 mx-lg-3 mx-5">
         <div class="row justify-content-between">
           <!-- COLUMN 1 -->
 
@@ -579,10 +580,10 @@
     </section>
 
     <!--contact section-->
-    <section class="contact-section py-md-5">
+    <section id="contact" class="contact-section py-lg-5">
       <div class="container">
-        <div class="row align-items-center justify-content-between px-5">
-          <div class="col-md-6 form-section pb-5">
+        <div class="row align-items-center justify-content-center justify-content-md-between px-lg-5">
+          <div class="col-md-6 form-section pb-5 pe-md-4 pe-lg-1">
             <div class="contact-form" style="background-color: white">
               <img
                 src="img/contact-pic.jpg"
@@ -649,7 +650,7 @@
               <span class="heading-span"> your business </span>
             </h1>
             <div class="row features py-4">
-              <div class="col-12 col-lg-6">
+              <div class="col-6">
                 <div class="d-flex feature-list">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -696,22 +697,7 @@
                   <p>Social Media Management</p>
                 </div>
               </div>
-              <div class="col-12 col-lg-6">
-                <div class="d-flex feature-list">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-arrow-right-circle-fill feature-icon"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
-                    />
-                  </svg>
-                  <p>Google Business Profile</p>
-                </div>
+              <div class="col-6">
                 <div class="d-flex feature-list">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -740,6 +726,21 @@
                       d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
                     />
                   </svg>
+                  <p> Google Business Profile</p>
+                </div>
+                <div class="d-flex feature-list">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-right-circle-fill feature-icon"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+                    />
+                  </svg>
                   <p>Electronic Health Records</p>
                 </div>
               </div>
@@ -750,11 +751,11 @@
     </section>
 
     <!-- blogs section-->
-    <section class="blogs-section py-5">
+    <section id="blogs" class="blogs-section py-5">
       <div class="container">
         <h1 class="blogs-heading text-center pb-5">Read Our Latest Articles</h1>
         <div class="row justify-content-between">
-          <div class="col-md-4 mb-4 px-4">
+          <div class="col-lg-4 col-md-6 mb-4 px-4">
             <div class="card">
               <img src="img/blog-1.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
@@ -772,7 +773,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4 px-4">
+          <div class="col-lg-4 col-md-6 mb-4 px-4">
             <div class="card">
               <img src="img/blog-2.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
@@ -791,7 +792,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4 px-4">
+          <div class="col-lg-4 col-md-6 mb-4 px-4">
             <div class="card">
               <img src="img/blog-3.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
@@ -844,15 +845,15 @@
               Comprehensive Digital Solutions for Healthcare Providers built by
               Professionals
             </p>
-            <a href="#" class="btn btn-cta">Get in touch</a>
+            <a href="#contact" class="btn btn-cta">Get in touch</a>
           </div>
           <div class="col-md-3 pb-3">
             <!-- <h3 class="footer-heading">Quick Links</h3> -->
             <div class="footer-links row">
-              <a href="#">About</a>
-              <a href="#">Services</a>
-              <a href="#">Blogs</a>
-              <a href="#">Contact</a>
+              <a href="/#about">About</a>
+              <a href="/#services">Services</a>
+              <a href="/#blogs">Blogs</a>
+              <a href="/#contact">Contact</a>
               <a href="#">Login</a>
             </div>
           </div>
@@ -933,7 +934,7 @@
                   />
                 </svg>
               </a>
-              <a href="#" class="footer-social-links"
+              <a href="https://www.linkedin.com/company/healthfort/" target="_blank" class="footer-social-links"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -947,7 +948,7 @@
                   />
                 </svg>
               </a>
-              <a href="#" class="footer-social-links"
+              <a href="https://www.instagram.com/healthfort.ai/"  target="_blank"  class="footer-social-links"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"

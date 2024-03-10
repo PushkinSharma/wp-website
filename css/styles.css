@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   font-family: "Inter", sans-serif;
   background-color: #f5f7fa;
@@ -14,10 +19,19 @@ h4 {
   color: #433c6e;
 }
 
+/* Global */
+
 .heading-span {
   color: #386ee5;
   font-weight: 900;
 }
+
+.service-inner-heading{
+  font-family: "Lily Script One", system-ui;
+  color: #386ee5;
+}
+
+/* Home Page */
 
 .main {
   background: linear-gradient(
@@ -33,6 +47,8 @@ h4 {
 .navbar {
   background-color: transparent !important ;
 }
+
+
 
 .nav-link {
   /* color: #496092; */
@@ -127,11 +143,12 @@ h4 {
 }
 .client-pic {
   border-radius: 50%;
-  width: 100px;
+  min-width: 100px;
   height: 100px;
   overflow: hidden;
   object-fit: cover;
   border: 1px solid #27539f;
+  margin-bottom: 10px;
 }
 
 .client-name {
@@ -169,9 +186,11 @@ h4 {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+
 .form {
   padding: 2rem;
 }
+
 .form-floating {
   position: relative;
 }
@@ -281,6 +300,13 @@ h4 {
   margin-bottom: 1rem;
 }
 
+/* Service 1 */
+
+
+.opm-pic{
+  border-radius: 10px;
+}
+
 
 /* Service 3 */
 
@@ -298,4 +324,26 @@ h4 {
 .school-content {
   padding-top: 1rem;
   color: rgb(31, 0, 82);
+}
+
+/* Service 4 */
+
+
+.software-card-name{
+  margin-top:15px;
+  color:#386ee5;
+  font-weight: 700;
+}
+.software-content {
+  color: rgb(31, 0, 82);
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 400px){
+  .logo{
+    width:150px;
+  }
+  
 }
