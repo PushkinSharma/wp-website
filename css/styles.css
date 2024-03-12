@@ -45,7 +45,7 @@ h4 {
 /* Navbar */
 
 .navbar {
-  background-color: transparent !important ;
+  background-color: transparent !important;
 }
 
 
@@ -69,6 +69,11 @@ h4 {
 
 /* Hero Section */
 
+.hero-content{
+  margin-top: 3.5rem;
+
+}
+
 .hero-content p {
   color: #6f6f6f;
 }
@@ -76,9 +81,13 @@ h4 {
 .hero-heading {
   color: #433c6e;
   font-weight: 500;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
   letter-spacing: 1px;
   font-family: "Inter", sans-serif;
+}
+
+.hero-image img{
+  max-height: 500px;
 }
 
 .italics {
@@ -307,6 +316,12 @@ h4 {
   border-radius: 10px;
 }
 
+/* Service 2 */
+.hcc-pic{
+  border-radius: 10px;
+
+}
+
 
 /* Service 3 */
 
@@ -345,5 +360,16 @@ h4 {
   .logo{
     width:150px;
   }
-  
+}
+
+@media screen and (max-width: 768px)   {
+  .yt-vid{
+    width: 300px;
+    height: 168px;
+  }
+
+  /* .hero-image img{
+    width: auto;
+    height: 400px;
+  } */
 }
