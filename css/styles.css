@@ -27,7 +27,11 @@ h4 {
 }
 
 .service-inner-heading{
-  font-family: "Lily Script One", system-ui;
+  margin-bottom: 0;
+  font-family: "Linden Hill", serif;
+  font-weight: 400;
+  font-size: 3rem;
+  letter-spacing: 2px;
   color: #386ee5;
 }
 
@@ -368,8 +372,11 @@ h4 {
     height: 168px;
   }
 
-  /* .hero-image img{
-    width: auto;
-    height: 400px;
-  } */
+}
+
+@media screen and (min-width: 1400px)   {
+  p{
+    font-size: 1.1rem;
+  }
+
 }
