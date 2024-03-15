@@ -109,6 +109,7 @@ h4 {
 .btn-cta:hover {
   background-color: white;
   color: #386ee5;
+  border: 1px solid #386ee5;
 }
 
 
@@ -150,19 +151,22 @@ h4 {
 
 .testimonial-card {
   /* background: linear-gradient(14deg, rgba(225,181,255,1) 0%, rgba(124,72,255,1) 0%, rgba(160,112,255,1) 100%); */
-  background-color: #d1dbff;
+  /* background-color: #d1dbff; */
+  background-color: #e7e9f3;
   border-radius: 10px;
   border: 2px dashed black;
 }
-.client-pic {
-  border-radius: 50%;
-  min-width: 100px;
-  height: 100px;
-  overflow: hidden;
-  object-fit: cover;
-  border: 1px solid #27539f;
+
+.client-pic{
+  width: 100px; /* Set the desired width */
+  height: 100px; /* Same as width to maintain 1:1 aspect ratio */
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover; /* Maintain aspect ratio and fill the container */
+  overflow: hidden; /* Hide any part of the image that exceeds the container */
   margin-bottom: 10px;
 }
+
+
 
 .client-name {
   color: black;
@@ -223,6 +227,7 @@ h4 {
   box-shadow: none;
 }
 
+
 .feature-list > * {
   margin: 0;
 }
@@ -244,6 +249,15 @@ h4 {
 
 
 /* Blogs Section */
+
+.card{
+  box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+}
+
+.card:hover{
+  transform: scale(1.1);;
+}
 .card-title {
   /* color: rgb(31, 0, 82); */
   color: #30876d;
@@ -343,6 +357,11 @@ h4 {
 .school-content {
   padding-top: 1rem;
   color: rgb(31, 0, 82);
+}
+
+.icon-blue{
+  max-width: 100px;
+  padding-bottom:10px;
 }
 
 /* Service 4 */
