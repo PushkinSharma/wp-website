@@ -113,6 +113,22 @@ h4 {
 }
 
 
+/* About Us and Digital Section */
+.about-section, .digital-section {
+  overflow: hidden; 
+}
+
+.about-image img, .market-image-1 img,.market-image-2 img, .about-content, .market-content-1, .market-content-2{
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.about-image img.animate, .about-content.animate, .market-image-1 img.animate,  .market-image-2 img.animate ,.market-content-1.animate,.market-content-2.animate{
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 /* Services Section */
 
@@ -246,6 +262,27 @@ h4 {
   margin-right: 0.75em;
 }
 
+.contact-section {
+  overflow: hidden; /* Hide any overflow content */
+}
+
+.form-section{
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1s ease, transform 0.8s ease;
+
+}
+.contact-extra {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 1s ease, transform 0.8s ease;
+}
+
+.form-section.animate-left,
+.contact-extra.animate-right {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 
 /* Blogs Section */
