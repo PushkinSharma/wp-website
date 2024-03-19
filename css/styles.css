@@ -287,6 +287,11 @@ h4 {
 
 /* Blogs Section */
 
+.blog-posts{
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+}
+
 .card{
   box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s;
@@ -319,6 +324,10 @@ h4 {
   border-radius: 10px;
 }
 
+.arrow-left, .arrow-right{
+  border: none;
+  background-color: transparent;
+}
 
 
 /* Footer */
