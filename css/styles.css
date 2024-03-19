@@ -27,7 +27,7 @@ h4 {
 }
 
 .service-inner-heading{
-  margin-bottom: 0;
+  margin-bottom: 1rem;
   font-family: "Linden Hill", serif;
   font-weight: 400;
   font-size: 3rem;
@@ -316,6 +316,7 @@ h4 {
   border: 1px solid black;
   background-color: #f1f4f8;
   margin-bottom: 1rem;
+  border-radius: 10px;
 }
 
 
@@ -383,37 +384,46 @@ h4 {
 .school-card{
   background-color: #f1f4f8;
   border-radius: 10px;
-  border: 1px solid black;
+  border: 1px solid #433c6e;
+}
+
+.school-card img{
+  max-width: 80px;
+  max-height: 80px;
+  padding-bottom:10px;
 }
 
 .school-card-name{
   padding-bottom: 0;
   margin-bottom: 0;
   font-weight: 700;
+  color:rgb(31, 0, 82);
 }
 .school-content {
   padding-top: 1rem;
   color: rgb(31, 0, 82);
 }
 
-.icon-blue{
-  max-width: 100px;
-  padding-bottom:10px;
-}
 
 /* Service 4 */
 
 .software-card{
-  border:2px solid transparent;
+  border:2px solid #cbcfd4;
   transition: transform 0.3s ease, border-color 0.8s ease;
   border-radius: 10px;
 }
 
 .software-card:hover{
-  background-color: #f1f4f8;
+  background-color: #ebeef3;
   border-radius: 10px;
   border: 2px solid #433c6e;
   transform :scale(1.1);
+}
+
+.software-card img{
+  max-width: 100px;
+  padding-bottom:10px;
+
 }
 
 
