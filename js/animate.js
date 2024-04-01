@@ -31,7 +31,7 @@ const observerDigital = new IntersectionObserver((entries) => {
       observerDigital.unobserve(digitalSection); // Stop observing after animation
     }
   });
-}, { threshold: 0.3 }); // Trigger animation when 70% of the section is visible
+}, { threshold: 0.4 }); // Trigger animation when 30% of the section is visible
 
 observerDigital.observe(digitalSection);
 

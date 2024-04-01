@@ -581,37 +581,42 @@
                 alt="Contact Doctor Photo"
               />
               <div class="contact-body">
-                <div class="form">
+                <form class="form" action="mailto:pushkinsharma0102@gmail.com" method="POST" enctype="text/plain">
                   <div class="form-floating">
                     <input
                       type="text"
                       class="form-control"
-                      id="floatingInput"
+                      id="Name"
                       placeholder="Name"
+                      name="Name"
+                      required
                     />
-                    <label style="color: #5c5c5f" for="floatingInput"
+                    <label style="color: #5c5c5f" for="Name"
                       >Name</label
                     >
                   </div>
                   <div class="form-floating">
                     <input
-                      type="text"
+                      type="email"
                       class="form-control"
-                      id="floatingInput"
+                      id="Email"
                       placeholder="Email"
+                      name="Email"
+                      required
                     />
-                    <label style="color: #5c5c5f" for="floatingInput"
+                    <label style="color: #5c5c5f" for="Email"
                       >Email</label
                     >
                   </div>
                   <div class="form-floating">
                     <input
-                      type="text"
+                      type="tel"
                       class="form-control"
-                      id="floatingInput"
+                      id="Phone"
                       placeholder="Phone"
+                      name="Phone"
                     />
-                    <label style="color: #5c5c5f" for="floatingInput"
+                    <label style="color: #5c5c5f" for="floatingInputPhone"
                       >Phone</label
                     >
                   </div>
@@ -619,18 +624,20 @@
                     <textarea
                       type="text"
                       class="form-control"
-                      id="floatingInput"
+                      id="Message"
                       placeholder="Message"
+                      name="Message"
                       rows="3"
+                      required
                     ></textarea>
-                    <label style="color: #5c5c5f" for="floatingInput"
+                    <label style="color: #5c5c5f" for="Message"
                       >Message</label
                     >
                   </div>
                   <div class="mt-4">
-                    <button class="btn btn-cta w-100">Submit</button>
+                    <button type="submit" class="btn btn-cta w-100">Submit</button>
                   </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>
@@ -747,7 +754,24 @@
         <div class="row justify-content-between blog-posts">
           <article class="col-lg-4 col-md-6 mb-4 px-4">
             <div class="card">
-              <img src="img/blog-1.jpg" class="card-img-top" alt="Blog Image 1" />
+              <img src="img/blog-4.png" class="card-img-top" alt="Blog Image 4" />
+              <div class="card-body">
+                <h6 class="card-title">
+                  Telemedicine in India: A Transformative Journey
+                </h6>
+                <p class="card-text">
+                  Telemedicine, with its roots tracing back to the early days of satellite communication, has...
+                </p>
+                <div class="blog-bottom-flex d-flex">
+                  <a href="/blog4.html" target="_blank" class="">Read More</a>
+                  <p class="ms-auto">March 27, 2024</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-lg-4 col-md-6 mb-4 px-4">
+            <div class="card">
+              <img src="img/blog-1.jpg" class="card-img-top" alt="Blog Image 3" />
               <div class="card-body">
                 <h6 class="card-title">
                   Essential Website Elements for Doctors in the Digital Era
@@ -757,7 +781,7 @@
                   presence is no longer a luxury but...
                 </p>
                 <div class="blog-bottom-flex d-flex">
-                  <a href="/blog1.html" class="">Read More</a>
+                  <a href="/blog3.html" target="_blank" class="">Read More</a>
                   <p class="ms-auto">December 14, 2023</p>
                 </div>
               </div>
@@ -776,7 +800,7 @@
                   its initial purpose and...
                 </p>
                 <div class="blog-bottom-flex d-flex">
-                  <a href="#" class="">Read More</a>
+                  <a href="/blog2.html" class="">Read More</a>
                   <p class="ms-auto">October 28, 2023</p>
                 </div>
               </div>
@@ -784,7 +808,7 @@
           </article>
           <article class="col-lg-4 col-md-6 mb-4 px-4">
             <div class="card">
-              <img src="img/blog-3.jpg" class="card-img-top" alt="Blog Image 3" />
+              <img src="img/blog-3.jpg" class="card-img-top" alt="Blog Image 1" />
               <div class="card-body">
                 <h6 class="card-title">
                   The Evolving Patient Journey in Modern Healthcare
@@ -794,13 +818,13 @@
                   healthcare system has undergone a profound...
                 </p>
                 <div class="blog-bottom-flex d-flex">
-                  <a href="#" class="">Read More</a>
+                  <a href="/blog1.html" class="">Read More</a>
                   <p class="ms-auto">October 2, 2023</p>
                 </div>
               </div>
             </div>
           </article>
-          <article class="col-lg-4 col-md-6 mb-4 px-4">
+          <!-- <article class="col-lg-4 col-md-6 mb-4 px-4">
             <div class="card">
               <img src="img/blog-3.jpg" class="card-img-top" alt="Blog Image 4" />
               <div class="card-body">
@@ -817,7 +841,7 @@
                 </div>
               </div>
             </div>
-          </article> 
+          </article>  -->
         </div>
 
         <!-- Navigation arrows -->

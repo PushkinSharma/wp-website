@@ -318,11 +318,36 @@ h4 {
   padding: 1px 12px;
 }
 
+.blog-secondary-heading{
+  color: #386ee5;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom:0;
+  margin-top: 1.75rem;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #edfbed; /* Green color for the chip */
+  color: #2ea155; /* Text color */
+  padding: 5px 10px;
+  margin:0;
+  border: 2px solid darkgreen;
+  border-radius: 10px;
+  /* box-shadow: 0 0 10px rgba(15, 248, 23, 0.2); */
+  z-index: 9999;
+  display: none;
+}
+
 .blog-card {
   border: 1px solid black;
   background-color: #f1f4f8;
   margin-bottom: 1rem;
   border-radius: 10px;
+  color:black;
 }
 
 .arrow-left, .arrow-right{
