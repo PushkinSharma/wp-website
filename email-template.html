@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Confirmation</title>
+    <style>
+        /* Reset styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Container styles */
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        /* Header styles */
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Button styles */
+        .btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        /* Button hover styles */
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Link styles */
+        .link {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        /* Link hover styles */
+        .link:hover {
+            text-decoration: underline;
+        }
+
+        .logo img{
+            width: 200px;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Registration Confirmation</h1>
+        </div>
+        <div class="logo">
+            <img src="img/logo.png" alt="Company Logo">
+        </div>
+        <p>Hello,</p>
+        <p>Thank you for partnering with us. Your account has been created successfully.</p>
+        <p> <strong>Email:</strong>  {{user_email}}</p>
+        <p> <strong>Password:</strong>{{user_password}}</p>
+        <p>You can now <a href="{{registration_link}}" class="link">register here</a> using the provided credentials.</p>
+        <p>If you have any questions or need assistance, feel free to <a href="mailto:support@example.com" class="link">contact us</a>.</p>
+        <p>Best regards,<br>Team Healthfort</p>
+    </div>
+</body>
+</html>
