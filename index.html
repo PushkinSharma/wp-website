@@ -34,66 +34,68 @@
     />
   </head>
   <body>
-    <main class="main">
-      <!-- navbar -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary pt-3 mx-md-5">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/index.html">
-            <img
-              src="img/logo.png"
-              alt="Brand Logo"
-              width="200px"
-              class="d-inline-block align-top logo"
-              loading="lazy"
-            />
-          </a>
 
-          <!-- menu for small screens -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item me-2">
-                <a class="nav-link" href="/#about">About</a>
-              </li>
-              <li class="nav-item me-2">
-                <a class="nav-link" href="/#services">Services</a>
-              </li>
-              <li class="nav-item me-2">
-                <a class="nav-link" href="/#clients">Clients</a>
-              </li>
-              <li class="nav-item me-3">
-                <a class="nav-link" href="/#contact">Contact</a>
-              </li>
-              <a href="https://champs.healthfort.in/Default.aspx" target="_blank">
-                <button class="btn btn-cta">Login</button>
-              </a>
-              
-            </ul>
+      <main class="main">
+        <!-- navbar -->
+        <nav class="navbar navbar-hero navbar-index navbar-expand-lg bg-body-tertiary pt-3 ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+              <img
+                src="img/logo.png"
+                alt="Brand Logo"
+                width="200px"
+                class="d-inline-block align-top logo"
+                loading="lazy"
+              />
+            </a>
+  
+            <!-- menu for small screens -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item me-2">
+                  <a class="nav-link" href="/#about">About</a>
+                </li>
+                <li class="nav-item me-2">
+                  <a class="nav-link" href="/#services">Services</a>
+                </li>
+                <li class="nav-item me-2">
+                  <a class="nav-link" href="/#testimonials">Clients</a>
+                </li>
+                <li class="nav-item me-3">
+                  <a class="nav-link" href="/#contact">Contact</a>
+                </li>
+                <a href="https://champs.healthfort.in/Default.aspx" target="_blank">
+                  <button class="btn btn-cta">Login</button>
+                </a>
+                
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+  
+        <!-- hero section -->
 
-      <!-- hero section -->
-      <section class="hero-section mx-xl-5">
-        <div class="container">
+      <section class="hero-section">
+        <div class="container-fluid">
           <div class="row">
             <div class="col-lg-6 order-2 order-lg-1">
               <!-- Left Side: Heading and CTA -->
-              <div class="hero-content ms-lg-5 text-center text-lg-start">
+              <div class="hero-content text-center text-lg-start">
                 <h1 class="hero-heading">Patient Engagement</h1>
                 <h1 class="hero-heading">Software Solutions</h1>
                 <h1 class="hero-heading">Digital Marketing</h1>
@@ -107,39 +109,41 @@
                   Elevate your healthcare practice with our holistic digital
                   solutions covering marketing, content and software.
                 </p>
-                <a href="/#contact" class="btn btn-cta mb-2 mt-lg-3"
-                  >Get in touch</a
-                >
+                <a href="/patient-engagement-platform.html" class="btn btn-cta">
+                  Start for Free
+                </a>
               </div>
             </div>
             <div class="col-lg-6 order-1 order-lg-2">
               <!-- Right Side: Image -->
               <div class="hero-image">
-                <img
-                  src="img/hero-pic-cropped.png"
-                  alt="Hero Image"
-                  loading="lazy"
-                  class="img-fluid"
-                />
+              <img
+                src="img/hero-pic-cropped.png"
+                alt="Hero Image"
+                aria-label="Hero Image"
+                class="img-fluid"
+              />
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      <svg
-        class="slanted-lines"
-        xmlns="http://www.w3.org/2000/svg"
-        version="1.1"
-        width="100%"
-        height="100"
-        viewBox="0 0 100 100"
-        preserveAspectRatio="none"
-        fill="#f5f7fa"
-      >
-        <path d="M0 20 L100 100 L0 100 Z"></path>
-      </svg>
-    </main>
+  
+        <svg
+          class="slanted-lines"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          width="100%"
+          height="100"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+          fill="#f5f7fa"
+        >
+          <path d="M0 20 L100 100 L0 100 Z"></path>
+        </svg>
+      </main>
+    
+    
 
     <!-- Social Icons -->
     <div class="mf-social-side-list">
@@ -148,16 +152,17 @@
           <a
             href="https://api.whatsapp.com/send/?phone=919810281169&text&type=phone_number&app_absent=0"
             target="_blank"
+            aria-label="Contact us on WhatsApp"
             ><i class="fa-brands fa-whatsapp"></i
           ></a>
         </li>
         <li>
-          <a href="mailto:hk@healthfort.in" target="_blank"
+          <a href="mailto:hk@healthfort.in" target="_blank" aria-label="Send us an email"
             ><i class="fa-solid fa-envelope"></i
           ></a>
         </li>
         <li>
-          <a href="tel:+919810281169" target="_blank"
+          <a href="tel:+919810281169" target="_blank" aria-label="Call us"
             ><i class="fa-solid fa-phone"></i
           ></a>
         </li>
@@ -171,11 +176,11 @@
           <div class="col-lg-6 mt-5 pe-md-5">
             <div class="about-content">
               <h1 class="about-heading pb-2 mt-lg-3">
-                Establish
-                <span class="heading-span"> trust </span>
+                Personalized
+                <span class="heading-span">  Patient Engagement </span>
               </h1>
               <p class="about-parag mb-3 lh-lg">
-                Let us create a professional website for you that is fully optimized for all devices. We offer medical content like - blogs, frequently asked questions (FAQs), information on procedures and conditions related to your specialization. All the content is written by specialist doctors to generate trust among visitors to your website.
+                At Healthfort, we transform patient engagement by sending tailored WhatsApp messages with informative videos. Our platform ensures that each patient receives content specific to their health status, fostering a deeper connection. This personalized approach not only enhances patient understanding but also builds trust and credibility with your practice.
               </p>
             </div>
           </div>
@@ -193,61 +198,65 @@
         </div>
       </div>
     </section>
+    
 
     <!-- digital section -->
     <section id="digital" class="digital-section">
       <div class="container py-lg-3">
-        <div class="row px-4">
-          <div class="col-lg-6 pe-md-5 order-2 order-lg-1 pt-lg-5">
-            <div class="market-image-1">
+        <!-- First Row -->
+        <div class="row d-flex align-items-stretch px-4">
+          <div class="col-lg-6 pe-md-5 order-2 order-lg-1 pt-lg-5 d-flex align-items-center">
+            <div class="market-image-1 w-100">
               <img
                 src="img/3.png"
                 alt="About-Us Image 2"
                 class="img-fluid"
                 loading="lazy"
-                style="border-radius: 10px; margin-top: 0.5rem"
+                style="border-radius: 10px; margin-top: 0.5rem; object-fit: cover;"
               />
             </div>
           </div>
-          <div class="col-lg-6 mt-5 order-1 order-lg-2">
+          <div class="col-lg-6 mt-5 order-1 order-lg-2 d-flex flex-column justify-content-center">
             <div class="market-content-1">
               <h1 class="digital-heading mb-3 mt-lg-3">
-                Build Your 
-                <span class="heading-span"> Brand </span>
+                <span class="heading-span">Boost</span>
+                Patient Acquisition and Retention
               </h1>
               <p class="digital-parag mb-4 lh-lg">
-                Enhance your digital footprint with a custom website designed specifically for your medical practice. From engaging visuals to informative medical content crafted by specialist doctors, we're dedicated to building a digital platform that instills confidence in your expertise and helps build your brand as a specialist or as a caring and competent healthcare organization.
+                Leverage our drip marketing tool to maintain consistent, meaningful communication with your patients. By delivering targeted messages that showcase your medical expertise, we help attract new patients and retain existing ones, fostering patient loyalty and practice growth.
               </p>
             </div>
           </div>
         </div>
-
-        <div class="row px-4 py-md-5">
-          <div class="col-lg-6 mt-5 pe-md-5">
+    
+        <!-- Second Row -->
+        <div class="row d-flex align-items-stretch px-4 py-md-5">
+          <div class="col-lg-6 mt-5 pe-md-5 d-flex flex-column justify-content-center">
             <div class="market-content-2">
               <h1 class="digital-heading mb-3 mt-lg-3">
-                Grow Your
-                <span class="heading-span"> Practice </span>
+                <span class="heading-span">Empowering</span>
+                Your Practice
               </h1>
               <p class="digital-parag mb-4 lh-lg">
-                Our software solutions, centered on lead conversion, patient engagement and seamless follow-up processes, empowers you to scale and expand your medical practice efficiently. They help convert patient enquiries into visits. The automated follow-up process helps your improve clinical outcomes.Relevant content delivered through our software helps you gain your patients' trust and confidence.
+                Healthfort blends medical and digital expertise to fuel your practice's growth. Our services include digital marketing, content creation, online presence management, and custom software solutions, enabling you to build a thriving practice while delivering top-notch patient care.
               </p>
             </div>
           </div>
-          <div class="col-lg-6 pt-lg-5">
-            <div class="market-image-2">
+          <div class="col-lg-6 pt-lg-5 d-flex align-items-center">
+            <div class="market-image-2 w-100">
               <img
                 src="img/grow your practise.png"
                 alt="About-Us Image 3"
                 class="img-fluid"
                 loading="lazy"
-                style="border-radius: 10px; margin-top: 0.5rem"
+                style="border-radius: 10px; margin-top: 0.5rem; object-fit: cover;"
               />
             </div>
           </div>
         </div>
       </div>
     </section>
+    
 
     <!-- services section -->
     <section class="services-section my-5" id="services">
@@ -278,12 +287,11 @@
                     class="img-fluid service-img mb-3"
                     loading="lazy"
                   />
-                  <h4 class="service-heading">Online Presence Management</h4>
+                  <h4 class="service-heading">Patient Engagement Platform</h4>
                   <p class="service-parag">
-                    Boost your online presence with our solutions that are
-                    tailored to optimize your digital presence and reputation.
+                    Send tailored WhatsApp messages with informative videos to patients, enhancing trust and credibility.
                   </p>
-                  <a href="/Online Presence Management.html" target="_blank" class="btn btn-cta">
+                  <a href="/patient-engagement-platform.html" target="_blank" class="btn btn-cta">
                     Read More
                   </a>
                 </div>
@@ -301,7 +309,7 @@
                     Our team led by doctors is uniquely positioned to create
                     trustworthy healthcare content for your practice.
                   </p>
-                  <a href="/Healthcare Content Creation.html" target="_blank" class="btn btn-cta">
+                  <a href="/healthcare-content-creation.html" target="_blank" class="btn btn-cta">
                     Read More
                   </a>
                 </div>
@@ -321,7 +329,7 @@
                     Ensure student well-being and parental involvement with our
                     digitally enabled school health program.
                   </p>
-                  <a href="/School Health Program.html" target="_blank" class="btn btn-cta">
+                  <a href="/school-health-program.html" target="_blank" class="btn btn-cta">
                     Read More
                   </a>
                 </div>
@@ -339,7 +347,7 @@
                     Tailored software solutions for individual practices and
                     hospitals. Designed by a team of doctors and IT specialists.
                   </p>
-                  <a href="/Software Solutions for Healthcare.html" target="_blank" class="btn btn-cta">
+                  <a href="/software-solutions-for-healthcare.html" target="_blank" class="btn btn-cta">
                     Read More
                   </a>
                 </div>
@@ -405,7 +413,12 @@
                           </li>
                         </ul>
                       </div>
+                      
                     </div>
+                    <div class="team-mobile">
+                      <p> Dr. Hemant Kumar </p>
+                    </div>
+                   
                   </div>
                   <div class="col-lg-6">
                     <div class="test">
@@ -433,6 +446,9 @@
                           </li>
                         </ul>
                       </div>
+                    </div>
+                    <div class="team-mobile">
+                      <p> Dr. Divye Chhabra </p>
                     </div>
                   </div>
                 </div>
@@ -473,6 +489,9 @@
                         </ul>
                       </div>
                     </div>
+                    <div class="team-mobile">
+                      <p> Dr. Neha Nayyar </p>
+                    </div>
                   </div>
                   <div class="col-lg-6">
                     <div class="test">
@@ -498,6 +517,9 @@
                         </ul>
                       </div>
                     </div>
+                    <div class="team-mobile">
+                      <p> Dr. Ridhima Magon </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -519,7 +541,7 @@
                   designed for healthcare professionals and organizations. Our
                   digital health solutions are designed specially for health
                   professionals and organizations to help them establish trust,
-                  build their brand and grow their practice.
+                  build their brand and grow their practice.
                 </p>
               </div>
             </div>
@@ -528,254 +550,20 @@
       </div>
     </section>
 
-    <!-- testimonial section -->
-    <section id="clients" class="testimonial-section py-md-5">
-      <h1 class="testimonial-heading text-center">
+   <!-- Testimonial Section -->
+    <div class="testimonial-container py-lg-5 py-3 my-3" id="testimonials">
+      <h1 class="testimonial-heading text-center pb-lg-4">
         What Our Clients Say About Us
       </h1>
-      <div class="d-flex py-5 mx-lg-3 mx-5">
-        <div class="row justify-content-between">
-          <!-- COLUMN 1 -->
-
-          <div class="col-md-4 px-4">
-            <div class="testimonial-card px-4 py-3 mb-4">
-              <div class="row testimonial-header">
-                <div class="col-md-4">
-                  <img
-                    src="img/manish-chopra.png"
-                    alt="Testimonial photo of Doctor"
-                    class="img-fluid client-pic"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="col-md-8">
-                  <h5 class="client-name">Manish Chopra</h5>
-                  <p class="client-designation">Dental Destinations, USA</p>
-                </div>
-              </div>
-              <div class="row client-content">
-                <p>
-                  The team at Healthfort consulting is amazing. They have the
-                  right insights into the healthcare industry. In a short span
-                  of time we have started thinking of Healthfort Consulting as
-                  not our vendors but our partners who are sharing our exciting
-                  journey to transform the dental health industry in the US.
-                </p>
-              </div>
-            </div>
-            <div class="testimonial-card px-4 py-3 mb-4">
-              <div class="row testimonial-header">
-                <div class="col-md-4">
-                  <img
-                    src="img/dr-neelima.jpg"
-                    alt="Testimonial photo of Doctor"
-                    class="img-fluid client-pic"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="col-md-8">
-                  <h5 class="client-name">Dr Neelima Gupta</h5>
-                  <p class="client-designation">GTB Hospital, Delhi</p>
-                </div>
-              </div>
-              <div class="row client-content">
-                <p>
-                  Healthfort excelled in supporting our Allergy Conference.
-                  Their swift website setup, efficient email marketing, and
-                  seamless design and print services showcase their valuable
-                  contribution to healthcare events. Highly recommended.
-                </p>
-              </div>
-            </div>
-            <div class="testimonial-card px-4 py-3 mb-4">
-              <div class="row testimonial-header">
-                <div class="col-md-4">
-                  <img
-                    src="img/dr-meenal.jpg"
-                    alt="Testimonial photo of Doctor"
-                    class="img-fluid client-pic"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="col-md-8">
-                  <h5 class="client-name">Dr Meenal Khanna</h5>
-                  <p class="client-designation">GoPhysio, Noida</p>
-                </div>
-              </div>
-              <div class="row client-content">
-                <p>
-                  Healthfort exceeded my expectations in building my clinic's
-                  website. From visuals to content, I simply shared my vision,
-                  and their team, led by knowledgeable doctors, ensured a
-                  hassle-free experience.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- COLUMN 2 -->
-
-          <div class="col-md-4 px-md-2 px-4">
-            <div class="testimonial-card px-4 py-3 mb-4">
-              <div class="row testimonial-header">
-                <div class="col-md-4">
-                  <img
-                    src="img/rupa-chakra.png"
-                    alt="Testimonial photo of Doctor"
-                    class="img-fluid client-pic"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="col-md-8">
-                  <h5 class="client-name">Rupa Chakravarty</h5>
-                  <p class="client-designation">Suncity School, Gurgaon</p>
-                </div>
-              </div>
-              <div class="row client-content">
-                <p>
-                  The ability to see all the important health information online
-                  through a student's Electronic Health Record is very helpful
-                  for the school as well as parents. We got positive feedback
-                  from parents and our school doctors.
-                </p>
-              </div>
-            </div>
-            <div class="testimonial-card px-4 py-3 mb-4">
-              <div class="row testimonial-header">
-                <div class="col-md-4">
-                  <img
-                    src="img/dr-amit.jpg"
-                    alt="Testimonial photo of Doctor"
-                    class="img-fluid client-pic"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="col-md-8">
-                  <h5 class="client-name">Dr Amit Nayar</h5>
-                  <p class="client-designation">Dental Spa, Chandigarh</p>
-                </div>
-              </div>
-              <div class="row client-content">
-                <p>
-                  Healthfort transformed our website into a powerful tool for
-                  patient engagement. Their attention to detail and medical
-                  accuracy exceeded my expectations.
-                </p>
-              </div>
-            </div>
-            <div class="testimonial-card px-4 py-3 mb-4">
-              <div class="row testimonial-header">
-                <div class="col-md-4">
-                  <img
-                    src="img/dr-yasir.jpg"
-                    alt="Testimonial photo of Doctor"
-                    class="img-fluid client-pic"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="col-md-8">
-                  <h5 class="client-name">Dr Yasir Rizvi</h5>
-                  <p class="client-designation">Dharamshila Hospital, Delhi</p>
-                </div>
-              </div>
-              <div class="row client-content">
-                <p>
-                  Healthfort's expertise in crafting medically accurate websites
-                  and engaging blogs is commendable. As a former faculty and
-                  senior consultant, I value their commitment to precision and
-                  informative content. Highly recommended for healthcare
-                  professionals seeking a reliable content partner.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- COLUMN 3 -->
-
-          <div class="col-md-4 px-4">
-            <div class="testimonial-card px-4 py-3 mb-4">
-              <div class="row testimonial-header">
-                <div class="col-md-4">
-                  <img
-                    src="img/dr-pawan.png"
-                    alt="Testimonial photo of Doctor"
-                    class="img-fluid client-pic"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="col-md-8">
-                  <h5 class="client-name">Dr Pawanindra Lal</h5>
-                  <p class="client-designation">MAMC, Delhi</p>
-                </div>
-              </div>
-              <div class="row client-content">
-                <p>
-                  I have partnered with Healthfort for more than a decade now. I
-                  think they're one of the most competent Healthcare-IT
-                  companies. Their understanding of clinical medicine as well as
-                  IT and its nuances is really great. They have helped develop
-                  software and mobile applications for me personally as well as
-                  for organizations that I have led.
-                </p>
-              </div>
-            </div>
-
-            <div class="testimonial-card px-4 py-3 mb-4">
-              <div class="row testimonial-header">
-                <div class="col-md-4">
-                  <img
-                    src="img/dr-nimish.jpg"
-                    alt="Testimonial photo of Doctor"
-                    class="img-fluid client-pic"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="col-md-8">
-                  <h5 class="client-name">Dr Nimish Gupta</h5>
-                  <p class="client-designation">Metro Hospital, Noida</p>
-                </div>
-              </div>
-              <div class="row client-content">
-                <p>
-                  I highly recommend Healthfort for their commitment to
-                  excellence in healthcare content development. They created a
-                  medically accurate and fully optimized website for me. Their
-                  expertise ensured the content resonated with precision,
-                  benefiting both patients and professionals.
-                </p>
-              </div>
-            </div>
-            <div class="testimonial-card px-4 py-3 mb-5">
-              <div class="row testimonial-header">
-                <div class="col-md-4">
-                  <img
-                    src="img/dr-bhawna.jpg"
-                    alt="Testimonial photo of Doctor"
-                    class="img-fluid client-pic"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="col-md-8">
-                  <h5 class="client-name">Dr Bhawna Gautam</h5>
-                  <p class="client-designation">Crayon Dental, Panipat</p>
-                </div>
-              </div>
-              <div class="row client-content">
-                <p>
-                  Healthfort did wonders for my dental brand! They fixed my
-                  logo, made our website from scratch, and helped us show up
-                  easily on Google. Easy process with good results. Thanks to
-                  Healthfort for making us stand out!
-                </p>
-              </div>
-            </div>
-          </div>
+      <div id="testimonialContainer" class="testimonial-wrapper">
+        <div id="testimonialScroll" class="testimonial-scroll">
+          <!-- Testimonials will be inserted here by JavaScript -->
         </div>
       </div>
-    </section>
+    </div>
 
     <!--contact section-->
-    <section id="contact" class="contact-section py-lg-5">
+    <section id="contact" class="contact-section py-lg-5 py-3">
       <div class="container">
         <div
           class="row align-items-center justify-content-center justify-content-md-around px-lg-5"
@@ -788,7 +576,7 @@
                 alt="Contact Doctor Photo"
               />
               <div class="contact-body">
-                <form class="form" action="https://www.healthfort.net/mail/mail.php" method="post" enctype="multipart/form-data" id="contactform111">
+                <form class="form" action="https://www.healthfort.in/mail/mail.php" method="post" enctype="multipart/form-data" id="contactform111">
                   <div class="form-floating">
                     <input type="text" class="form-control" id="name" placeholder="Name" name="name" autocomplete="on" />
                     <label style="color: #5c5c5f" for="name"
@@ -808,6 +596,9 @@
                     <label style="color: #5c5c5f" for="email"
                       >Email</label
                     >
+                    </div>
+                    <div class="form-floating">
+                      <input type="text" name="honeypot" class="form-control" style="display:none;">
                     </div>
                     <div class="form-floating">
                     <input
@@ -879,7 +670,7 @@
                       d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
                     />
                   </svg>
-                  <p>SMS Automation</p>
+                  <p>Whatsapp Automation</p>
                 </div>
                 <div class="d-flex feature-list">
                   <svg
@@ -926,7 +717,7 @@
                       d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
                     />
                   </svg>
-                  <p>Google Business Profile</p>
+                  <p>Software Solutions</p>
                 </div>
                 <div class="d-flex feature-list">
                   <svg
@@ -971,7 +762,7 @@
                   satellite communication, has...
                 </p>
                 <div class="blog-bottom-flex d-flex">
-                  <a href="/Telemedicine in India.html" target="_blank" class="">Read More</a>
+                  <a href="/telemedicine-in-india.html" target="_blank" class="">Read More</a>
                   <p class="ms-auto">March 27, 2024</p>
                 </div>
               </div>
@@ -993,7 +784,7 @@
                   presence is no longer a luxury but...
                 </p>
                 <div class="blog-bottom-flex d-flex">
-                  <a href="/Essential Website Elements for Doctors.html" target="_blank" class="">Read More</a>
+                  <a href="/essential-website-elements-for-doctors.html" target="_blank" class="">Read More</a>
                   <p class="ms-auto">December 14, 2023</p>
                 </div>
               </div>
@@ -1012,11 +803,11 @@
                   Enhancing Care
                 </h6>
                 <p class="card-text fs-7">
-                  In today’s interconnected world, social media has transcended
+                  In today's interconnected world, social media has transcended
                   its initial purpose and...
                 </p>
                 <div class="blog-bottom-flex d-flex">
-                  <a href="/Social Media for Healthcare Providers.html" class="" target="_blank">Read More</a>
+                  <a href="/social-media-for-healthcare-providers.html" class="" target="_blank">Read More</a>
                   <p class="ms-auto">October 28, 2023</p>
                 </div>
               </div>
@@ -1034,11 +825,11 @@
                   The Evolving Patient Journey in Modern Healthcare
                 </h6>
                 <p class="card-text">
-                  In today’s digital age, the patient’s journey through the
+                  In today's digital age, the patient's journey through the
                   healthcare system has undergone a profound...
                 </p>
                 <div class="blog-bottom-flex d-flex">
-                  <a href="/Evolving Patient Journey.html" class="" target="_blank">Read More</a>
+                  <a href="/evolving-patient-journey.html" class="" target="_blank">Read More</a>
                   <p class="ms-auto">October 2, 2023</p>
                 </div>
               </div>
@@ -1184,26 +975,23 @@
               <p class="footer-parag">hk@healthfort.in</p>
             </div>
             <div class="d-flex footer-contact">
+              <a href="/terms-of-use.html" target="_blank"
+                >Terms of Use</a
+              >
+            </div>
+            <div class="d-flex footer-contact">
+              <a href="/privacy-policy.html" target="_blank"
+                >Privacy Policy</a
+              >
+            </div>
+
+            <div class="d-flex footer-contact">
               <a href="https://storyset.com/people"
                 >People illustrations by Storyset</a
               >
             </div>
 
             <div class="footer-socials mb-2">
-              <a href="#" class="footer-social-links"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  class="bi bi-facebook me-2"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
-                  />
-                </svg>
-              </a>
               <a
                 href="https://www.linkedin.com/company/healthfort/"
                 target="_blank"
@@ -1255,6 +1043,11 @@
       </div>
     </footer>
 
+    <script>
+      function navigateToCharts() {
+        window.location.href = '/charts';
+      }
+      </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -1263,14 +1056,7 @@
     <script src="js/animate.js"></script>
     <script src="js/blog.js"></script>
     <script src="js/validateForm.js" defer></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-      $(document).ready(function(){
-          $('#contactform111').submit(function(event){
-              event.preventDefault(); 
-              alert("Hello");
-          });
-      });
-    </script> -->
+    <script src="js/testimonial.js"></script>
+    <!-- <script src=js/gradient.js></script> -->
   </body>
 </html>
