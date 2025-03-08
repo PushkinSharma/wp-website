@@ -645,74 +645,88 @@ h4 {
   color: #386ee5;
 }
 
-/* Testimonials */
-
-
+/* Testimonial Section Styles */
 .testimonial-container {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
+    background-color: #f5f7fa;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+}
+
+.testimonial-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .testimonial-scroll {
-  display: flex;
-  transition: transform 0.5s ease;
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 20px;
+    padding: 20px 0;
 }
 
 .testimonial-card {
-  margin-right: 50px;
-  padding: 20px;
-  background-color: #e7e9f3;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  flex: 0 0 400px;
-  width: 400px;
-  border: 2px dotted black;
-  min-height: 350px;
+    width: 350px;
+    min-width: 350px;
+    max-width: 350px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+    height: 100%;
+    min-height: 320px;
 }
 
 .testimonial-header {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
 .client-pic {
-  width: 100px; /* Set the desired width */
-  height: 100px; /* Same as width to maintain 1:1 aspect ratio */
-  border-radius: 50%; /* Make the image circular */
-  object-fit: cover; /* Maintain aspect ratio and fill the container */
-  overflow: hidden; /* Hide any part of the image that exceeds the container */
-  margin-bottom: 10px;
-  margin-right: 1rem;
-}
-
-.client-name {
-  color: black;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-.client-designation {
-  color: #27539f;
-  font-weight: 500;
-  margin-bottom: 0;
-}
-
-.client-website {
-  text-decoration: none;
-  color: green;
-  font-weight: 700;
-}
-
-.client-content {
-  padding-top: 1rem;
-  color: black;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
 }
 
 .client-info {
-  flex-grow: 1;
+    flex: 1;
 }
 
+.client-name {
+    margin: 0;
+    font-weight: 600;
+    color: #333;
+}
+
+.client-designation {
+    margin: 0;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.client-content {
+    color: #555;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .testimonial-card {
+        width: 280px;
+        min-width: 280px;
+        max-width: 280px;
+    }
+    
+    .testimonial-scroll {
+        gap: 15px;
+    }
+}
 
 /* PEP Page Specific Styles */
 .pep-hero {

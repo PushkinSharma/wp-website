@@ -55,11 +55,12 @@ const testimonials = [
     },
 ];
 
-const testimonialContainer = document.getElementById('testimonialContainer');
-const testimonialScroll = document.getElementById('testimonialScroll');
+let testimonialContainer;
+let testimonialScroll;
 let scrollPosition = 0;
 let isHovered = false;
 let startX, currentTranslate = 0, prevTranslate = 0, isDragging = false;
+let scrollInterval;
 
 function createTestimonialCard(testimonial) {
     const card = document.createElement('div');
@@ -80,9 +81,29 @@ function createTestimonialCard(testimonial) {
 }
 
 function initializeTestimonials() {
+    testimonialContainer = document.getElementById('testimonialContainer');
+    testimonialScroll = document.getElementById('testimonialScroll');
+    
+    if (!testimonialContainer || !testimonialScroll) {
+        console.error('Testimonial elements not found');
+        return;
+    }
+
+    // Clear existing content
+    testimonialScroll.innerHTML = '';
+    
+    // Add testimonials
     testimonials.forEach(testimonial => {
         testimonialScroll.appendChild(createTestimonialCard(testimonial));
     });
+
+    // Clone testimonials for seamless infinite scroll
+    testimonials.forEach(testimonial => {
+        testimonialScroll.appendChild(createTestimonialCard(testimonial));
+    });
+
+    // Start scrolling
+    startScrolling();
 }
 
 function isMobile() {
@@ -95,7 +116,8 @@ function scrollTestimonials() {
     scrollPosition += 2;
     testimonialScroll.style.transform = `translateX(-${scrollPosition}px)`;
 
-    if (scrollPosition >= (testimonialScroll.scrollWidth - testimonialContainer.offsetWidth)) {
+    // Reset position when we've scrolled through all testimonials
+    if (scrollPosition >= (testimonialScroll.scrollWidth / 2)) {
         scrollPosition = 0;
         testimonialScroll.style.transition = 'none';
         testimonialScroll.style.transform = `translateX(0)`;
@@ -103,6 +125,13 @@ function scrollTestimonials() {
             testimonialScroll.style.transition = 'transform 0.5s ease';
         }, 50);
     }
+}
+
+function startScrolling() {
+    if (scrollInterval) {
+        clearInterval(scrollInterval);
+    }
+    scrollInterval = setInterval(scrollTestimonials, 30);
 }
 
 function touchStart(event) {
@@ -142,16 +171,18 @@ function touchEnd() {
     testimonialScroll.style.transform = `translateX(${currentTranslate}px)`;
 }
 
-initializeTestimonials();
-
-const scrollInterval = setInterval(scrollTestimonials, 30);
-
-testimonialScroll.addEventListener('mouseenter', () => isHovered = true);
-testimonialScroll.addEventListener('mouseleave', () => isHovered = false);
-
-testimonialScroll.addEventListener('touchstart', touchStart);
-testimonialScroll.addEventListener('touchmove', touchMove);
-testimonialScroll.addEventListener('touchend', touchEnd);
+// Initialize when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    initializeTestimonials();
+    
+    if (testimonialScroll) {
+        testimonialScroll.addEventListener('mouseenter', () => isHovered = true);
+        testimonialScroll.addEventListener('mouseleave', () => isHovered = false);
+        testimonialScroll.addEventListener('touchstart', touchStart);
+        testimonialScroll.addEventListener('touchmove', touchMove);
+        testimonialScroll.addEventListener('touchend', touchEnd);
+    }
+});
 
 // Recalculate on resize
 window.addEventListener('resize', () => {
