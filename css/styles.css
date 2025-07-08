@@ -852,7 +852,153 @@ h4 {
   margin-right: 0.5rem;
 }
 
+/* WhatsApp Demo Section */
+.whatsapp-demo-section {
+  background-color: #f5f7fa;
+  overflow: hidden;
+}
 
+.whatsapp-heading {
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
+  color: #433c6e;
+  margin-bottom: 2rem;
+}
+
+.whatsapp-subheading {
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  color: #386ee5;
+  margin-bottom: 1rem;
+}
+
+.whatsapp-description {
+  color: #6f6f6f;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+  .whatsapp-text-container {
+    position: relative;
+    min-height: 200px;
+  }
+
+/* WhatsApp Image Container - No iPhone Frame Needed */
+.iphone-mockup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.iphone-frame {
+  position: relative;
+  max-width: 350px;
+  width: 100%;
+}
+
+.whatsapp-image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  /* box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25); */
+}
+
+  .whatsapp-screenshot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    opacity: 0;
+    transform: translateX(80px);
+    transition: all 0.8s ease-out;
+    border-radius: 20px;
+  }
+
+  .whatsapp-screenshot.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .whatsapp-screenshot:first-child {
+    position: relative;
+  }
+
+  /* Smooth Text Animations - All Together */
+  .whatsapp-text-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: all 0.8s ease-out;
+  }
+
+  .whatsapp-text-item.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .whatsapp-subheading,
+  .whatsapp-description {
+    transform: none;
+    transition: none;
+  }
+
+/* Patient Journey Section */
+.patient-journey-section {
+  background-color: #f5f7fa;
+  padding: 4rem 0;
+}
+
+.journey-heading {
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
+  color: #433c6e;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+  .journey-illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .journey-image {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+  }
+
+  .journey-image:hover {
+    transform: scale(1.02);
+  }
+
+  /* Scroll animations for new sections */
+  .whatsapp-demo-section,
+  .patient-journey-section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+  }
+
+  .whatsapp-demo-section.animate-in,
+  .patient-journey-section.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
 
 /* Media Queries */
@@ -925,6 +1071,50 @@ h4 {
   .client-designation,
   .client-content {
     font-size: 12px;
+  }
+
+  /* WhatsApp Demo Section Mobile */
+  .whatsapp-demo-section {
+    padding: 3rem 0;
+  }
+
+  .whatsapp-heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .whatsapp-text-container {
+    min-height: 150px;
+    margin-bottom: 2rem;
+  }
+
+  .whatsapp-text-item {
+    transform: translateX(-40px);
+  }
+
+  .whatsapp-screenshot {
+    transform: translateX(60px);
+  }
+
+  .iphone-mockup {
+    padding: 1rem;
+  }
+
+  .iphone-frame {
+    max-width: 280px;
+  }
+
+  .whatsapp-image-container {
+    border-radius: 15px;
+  }
+
+  .journey-heading {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .patient-journey-section {
+    padding: 3rem 0;
   }
 }
 
