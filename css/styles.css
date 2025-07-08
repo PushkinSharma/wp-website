@@ -977,6 +977,442 @@ h4 {
   font-weight: 400;
 }
 
+/* About Section - Impact Stats */
+.about-section {
+  position: relative;
+  background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 50%, #f5f7fa 100%);
+  overflow: hidden;
+}
+
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(56, 110, 229, 0.03) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.about-section::after {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  left: -100px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(56, 110, 229, 0.02) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.about-content,
+.about-visual {
+  position: relative;
+  z-index: 2;
+}
+
+.impact-stats {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 120px;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #386ee5;
+  font-family: "Overpass", sans-serif;
+  display: inline-block;
+}
+
+.stat-symbol {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #386ee5;
+  font-family: "Overpass", sans-serif;
+  display: inline;
+  margin-left: 2px;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #6f6f6f;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+/* Digital Section - Three Verticals Styles */
+.digital-section {
+  position: relative;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 30%, #f5f7fa 100%);
+  overflow: hidden;
+}
+
+.digital-section::before {
+  content: '';
+  position: absolute;
+  top: -150px;
+  left: -150px;
+  width: 400px;
+  height: 400px;
+  background: conic-gradient(from 0deg, rgba(56, 110, 229, 0.02), transparent, rgba(56, 110, 229, 0.015));
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.digital-section::after {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(56, 110, 229, 0.025) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.digital-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.vertical-card {
+  height: 350px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  transition: transform 0.6s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-front {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  border: 2px solid #e5e8f0;
+}
+
+.card-back {
+  background: linear-gradient(135deg, #386ee5 0%, #2c5aa0 100%);
+  color: white;
+  padding: 2rem;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.vertical-card:hover .card-front {
+  transform: rotateY(-180deg);
+}
+
+.vertical-card:hover .card-back {
+  transform: rotateY(0deg);
+}
+
+.card-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #386ee5, #5d87ff);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.card-icon i {
+  font-size: 2rem;
+  color: white;
+}
+
+.vertical-card:hover .card-icon {
+  transform: scale(1.1);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #433c6e;
+  margin-bottom: 0.5rem;
+  font-family: "Overpass", sans-serif;
+}
+
+.card-subtitle {
+  font-size: 1rem;
+  color: #6f6f6f;
+  margin-bottom: 1.5rem;
+}
+
+.card-hover-indicator {
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.vertical-card:hover .card-hover-indicator {
+  opacity: 1;
+}
+
+.card-hover-indicator i {
+  font-size: 1.5rem;
+  color: #386ee5;
+}
+
+.card-back h4 {
+  color: white;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-list li {
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.card-stats {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.card-stats span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Process Flow Section */
+.process-flow-section {
+  background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 50%, #f5f7fa 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.process-flow-section::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(56, 110, 229, 0.03) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.process-content,
+.process-visual {
+  position: relative;
+  z-index: 2;
+}
+
+.process-heading {
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
+  color: #433c6e;
+  font-size: 2.5rem;
+}
+
+.process-description {
+  color: #6f6f6f;
+  font-weight: 400;
+}
+
+/* Service Features */
+.service-features {
+  margin-bottom: 2rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all 0.6s ease;
+}
+
+.feature-item.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.feature-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #386ee5, #5d87ff);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.feature-icon i {
+  font-size: 1.25rem;
+  color: white;
+}
+
+.feature-content h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #433c6e;
+  margin-bottom: 0.5rem;
+  font-family: "Overpass", sans-serif;
+}
+
+.feature-content p {
+  color: #6f6f6f;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Process Flow */
+.process-visual {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.process-flow {
+  position: relative;
+  padding: 2rem;
+  max-width: 350px;
+  width: 100%;
+}
+
+.flow-step {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.flow-step.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.flow-step.active .step-number {
+  background: linear-gradient(135deg, #386ee5, #5d87ff);
+  transform: scale(1.1);
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  background: #e5e8f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #433c6e;
+  margin-right: 1rem;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.flow-step.active .step-number {
+  color: white;
+}
+
+.step-content h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #433c6e;
+  margin-bottom: 0.25rem;
+  font-family: "Overpass", sans-serif;
+}
+
+.step-content p {
+  color: #6f6f6f;
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.3;
+}
+
+.step-connector {
+  position: absolute;
+  left: 20px;
+  top: 50px;
+  width: 2px;
+  height: 30px;
+  background: linear-gradient(to bottom, #386ee5, transparent);
+  opacity: 0.3;
+}
+
+.flow-step:last-child .step-connector {
+  display: none;
+}
+
+.central-icon {
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulse 2s infinite;
+}
+
+.central-icon i {
+  font-size: 1.5rem;
+  color: white;
+}
+
+@keyframes pulse {
+  0% { transform: translateY(-50%) scale(1); }
+  50% { transform: translateY(-50%) scale(1.1); }
+  100% { transform: translateY(-50%) scale(1); }
+}
+
 /* Match about and digital section styling to patient journey */
 .about-heading {
   font-family: "Overpass", sans-serif;
@@ -1182,6 +1618,110 @@ h4 {
 
   .whatsapp-image-container {
     max-height: 400px;
+  }
+
+  /* Mobile styles for new sections */
+  .impact-stats {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .stat-number,
+  .stat-symbol {
+    font-size: 2rem;
+  }
+
+  .service-features {
+    margin-bottom: 1.5rem;
+  }
+
+  .feature-item {
+    margin-bottom: 1rem;
+  }
+
+  .feature-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .feature-icon i {
+    font-size: 1rem;
+  }
+
+  .feature-content h4 {
+    font-size: 1rem;
+  }
+
+  .feature-content p {
+    font-size: 0.9rem;
+  }
+
+  .process-flow {
+    padding: 1rem;
+    max-width: 300px;
+  }
+
+  .flow-step {
+    margin-bottom: 1.5rem;
+  }
+
+  .step-number {
+    width: 35px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+
+  .step-content h5 {
+    font-size: 0.95rem;
+  }
+
+  .step-content p {
+    font-size: 0.8rem;
+  }
+
+  .central-icon {
+    width: 50px;
+    height: 50px;
+    right: -15px;
+  }
+
+  .central-icon i {
+    font-size: 1.25rem;
+  }
+
+  .vertical-card {
+    height: 300px;
+    margin-bottom: 1.5rem;
+  }
+
+  .card-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .card-icon i {
+    font-size: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+  }
+
+  .card-back {
+    padding: 1.5rem;
+  }
+
+  .feature-list li {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .process-heading {
+    font-size: 1.8rem;
+  }
+
+  .process-description {
+    font-size: 0.95rem;
   }
 }
 
