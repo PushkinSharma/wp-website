@@ -1014,44 +1014,7 @@ h4 {
   z-index: 2;
 }
 
-.impact-stats {
-  display: flex;
-  gap: 2rem;
-  margin-top: 2rem;
-  flex-wrap: wrap;
-}
 
-.stat-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  min-width: 120px;
-}
-
-.stat-number {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #386ee5;
-  font-family: "Overpass", sans-serif;
-  display: inline-block;
-}
-
-.stat-symbol {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #386ee5;
-  font-family: "Overpass", sans-serif;
-  display: inline;
-  margin-left: 2px;
-}
-
-.stat-label {
-  font-size: 0.9rem;
-  color: #6f6f6f;
-  margin-top: 0.5rem;
-  font-weight: 500;
-}
 
 /* Digital Section - Three Verticals Styles */
 .digital-section {
@@ -1377,10 +1340,16 @@ h4 {
   position: absolute;
   left: 20px;
   top: 50px;
-  width: 2px;
+  width: 3px;
   height: 30px;
-  background: linear-gradient(to bottom, #386ee5, transparent);
-  opacity: 0.3;
+  background: linear-gradient(to bottom, #386ee5 0%, #5d87ff 50%, transparent 100%);
+  opacity: 0.6;
+  animation: connectorGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes connectorGlow {
+  0% { opacity: 0.6; transform: scaleY(1); }
+  100% { opacity: 0.9; transform: scaleY(1.1); }
 }
 
 .flow-step:last-child .step-connector {
@@ -1388,29 +1357,7 @@ h4 {
 }
 
 .central-icon {
-  position: absolute;
-  top: 50%;
-  right: -20px;
-  transform: translateY(-50%);
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(135deg, #25d366, #128c7e);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: pulse 2s infinite;
-}
-
-.central-icon i {
-  font-size: 1.5rem;
-  color: white;
-}
-
-@keyframes pulse {
-  0% { transform: translateY(-50%) scale(1); }
-  50% { transform: translateY(-50%) scale(1.1); }
-  100% { transform: translateY(-50%) scale(1); }
+  display: none;
 }
 
 /* Match about and digital section styling to patient journey */
@@ -1470,8 +1417,8 @@ h4 {
   /* Scroll animations for new sections */
   .whatsapp-demo-section,
   .patient-journey-section {
-    opacity: 0;
-    transform: translateY(50px);
+    opacity: 1;
+    transform: translateY(0);
     transition: all 0.8s ease;
   }
 
@@ -1621,15 +1568,6 @@ h4 {
   }
 
   /* Mobile styles for new sections */
-  .impact-stats {
-    justify-content: center;
-    gap: 1.5rem;
-  }
-
-  .stat-number,
-  .stat-symbol {
-    font-size: 2rem;
-  }
 
   .service-features {
     margin-bottom: 1.5rem;
@@ -1679,15 +1617,7 @@ h4 {
     font-size: 0.8rem;
   }
 
-  .central-icon {
-    width: 50px;
-    height: 50px;
-    right: -15px;
-  }
 
-  .central-icon i {
-    font-size: 1.25rem;
-  }
 
   .vertical-card {
     height: 300px;
