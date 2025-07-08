@@ -961,30 +961,33 @@ h4 {
   font-family: "Overpass", sans-serif;
   font-weight: 700;
   color: #433c6e;
-  margin-bottom: 3rem;
   font-size: 2.5rem;
 }
 
-  .journey-illustration {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
+.journey-description {
+  color: #6f6f6f;
+  font-weight: 400;
+}
 
-  .journey-image {
-    width: 100%;
-    height: auto;
-    max-height: 300px;
-    object-fit: contain;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    border-radius: 15px;
-  }
+.journey-illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 
-  .journey-image:hover {
-    transform: scale(1.02);
-  }
+.journey-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
+  transition: transform 0.3s ease;
+  border-radius: 15px;
+}
+
+.journey-image:hover {
+  transform: scale(1.02);
+}
 
   /* Scroll animations for new sections */
   .whatsapp-demo-section,
@@ -1110,11 +1113,19 @@ h4 {
 
   .journey-heading {
     font-size: 1.8rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .journey-description {
+    font-size: 0.95rem;
   }
 
   .patient-journey-section {
     padding: 3rem 0;
+  }
+
+  .journey-content {
+    margin-top: 2rem;
   }
 }
 
