@@ -875,7 +875,7 @@ h4 {
 .whatsapp-description {
   color: #6f6f6f;
   line-height: 1.6;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
   .whatsapp-text-container {
@@ -902,9 +902,12 @@ h4 {
   position: relative;
   width: 100%;
   height: auto;
+  max-height: 600px;
   border-radius: 20px;
   overflow: hidden;
-  /* box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
   .whatsapp-screenshot {
@@ -912,7 +915,8 @@ h4 {
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
+    max-height: 600px;
     object-fit: contain;
     opacity: 0;
     transform: translateX(80px);
@@ -951,6 +955,10 @@ h4 {
     transition: none;
   }
 
+  .whatsapp-subheading {
+    font-size: 1.75rem;
+  }
+
 /* Patient Journey Section */
 .patient-journey-section {
   background-color: #f5f7fa;
@@ -969,12 +977,46 @@ h4 {
   font-weight: 400;
 }
 
-.journey-illustration {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+/* Match about and digital section styling to patient journey */
+.about-heading {
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
+  color: #433c6e;
+  font-size: 2.5rem;
 }
+
+.about-parag {
+  color: #6f6f6f;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.digital-heading {
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
+  color: #433c6e;
+  font-size: 2.5rem;
+}
+
+.digital-parag {
+  color: #6f6f6f;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+  .journey-illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .journey-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
 .journey-image {
   width: 100%;
@@ -1126,6 +1168,20 @@ h4 {
 
   .journey-content {
     margin-top: 2rem;
+  }
+
+  .about-heading,
+  .digital-heading {
+    font-size: 1.8rem;
+  }
+
+  .about-parag,
+  .digital-parag {
+    font-size: 0.95rem;
+  }
+
+  .whatsapp-image-container {
+    max-height: 400px;
   }
 }
 
