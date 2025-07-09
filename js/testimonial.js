@@ -58,7 +58,6 @@ const testimonials = [
 let testimonialContainer;
 let testimonialScroll;
 let scrollPosition = 0;
-let isHovered = false;
 let startX, currentTranslate = 0, prevTranslate = 0, isDragging = false;
 let scrollInterval;
 
@@ -92,15 +91,12 @@ function initializeTestimonials() {
     // Clear existing content
     testimonialScroll.innerHTML = '';
     
-    // Add testimonials
-    testimonials.forEach(testimonial => {
-        testimonialScroll.appendChild(createTestimonialCard(testimonial));
-    });
-
-    // Clone testimonials for seamless infinite scroll
-    testimonials.forEach(testimonial => {
-        testimonialScroll.appendChild(createTestimonialCard(testimonial));
-    });
+    // Add testimonials multiple times for better infinite scroll
+    for (let i = 0; i < 3; i++) {
+        testimonials.forEach(testimonial => {
+            testimonialScroll.appendChild(createTestimonialCard(testimonial));
+        });
+    }
 
     // Start scrolling
     startScrolling();
@@ -111,18 +107,19 @@ function isMobile() {
 }
 
 function scrollTestimonials() {
-    if (isHovered || isMobile()) return;
+    if (isMobile()) return;
     
-    scrollPosition += 2;
+    scrollPosition += 1.5; // Slightly slower for smoother experience
     testimonialScroll.style.transform = `translateX(-${scrollPosition}px)`;
 
-    // Reset position when we've scrolled through all testimonials
-    if (scrollPosition >= (testimonialScroll.scrollWidth / 2)) {
+    // Reset position when we've scrolled through one set of testimonials
+    const oneSetWidth = (testimonialScroll.scrollWidth / 3);
+    if (scrollPosition >= oneSetWidth) {
         scrollPosition = 0;
         testimonialScroll.style.transition = 'none';
         testimonialScroll.style.transform = `translateX(0)`;
         setTimeout(() => {
-            testimonialScroll.style.transition = 'transform 0.5s ease';
+            testimonialScroll.style.transition = 'transform 0.8s ease-out';
         }, 50);
     }
 }
@@ -131,13 +128,27 @@ function startScrolling() {
     if (scrollInterval) {
         clearInterval(scrollInterval);
     }
-    scrollInterval = setInterval(scrollTestimonials, 30);
+    scrollInterval = setInterval(scrollTestimonials, 25); // Smoother animation
+}
+
+function pauseScrolling() {
+    if (scrollInterval) {
+        clearInterval(scrollInterval);
+        scrollInterval = null;
+    }
+}
+
+function resumeScrolling() {
+    if (!scrollInterval) {
+        startScrolling();
+    }
 }
 
 function touchStart(event) {
     if (!isMobile()) return;
     startX = event.touches[0].clientX;
     isDragging = true;
+    pauseScrolling();
     testimonialScroll.style.transition = 'none';
 }
 
@@ -169,6 +180,11 @@ function touchEnd() {
     currentTranslate = prevTranslate;
     testimonialScroll.style.transition = 'transform 0.3s ease-out';
     testimonialScroll.style.transform = `translateX(${currentTranslate}px)`;
+    
+    // Resume scrolling after touch interaction
+    setTimeout(() => {
+        resumeScrolling();
+    }, 1000);
 }
 
 // Initialize when DOM is loaded
@@ -176,20 +192,38 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeTestimonials();
     
     if (testimonialScroll) {
-        testimonialScroll.addEventListener('mouseenter', () => isHovered = true);
-        testimonialScroll.addEventListener('mouseleave', () => isHovered = false);
+        // Optional: Pause on click/tap for better UX
+        testimonialScroll.addEventListener('click', () => {
+            pauseScrolling();
+            setTimeout(() => {
+                resumeScrolling();
+            }, 3000); // Resume after 3 seconds
+        });
+        
         testimonialScroll.addEventListener('touchstart', touchStart);
         testimonialScroll.addEventListener('touchmove', touchMove);
         testimonialScroll.addEventListener('touchend', touchEnd);
     }
 });
 
+// Handle visibility change (pause when tab is not visible)
+document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+        pauseScrolling();
+    } else {
+        resumeScrolling();
+    }
+});
+
 // Recalculate on resize
 window.addEventListener('resize', () => {
     if (!isMobile()) {
-        testimonialScroll.style.transform = 'translateX(0)';
         scrollPosition = 0;
         currentTranslate = 0;
         prevTranslate = 0;
+        testimonialScroll.style.transform = 'translateX(0)';
+        resumeScrolling();
+    } else {
+        pauseScrolling();
     }
 });
