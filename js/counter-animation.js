@@ -37,6 +37,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Animate feature items and flow steps on scroll
     const featureItems = document.querySelectorAll('.feature-item');
     const flowSteps = document.querySelectorAll('.flow-step');
+    const painCards = document.querySelectorAll('.pain-card');
+    const statBoxes = document.querySelectorAll('.stat-box');
 
     const animateOnScroll = new IntersectionObserver((entries) => {
         entries.forEach((entry, index) => {
@@ -50,6 +52,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     featureItems.forEach(item => animateOnScroll.observe(item));
     flowSteps.forEach(step => animateOnScroll.observe(step));
+    painCards.forEach(card => animateOnScroll.observe(card));
+    statBoxes.forEach(box => animateOnScroll.observe(box));
 
     // Continuous looping step activation animation for process flow
     const processFlowSteps = document.querySelectorAll('.flow-step');

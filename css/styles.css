@@ -1239,7 +1239,7 @@ h4 {
 .circle-1 {
   width: 200px;
   height: 200px;
-  background: radial-gradient(circle, rgba(56, 110, 229, 0.1) 0%, transparent 70%);
+  /* background: radial-gradient(circle, rgba(56, 110, 229, 0.1) 0%, transparent 70%); */
   top: -50px;
   right: -50px;
   animation-duration: 25s;
@@ -1248,7 +1248,7 @@ h4 {
 .circle-2 {
   width: 150px;
   height: 150px;
-  background: radial-gradient(circle, rgba(37, 211, 102, 0.08) 0%, transparent 60%);
+  /* background: radial-gradient(circle, rgba(37, 211, 102, 0.08) 0%, transparent 60%); */
   bottom: -30px;
   left: -30px;
   animation-duration: 30s;
@@ -1258,7 +1258,7 @@ h4 {
 .circle-3 {
   width: 100px;
   height: 100px;
-  background: radial-gradient(circle, rgba(56, 110, 229, 0.06) 0%, transparent 50%);
+  /* background: radial-gradient(circle, rgba(56, 110, 229, 0.06) 0%, transparent 50%); */
   top: 30%;
   left: -20px;
   animation-duration: 35s;
@@ -1433,35 +1433,10 @@ h4 {
 
 
 
-/* Digital Section - Three Verticals Styles */
+/* Digital Section - Connected Cards */
 .digital-section {
   position: relative;
-  /* background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 30%, #f5f7fa 100%); */
   overflow: hidden;
-}
-
-.digital-section::before {
-  content: '';
-  position: absolute;
-  top: -150px;
-  left: -150px;
-  width: 400px;
-  height: 400px;
-  background: conic-gradient(from 0deg, rgba(56, 110, 229, 0.02), transparent, rgba(56, 110, 229, 0.015));
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.digital-section::after {
-  content: '';
-  position: absolute;
-  bottom: -100px;
-  right: -100px;
-  width: 250px;
-  height: 250px;
-  background: radial-gradient(circle, rgba(56, 110, 229, 0.025) 0%, transparent 70%);
-  border-radius: 50%;
-  z-index: 1;
 }
 
 .digital-section .container {
@@ -1469,66 +1444,85 @@ h4 {
   z-index: 2;
 }
 
-.vertical-card {
-  height: 350px;
-  perspective: 1000px;
-  cursor: pointer;
-}
-
-.card-front,
-.card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 15px;
-  transition: transform 0.6s ease;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
-.card-front {
-  background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+/* Connected Cards Container */
+.connected-cards-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 2rem;
+  border-radius: 12px;
+  background: #ffffff;
   border: 2px solid #e5e8f0;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
 }
 
-.card-back {
-  background: linear-gradient(135deg, #386ee5 0%, #2c5aa0 100%);
-  color: white;
-  padding: 2rem;
-  transform: rotateY(180deg);
+.vertical-card {
+  flex: 1;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Vertical separators between cards */
+.vertical-card:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  right: 0;
+  bottom: 10%;
+  width: 1px;
+  background: #e5e8f0;
+  transition: background-color 0.3s ease;
+}
+
+.card-container {
+  padding: 2rem 1.5rem;
+  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+  background: transparent;
+  transition: all 0.3s ease;
 }
 
-.vertical-card:hover .card-front {
-  transform: rotateY(-180deg);
+.vertical-card:hover .card-container {
+  background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+  transform: scale(1.02);
 }
 
-.vertical-card:hover .card-back {
-  transform: rotateY(0deg);
+.vertical-card:hover::after {
+  background: #386ee5;
+}
+
+.vertical-card:hover {
+  z-index: 5;
+}
+
+/* Hover effect for entire wrapper */
+.connected-cards-wrapper:hover {
+  border-color: #386ee5;
+  box-shadow: 0 8px 30px rgba(56, 110, 229, 0.15);
+}
+
+.card-header {
+  text-align: center;
+  flex-shrink: 0;
 }
 
 .card-icon {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   background: linear-gradient(135deg, #386ee5, #5d87ff);
-  border-radius: 50%;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1.5rem;
+  margin: 0 auto 1rem;
   transition: transform 0.3s ease;
 }
 
 .card-icon i {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
 }
 
@@ -1537,64 +1531,153 @@ h4 {
 }
 
 .card-title {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #433c6e;
   margin-bottom: 0.5rem;
   font-family: "Overpass", sans-serif;
+  line-height: 1.3;
 }
 
 .card-subtitle {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #6f6f6f;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
+  line-height: 1.4;
 }
 
-.card-hover-indicator {
-  opacity: 0.5;
-  transition: opacity 0.3s ease;
+/* Feature Points */
+.feature-points {
+  margin: 1.5rem 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.vertical-card:hover .card-hover-indicator {
-  opacity: 1;
-}
-
-.card-hover-indicator i {
-  font-size: 1.5rem;
-  color: #386ee5;
-}
-
-.card-back h4 {
-  color: white;
-  font-size: 1.25rem;
-  margin-bottom: 1.5rem;
-  font-weight: 600;
-}
-
-.feature-list-vertical {
+.feature-points ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.feature-list-vertical li {
+.feature-points li {
+  display: flex;
+  align-items: center;
   margin-bottom: 0.75rem;
-  font-size: 0.95rem;
-  line-height: 1.4;
+  font-size: 0.9rem;
+  color: #433c6e;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
-.card-stats {
+.feature-points li:last-child {
+  margin-bottom: 0;
+}
+
+.feature-points li i {
+  color: #386ee5;
+  font-size: 0.8rem;
+  margin-right: 0.75rem;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.vertical-card:hover .feature-points li {
+  color: #2c4a7a;
+  transform: translateX(3px);
+}
+
+.vertical-card:hover .feature-points li i {
+  color: #2c5aa0;
+  transform: translateX(2px);
+}
+
+.card-footer {
   text-align: center;
-  padding: 1rem;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  margin-top: 1rem;
+  flex-shrink: 0;
 }
 
-.card-stats span {
-  font-size: 1rem;
+.learn-more-btn {
+  color: #386ee5;
   font-weight: 600;
-  color: #fff;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+  opacity: 0.8;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+
+.learn-more-btn i {
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.vertical-card:hover .learn-more-btn {
+  opacity: 1;
+  color: #ffffff;
+  background: #386ee5;
+  border-color: #386ee5;
+  transform: translateY(-2px);
+}
+
+.vertical-card:hover .learn-more-btn i {
+  transform: translateX(3px);
+}
+
+/* Mobile styles */
+@media screen and (max-width: 991px) {
+  .connected-cards-wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .vertical-card:not(:last-child)::after {
+    top: auto;
+    bottom: 0;
+    left: 10%;
+    right: 10%;
+    width: auto;
+    height: 1px;
+  }
+  
+  .card-container {
+    height: auto;
+    min-height: 280px;
+    padding: 1.5rem;
+  }
+  
+  .card-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .card-icon i {
+    font-size: 1.25rem;
+  }
+  
+  .card-title {
+    font-size: 1.1rem;
+  }
+  
+  .feature-points {
+    margin: 1rem 0;
+  }
+  
+  .feature-points li {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .feature-points li i {
+    font-size: 0.75rem;
+    margin-right: 0.6rem;
+  }
 }
 
 /* Process Flow Section */
@@ -2293,5 +2376,85 @@ h4 {
   background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
   background-size: 300px 100%;
   animation: shimmer 1.5s infinite;
+}
+
+/* Disable hover transform effects for vertical cards to prevent UI shift */
+.vertical-card:hover .card-container,
+.vertical-card:hover .card-icon,
+.vertical-card:hover .feature-points li,
+.vertical-card:hover .feature-points li i,
+.vertical-card:hover .learn-more-btn {
+  transform: none !important;
+}
+
+/* Pain-Point Section */
+.pain-section {
+  background-color: #f5f7fa;
+  overflow: hidden;
+}
+
+.pain-heading {
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
+  color: #433c6e;
+  font-size: 2.5rem;
+}
+
+.pain-card {
+  background: #ffffff;
+  border: 1px solid rgba(56, 110, 229, 0.08);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.pain-card.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.pain-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(56, 110, 229, 0.15);
+}
+
+.pain-icon i {
+  color: #386ee5;
+  transition: transform 0.3s ease;
+}
+
+.pain-card:hover .pain-icon i {
+  transform: scale(1.1);
+}
+
+/* Statistics Banner */
+.stats-banner {
+  background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 50%, #f5f7fa 100%);
+}
+
+.stat-box {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.stat-box.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #386ee5;
+  margin-bottom: 0.25rem;
+  font-family: "Overpass", sans-serif;
+}
+
+.stat-label {
+  color: #433c6e;
+  font-weight: 500;
 }
 
