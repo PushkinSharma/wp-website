@@ -754,17 +754,6 @@ h4 {
   transform: translateY(-5px);
 }
 
-.video-demo {
-  background-color: #f8f9fa;
-}
-
-.cta {
-  background: linear-gradient(135deg, rgba(249, 249, 249, 1) 0%, rgba(197, 206, 240, 1) 40%, rgba(88, 90, 232, 0.653) 100%);
-}
-
-.cta h2, .cta .lead {
-  color: #433c6e;
-}
 
 /* PEP Feature Cards */
 .feature-icon-wrapper {
@@ -812,11 +801,6 @@ h4 {
   font-family: "Overpass", sans-serif;
 }
 
-.video-demo h2, .cta h2 {
-  font-family: "Overpass", sans-serif;
-  font-weight: 700;
-  color: #433c6e;
-}
 
 .hero-devices {
   position: relative;
@@ -883,19 +867,209 @@ h4 {
     min-height: 200px;
   }
 
-/* WhatsApp Image Container - No iPhone Frame Needed */
+/* WhatsApp Image Container - Enhanced with Effects */
 .iphone-mockup {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem;
   position: relative;
+  min-height: 500px;
 }
 
 .iphone-frame {
   position: relative;
   max-width: 350px;
   width: 100%;
+  z-index: 10;
+}
+
+/* Floating Healthcare Icons */
+.floating-icons {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 15;
+}
+
+.floating-icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(56, 110, 229, 0.2);
+  border: 2px solid rgba(56, 110, 229, 0.1);
+  cursor: pointer;
+  pointer-events: auto;
+  transition: all 0.3s ease;
+  animation: floatUpDown 3s ease-in-out infinite;
+  z-index: 20;
+}
+
+.floating-icon i {
+  font-size: 1.2rem;
+  color: #386ee5;
+  transition: all 0.3s ease;
+}
+
+.floating-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(56, 110, 229, 0.3);
+  background: linear-gradient(135deg, #386ee5 0%, #5d87ff 100%);
+  z-index: 25;
+}
+
+.floating-icon:hover i {
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Icon Positioning */
+.icon-1 {
+  top: 10%;
+  left: 15%;
+  animation-delay: 0s;
+}
+
+.icon-2 {
+  top: 25%;
+  right: 10%;
+  animation-delay: 0.5s;
+}
+
+.icon-3 {
+  top: 45%;
+  left: 5%;
+  animation-delay: 1s;
+}
+
+.icon-4 {
+  top: 65%;
+  right: 15%;
+  animation-delay: 1.5s;
+}
+
+.icon-5 {
+  bottom: 25%;
+  left: 20%;
+  animation-delay: 2s;
+}
+
+.icon-6 {
+  bottom: 10%;
+  right: 25%;
+  animation-delay: 2.5s;
+}
+
+/* Floating Animation */
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+  66% {
+    transform: translateY(-5px) rotate(-2deg);
+  }
+}
+
+/* Gradient Background Effects */
+.iphone-background-effects {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.gradient-circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: rotateGradient 20s linear infinite;
+}
+
+.circle-1 {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(56, 110, 229, 0.1) 0%, transparent 70%);
+  top: -50px;
+  right: -50px;
+  animation-duration: 25s;
+}
+
+.circle-2 {
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, rgba(37, 211, 102, 0.08) 0%, transparent 60%);
+  bottom: -30px;
+  left: -30px;
+  animation-duration: 30s;
+  animation-direction: reverse;
+}
+
+.circle-3 {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, rgba(56, 110, 229, 0.06) 0%, transparent 50%);
+  top: 30%;
+  left: -20px;
+  animation-duration: 35s;
+}
+
+@keyframes rotateGradient {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+/* Tooltip for floating icons */
+.floating-icon::before {
+  content: attr(data-content);
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(67, 60, 110, 0.9);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.floating-icon::after {
+  content: '';
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: rgba(67, 60, 110, 0.9);
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.floating-icon:hover::before,
+.floating-icon:hover::after {
+  opacity: 1;
 }
 
 .whatsapp-image-container {
@@ -908,6 +1082,7 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: transparent;
 }
 
   .whatsapp-screenshot {
@@ -922,6 +1097,7 @@ h4 {
     transform: translateX(80px);
     transition: all 0.8s ease-out;
     border-radius: 20px;
+    background: transparent;
   }
 
   .whatsapp-screenshot.active {
@@ -980,7 +1156,7 @@ h4 {
 /* About Section - Impact Stats */
 .about-section {
   position: relative;
-  background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 50%, #f5f7fa 100%);
+  /* background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 50%, #f5f7fa 100%); */
   overflow: hidden;
 }
 
@@ -1019,7 +1195,7 @@ h4 {
 /* Digital Section - Three Verticals Styles */
 .digital-section {
   position: relative;
-  background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 30%, #f5f7fa 100%);
+  /* background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 30%, #f5f7fa 100%); */
   overflow: hidden;
 }
 
@@ -1154,13 +1330,13 @@ h4 {
   font-weight: 600;
 }
 
-.feature-list {
+.feature-list-vertical {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.feature-list li {
+.feature-list-vertical li {
   margin-bottom: 0.75rem;
   font-size: 0.95rem;
   line-height: 1.4;
@@ -1182,7 +1358,6 @@ h4 {
 
 /* Process Flow Section */
 .process-flow-section {
-  background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 50%, #f5f7fa 100%);
   position: relative;
   overflow: hidden;
 }
@@ -1236,7 +1411,7 @@ h4 {
   transform: translateX(0);
 }
 
-.feature-icon {
+.feature-icon-process {
   width: 50px;
   height: 50px;
   background: linear-gradient(135deg, #386ee5, #5d87ff);
@@ -1248,7 +1423,7 @@ h4 {
   flex-shrink: 0;
 }
 
-.feature-icon i {
+.feature-icon-process i {
   font-size: 1.25rem;
   color: white;
 }
@@ -1567,6 +1742,40 @@ h4 {
     max-height: 400px;
   }
 
+  /* Mobile styles for floating icons */
+  .iphone-mockup {
+    min-height: 400px;
+    padding: 1rem;
+  }
+
+  .floating-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .floating-icon i {
+    font-size: 1rem;
+  }
+
+  .gradient-circle {
+    opacity: 0.3;
+  }
+
+  .circle-1 {
+    width: 120px;
+    height: 120px;
+  }
+
+  .circle-2 {
+    width: 100px;
+    height: 100px;
+  }
+
+  .circle-3 {
+    width: 80px;
+    height: 80px;
+  }
+
   /* Mobile styles for new sections */
 
   .service-features {
@@ -1577,14 +1786,14 @@ h4 {
     margin-bottom: 1rem;
   }
 
-  .feature-icon {
+  .feature-icon-process {
     width: 40px;
     height: 40px;
   }
 
-  .feature-icon i {
+  .feature-icon-process i {
     font-size: 1rem;
-  }
+  } 
 
   .feature-content h4 {
     font-size: 1rem;
@@ -1641,7 +1850,7 @@ h4 {
     padding: 1.5rem;
   }
 
-  .feature-list li {
+  .feature-list-vertical li {
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
   }

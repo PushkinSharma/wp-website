@@ -51,16 +51,59 @@ document.addEventListener('DOMContentLoaded', function() {
     featureItems.forEach(item => animateOnScroll.observe(item));
     flowSteps.forEach(step => animateOnScroll.observe(step));
 
-    // Step activation animation for process flow
+    // Continuous looping step activation animation for process flow
+    const processFlowSteps = document.querySelectorAll('.flow-step');
+    let isProcessFlowVisible = false;
+    let processFlowInterval;
+
+    function activateStep(stepIndex) {
+        // Remove active class from all steps
+        processFlowSteps.forEach(step => {
+            step.classList.remove('active');
+        });
+        
+        // Add active class to current step
+        if (processFlowSteps[stepIndex]) {
+            processFlowSteps[stepIndex].classList.add('active');
+        }
+    }
+
+    function startProcessFlowAnimation() {
+        let currentStep = 0;
+        
+        // Function to cycle through steps
+        function cycleSteps() {
+            activateStep(currentStep);
+            currentStep = (currentStep + 1) % processFlowSteps.length;
+        }
+
+        // Start immediately with first step
+        cycleSteps();
+        
+        // Continue cycling every 1.5 seconds
+        processFlowInterval = setInterval(cycleSteps, 1500);
+    }
+
+    function stopProcessFlowAnimation() {
+        if (processFlowInterval) {
+            clearInterval(processFlowInterval);
+            processFlowInterval = null;
+        }
+        // Reset all steps to inactive state
+        processFlowSteps.forEach(step => {
+            step.classList.remove('active');
+        });
+    }
+
+    // Observer for when process flow section comes into view
     const stepActivation = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const steps = document.querySelectorAll('.flow-step');
-                steps.forEach((step, index) => {
-                    setTimeout(() => {
-                        step.classList.add('active');
-                    }, index * 500);
-                });
+            if (entry.isIntersecting && !isProcessFlowVisible) {
+                isProcessFlowVisible = true;
+                startProcessFlowAnimation();
+            } else if (!entry.isIntersecting && isProcessFlowVisible) {
+                isProcessFlowVisible = false;
+                stopProcessFlowAnimation();
             }
         });
     }, { threshold: 0.3 });
