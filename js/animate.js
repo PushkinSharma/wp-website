@@ -1,18 +1,18 @@
-const aboutSection = document.querySelector('#about');
-const aboutImage = document.querySelector('.about-image img');
-const aboutContent = document.querySelector('.about-content');
+// const aboutSection = document.querySelector('#about');
+// const aboutImage = document.querySelector('.about-image img');
+// const aboutContent = document.querySelector('.about-content');
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      aboutImage.classList.add('animate');
-      aboutContent.classList.add('animate');
-      observer.unobserve(aboutSection); // Stop observing after animation
-    }
-  });
-}, { threshold: 0.5 }); // Trigger animation when 50% of the section is visible
+// const observer = new IntersectionObserver((entries) => {
+//   entries.forEach((entry) => {
+//     if (entry.isIntersecting) {
+//       aboutImage.classList.add('animate');
+//       aboutContent.classList.add('animate');
+//       observer.unobserve(aboutSection); // Stop observing after animation
+//     }
+//   });
+// }, { threshold: 0.5 }); // Trigger animation when 50% of the section is visible
 
-observer.observe(aboutSection);
+//observer.observe(aboutSection);
 
 // Lazy Loading for Images
 const lazyImages = document.querySelectorAll('.lazy-image');

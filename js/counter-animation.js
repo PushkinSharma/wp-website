@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const flowSteps = document.querySelectorAll('.flow-step');
     const painCards = document.querySelectorAll('.pain-card');
     const statBoxes = document.querySelectorAll('.stat-box');
+    const journeySteps = document.querySelectorAll('.journey-step');
 
     const animateOnScroll = new IntersectionObserver((entries) => {
         entries.forEach((entry, index) => {
@@ -54,6 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
     flowSteps.forEach(step => animateOnScroll.observe(step));
     painCards.forEach(card => animateOnScroll.observe(card));
     statBoxes.forEach(box => animateOnScroll.observe(box));
+    journeySteps.forEach(step => animateOnScroll.observe(step));
 
     // Continuous looping step activation animation for process flow
     const processFlowSteps = document.querySelectorAll('.flow-step');

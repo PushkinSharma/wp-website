@@ -8,10 +8,11 @@ body {
   /* color: #433c6e; */
 }
 
-h1 {
+h1 span, h1 {
   font-family: "Overpass", sans-serif;
   font-weight: 500;
-  color: rgb(31, 0, 82);
+  letter-spacing: -1px;
+  color: #433c6e;
 }
 
 h4 {
@@ -812,7 +813,7 @@ h4 {
 
 /* Testimonial Section Styles */
 .testimonial-container {
-    background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 50%, #f5f7fa 100%);
+    /* background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 50%, #f5f7fa 100%); */
     overflow: hidden;
     position: relative;
     padding: 40px 0;
@@ -969,20 +970,6 @@ h4 {
     }
 }
 
-/* PEP Page Specific Styles */
-.pep-hero {
-  padding: 80px 0;
-  /* background: linear-gradient(135deg, rgba(249, 249, 249, 1) 0%, rgba(197, 206, 240, 1) 40%, rgba(88, 90, 232, 0.653) 100%); */
-}
-
-.pep-hero h1 {
-  color: #433c6e;
-  margin-bottom: 1.5rem;
-}
-
-.pep-hero .lead {
-  color: #6f6f6f;
-}
 
 .features .card {
   border: none;
@@ -1284,6 +1271,7 @@ h4 {
   left: 50%;
   transform: translateX(-50%);
   background: rgba(67, 60, 110, 0.9);
+  /* background: rgba(124, 116, 178, 0.8); */
   color: white;
   padding: 8px 12px;
   border-radius: 6px;
@@ -1295,7 +1283,7 @@ h4 {
   z-index: 1000;
 }
 
-.floating-icon::after {
+/* .floating-icon::after {
   content: '';
   position: absolute;
   bottom: 110%;
@@ -1303,10 +1291,10 @@ h4 {
   transform: translateX(-50%);
   border: 5px solid transparent;
   border-top-color: rgba(67, 60, 110, 0.9);
-  opacity: 0;
+  opacity: 1;
   transition: all 0.3s ease;
   z-index: 1000;
-}
+} */
 
 .floating-icon:hover::before,
 .floating-icon:hover::after {
@@ -2456,5 +2444,83 @@ h4 {
 .stat-label {
   color: #433c6e;
   font-weight: 500;
+}
+
+/* Patient Journey Timeline */
+.patient-journey-section {
+  background: #f5f7fa;
+  overflow: hidden;
+}
+
+.journey-timeline {
+  position: relative;
+  padding: 20px 0 40px;
+}
+
+/* horizontal line */
+.journey-timeline::before {
+  content: '';
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #e5e8f0;
+  z-index: 1;
+}
+
+.journey-step {
+  position: relative;
+  z-index: 2;
+  min-width: 120px;
+  margin-bottom: 40px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.journey-step.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.journey-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #386ee5, #5d87ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 2rem;
+  margin: 0 auto 1rem;
+  transition: transform 0.3s ease;
+}
+
+.journey-step:hover .journey-icon {
+  transform: scale(1.1);
+}
+
+.journey-label {
+  font-weight: 600;
+  color: #433c6e;
+  font-size: 0.95rem;
+  line-height: 1.3;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .journey-timeline::before {
+    top: 100px;
+  }
+  .journey-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 1.5rem;
+  }
+  .journey-step {
+    min-width: 140px;
+  }
 }
 

@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     let currentIndex = 0;
     const totalItems = Math.min(textItems.length, imageItems.length);
-    const intervalTime = 6000; // 6 seconds for better animation viewing
+    const intervalTime = 5000; // 6 seconds for better animation viewing
     
     // Function to show item at specific index
     function showItem(index) {
