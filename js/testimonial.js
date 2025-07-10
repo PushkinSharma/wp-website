@@ -23,12 +23,12 @@ const testimonials = [
         image: "img/rupa-chakra.png",
         content: "The ability to see all the important health information online                  through a student's Electronic Health Record is very helpful for the school as well as parents. We got positive feedback from parents and our school doctors."
     },
-    {
-        name: "Dr Amit Nayar",
-        designation: "Dental Spa, Chandigarh",
-        image: "img/dr-amit.jpg",
-        content: "Healthfort transformed our website into a powerful tool for                  patient engagement. Their attention to detail and medical accuracy exceeded my expectations. Highly recommended for healthcare professionals."
-    },
+    // {
+    //     name: "Dr Amit Nayar",
+    //     designation: "Dental Spa, Chandigarh",
+    //     image: "img/dr-amit.jpg",
+    //     content: "Healthfort transformed our website into a powerful tool for                  patient engagement. Their attention to detail and medical accuracy exceeded my expectations. Highly recommended for healthcare professionals."
+    // },
     {
         name: "Dr Yasir Rizvi",
         designation: "Dharamshila Hospital, Delhi",
