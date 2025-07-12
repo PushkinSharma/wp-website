@@ -1,18 +1,3 @@
-// const aboutSection = document.querySelector('#about');
-// const aboutImage = document.querySelector('.about-image img');
-// const aboutContent = document.querySelector('.about-content');
-
-// const observer = new IntersectionObserver((entries) => {
-//   entries.forEach((entry) => {
-//     if (entry.isIntersecting) {
-//       aboutImage.classList.add('animate');
-//       aboutContent.classList.add('animate');
-//       observer.unobserve(aboutSection); // Stop observing after animation
-//     }
-//   });
-// }, { threshold: 0.5 }); // Trigger animation when 50% of the section is visible
-
-//observer.observe(aboutSection);
 
 // Lazy Loading for Images
 const lazyImages = document.querySelectorAll('.lazy-image');
@@ -57,6 +42,28 @@ lazyImages.forEach(img => {
   imageObserver.observe(img);
 });
 
+// Pain Points Animation
+const painSection = document.querySelector('#pain-points');
+const painCards = document.querySelectorAll('.pain-point-card');
+
+const painObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      // Animate pain cards with staggered delay
+      painCards.forEach((card, index) => {
+        setTimeout(() => {
+          card.classList.add('animate');
+        }, index * 200); // 200ms delay between each card
+      });
+      painObserver.unobserve(painSection); // Stop observing after animation
+    }
+  });
+}, { threshold: 0.4 }); // Trigger animation when 40% of the section is visible
+
+if (painSection) {
+  painObserver.observe(painSection);
+}
+
 const contactSection = document.querySelector('#contact');
 const leftCol = document.querySelector('.form-section');
 const rightCol = document.querySelector('.contact-extra');
@@ -69,6 +76,6 @@ const observerContact = new IntersectionObserver((entries) => {
       observerContact.unobserve(contactSection); // Stop observing after animation
     }
   });
-}, { threshold: 0.15 }); // Trigger animation when 15% of the section is visible
+}, { threshold: 0.1 }); // Trigger animation when 10% of the section is visible
 
 observerContact.observe(contactSection);
