@@ -80,9 +80,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (value === '') {
                     isValid = false;
                     errorMessage = 'Message is required';
-                } else if (value.length < 10) {
+                } else if (value.length < 5) {
                     isValid = false;
-                    errorMessage = 'Message must be at least 10 characters long';
+                    errorMessage = 'Message must be at least 5 characters long';
                 }
                 break;
         }
@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const formData = new FormData(form);
         
         // Send AJAX request
-        fetch('whatsapp/send-whatsapp.php', {
+        fetch('http://127.0.0.1:5500/whatsapp/send-whatsapp.php', {
             method: 'POST',
             body: formData
         })
@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function() {
         })
         .then(responseText => {
             // Log the raw response for debugging
-            console.log('Raw response:', responseText);
+            //console.log('Raw response:', responseText);
             
             // Try to parse JSON
             if (!responseText.trim()) {

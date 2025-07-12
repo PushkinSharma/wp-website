@@ -75,7 +75,7 @@ h4 {
 
 .hero-heading {
   color: #433c6e;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 0.75rem;
   letter-spacing: 1px;
   font-family: "Inter", sans-serif;
@@ -88,7 +88,7 @@ h4 {
 }
 
 .hero-image img {
-  max-height: 500px;
+  max-height: 550px;
 }
 
 .italics {
@@ -2246,7 +2246,11 @@ h4 {
 @media screen and (min-width: 769px) {
   .navbar-hero,
   .hero-section {
-    margin: 0 5rem;
+    margin: 0 5rem 2rem 5rem;
+  }
+
+  .hero-heading{
+    font-size: 2.5rem;
   }
 
   .team-mobile {
@@ -2783,6 +2787,12 @@ h4 {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+
+  .patient-journey-section{
+    display: none;
+  }
+
+
   .pain-heading {
     font-size: 2.2rem;
   }

@@ -5,17 +5,17 @@ const testimonials = [
         image: "img/manish-chopra.png",
         content: "The team at Healthfort is amazing. They have the right insights into the healthcare industry. In a short span of time we have started thinking of Healthfort as not our vendors but our partners who are sharing our exciting journey to transform the dental health industry in the US."
     },
+    // {
+    //     name: "Dr Neelima Gupta",
+    //     designation: "GTB Hospital, Delhi",
+    //     image: "img/dr-neelima.jpg",
+    //     content: "Healthfort excelled in supporting our Allergy Conference.Their swift website setup, efficient email marketing, and seamless design and print services showcase their valuable contribution to healthcare events. Highly recommended."
+    // },
     {
-        name: "Dr Neelima Gupta",
-        designation: "GTB Hospital, Delhi",
-        image: "img/dr-neelima.jpg",
-        content: "Healthfort excelled in supporting our Allergy Conference.Their swift website setup, efficient email marketing, and seamless design and print services showcase their valuable contribution to healthcare events. Highly recommended."
-    },
-    {
-        name: "Dr Meenal Khanna",
-        designation: "GoPhysio, Noida",
-        image: "img/dr-meenal.jpg",
-        content: "Healthfort exceeded my expectations in building my clinic's                  website. From visuals to content, I simply shared my vision, and their team, led by knowledgeable doctors, ensured a hassle-free experience."
+        name: "Dr Rajeev Jain",
+        designation: "Save Sight Centre, Delhi",
+        image: "img/dr.rajeev-jain.jpg",
+        content: "We’ve seen fewer missed appointments and better treatment compliance. Overall, our patient communication is more consistent and efficient—benefiting both our team and our patients."
     },
     {
         name: "Rupa Chakravarty",
@@ -23,12 +23,6 @@ const testimonials = [
         image: "img/rupa-chakra.png",
         content: "The ability to see all the important health information online                  through a student's Electronic Health Record is very helpful for the school as well as parents. We got positive feedback from parents and our school doctors."
     },
-    // {
-    //     name: "Dr Amit Nayar",
-    //     designation: "Dental Spa, Chandigarh",
-    //     image: "img/dr-amit.jpg",
-    //     content: "Healthfort transformed our website into a powerful tool for                  patient engagement. Their attention to detail and medical accuracy exceeded my expectations. Highly recommended for healthcare professionals."
-    // },
     {
         name: "Dr Yasir Rizvi",
         designation: "Dharamshila Hospital, Delhi",
@@ -42,16 +36,16 @@ const testimonials = [
         content: "I have partnered with Healthfort for more than a decade now. I think they're one of the most competent Healthcare-IT companies.They have helped develop  software and mobile applications for me personally as well as for organizations that I have led."
     },
     {
-        name: "Dr Nimish Gupta",
-        designation: "Metro Hospital, Noida",
-        image: "img/dr-nimish.jpg",
-        content: "I highly recommend Healthfort for their commitment to excellence in healthcare content development. Their expertise ensured the website's content resonated with precision, benefiting both patients and professionals."
+        name: "Dr Pinnojj Siingh",
+        designation: "Luxe Dental, Bombay",
+        image: "img/dr.pinnojj.jpeg",
+        content: "We’ve been using Healthfort PEP for over a year now and it has helped our team automate patient follow-ups and share prescriptions and medical documents via WhatsApp.This consistency in communication has reduced missed appointments and made patient engagement smoother"
     },
     {
-        name: "Dr Bhawna Gautam",
-        designation: "Crayon Dental, Panipat",
-        image: "img/dr-bhawna.jpg",
-        content: "Healthfort did wonders for my dental brand! They fixed my logo, made our website from scratch, and helped us show up easily on Google. Easy process with good results. Thanks to Healthfort for making us stand out!"
+        name: "Dr Vikas Goswami",
+        designation: "Max Hospitals",
+        image: "img/dr.goswami.jpeg",
+        content: "I rely on Healthfort PEP to ensure my chemotherapy patients don’t miss appointments or essential follow-ups.It has improved continuity in care, and helped us maintain treatment schedules more reliably."
     },
 ];
 

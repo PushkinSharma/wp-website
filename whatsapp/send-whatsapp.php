@@ -22,7 +22,8 @@ try {
     if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
         throw new Exception('Invalid request method');
     }
-    
+    echo "POST received!";
+
     // Validate and sanitize form data
     $formData = validateAndSanitizeFormData($_POST);
     
@@ -41,7 +42,7 @@ try {
     // Return success response
     echo json_encode([
         'success' => true,
-        'message' => 'Message sent successfully!',
+        'message' => 'Your response has been recorded.',
         'data' => $response
     ]);
     
