@@ -1364,29 +1364,6 @@ h4 {
     font-size: 1.75rem;
   }
 
-/* Patient Journey Section */
-.patient-journey-section {
-  /* background-color: #f5f7fa; */
-  background: linear-gradient(
-    135deg,
-    rgba(249, 249, 249, 1) 0%,
-    rgba(197, 206, 240, 1) 40%,
-    rgba(88, 90, 232, 0.653) 100%
-  );
-  overflow: hidden;
-}
-
-.journey-heading {
-  font-family: "Overpass", sans-serif;
-  font-weight: 700;
-  color: #433c6e;
-  font-size: 2.5rem;
-}
-
-.journey-description {
-  color: #444444;
-  font-weight: 400;
-}
 
 /* About Section - Impact Stats */
 .about-section {
@@ -1880,43 +1857,14 @@ h4 {
   font-size: 1rem;
 }
 
-  .journey-illustration {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
-  .journey-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-.journey-image {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
-  transition: transform 0.3s ease;
-  border-radius: 15px;
-}
-
-.journey-image:hover {
-  transform: scale(1.02);
-}
-
 /* Scroll animations for new sections */
-.whatsapp-demo-section,
-.patient-journey-section {
+.whatsapp-demo-section {
   opacity: 1;
   transform: translateY(0);
   transition: all 0.8s ease;
 }
 
-.whatsapp-demo-section.animate-in,
-.patient-journey-section.animate-in {
+.whatsapp-demo-section.animate-in {
   opacity: 1;
   transform: translateY(0);
 }
@@ -2079,23 +2027,6 @@ h4 {
 
   .whatsapp-image-container {
     border-radius: 15px;
-  }
-
-  .journey-heading {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .journey-description {
-    font-size: 0.95rem;
-  }
-
-  .patient-journey-section {
-    padding: 3rem 0;
-  }
-
-  .journey-content {
-    margin-top: 2rem;
   }
 
   .about-heading,
@@ -2390,7 +2321,7 @@ h4 {
   background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 50%, #f5f7fa 100%);
   position: relative;
   overflow: hidden;
-  padding: 80px 0;
+  padding: 5rem 0;
 }
 
 /* Enhanced Header Styling */
@@ -2747,23 +2678,15 @@ h4 {
 .bg-circle-1 {
   width: 100px;
   height: 100px;
-  top: 18%;
+  top: 20%;
   right: 5%;
   animation-delay: 0s;
-}
-
-.bg-circle-2 {
-  width: 150px;
-  height: 150px;
-  top: 60%;
-  right: 10%;
-  animation-delay: 2s;
 }
 
 .bg-circle-3 {
   width: 100px;
   height: 100px;
-  bottom: 20%;
+  bottom: 25%;
   left: 15%;
   animation-delay: 4s;
 }
@@ -2787,11 +2710,6 @@ h4 {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-
-  .patient-journey-section{
-    display: none;
-  }
-
 
   .pain-heading {
     font-size: 2.2rem;
@@ -2901,91 +2819,5 @@ h4 {
   transform: translateY(0);
 }
 
-/* Patient Journey Timeline */
-.patient-journey-section {
-  /* background: #f5f7fa; */
-  background: linear-gradient(
-    135deg,
-    rgba(249, 249, 249, 1) 0%,
-    rgba(197, 206, 240, 1) 40%,
-    rgba(88, 90, 232, 0.653) 100%
-  );
-  overflow: hidden;
-}
 
-.journey-timeline {
-  position: relative;
-  padding: 20px 0 40px;
-}
-
-/* horizontal line */
-.journey-timeline::before {
-  content: '';
-  position: absolute;
-  top: 60px;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: #e5e8f0;
-  z-index: 1;
-}
-
-.journey-step {
-  position: relative;
-  z-index: 2;
-  min-width: 120px;
-  margin-bottom: 40px;
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.6s ease;
-}
-
-.journey-step.animate {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.journey-icon {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  /* background: linear-gradient(135deg, #386ee5, #5d87ff); */
-  background: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  font-size: 2rem;
-  margin: 0 auto 1rem;
-  transition: transform 0.3s ease;
-}
-
-.journey-icon i {
-  color: #386ee5;
-}
-
-.journey-step:hover .journey-icon {
-  transform: scale(1.1);
-}
-
-.journey-label {
-  font-weight: 600;
-  color: #433c6e;
-  font-size: 0.95rem;
-  line-height: 1.3;
-}
-
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
-  .journey-timeline::before {
-    top: 100px;
-  }
-  .journey-icon {
-    width: 70px;
-    height: 70px;
-  }
-  .journey-step {
-    min-width: 140px;
-  }
-}
 
