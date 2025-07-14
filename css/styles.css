@@ -963,10 +963,25 @@ h4 {
         width: 280px;
         min-width: 280px;
         max-width: 280px;
+        margin-right: 15px;
     }
     
     .testimonial-scroll {
         gap: 15px;
+        padding: 20px 0;
+        /* Enable smooth scrolling on mobile */
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Hide scrollbar on mobile but keep functionality */
+    .testimonial-scroll::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .testimonial-scroll {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
 }
 
@@ -1334,8 +1349,25 @@ h4 {
     transform: translateX(0);
   }
 
-  .whatsapp-screenshot:first-child {
-    position: relative;
+  /* Desktop: First child should be relative for proper layout */
+  @media (min-width: 769px) {
+    .whatsapp-screenshot:first-child {
+      position: relative;
+    }
+  }
+
+  /* Desktop: First child should be relative for proper layout */
+  @media (min-width: 769px) {
+    .whatsapp-screenshot:first-child {
+      position: relative;
+    }
+  }
+
+  /* Mobile: All screenshots should be absolute for proper overlay */
+  @media (max-width: 768px) {
+    .whatsapp-screenshot:first-child {
+      position: absolute;
+    }
   }
 
   /* Smooth Text Animations - All Together */
@@ -2040,7 +2072,18 @@ h4 {
   }
 
   .whatsapp-image-container {
-    max-height: 400px;
+    max-height: 350px;
+    min-height: 300px;
+  }
+
+  .whatsapp-screenshot {
+    max-height: 350px;
+    object-fit: contain;
+  }
+
+  .iphone-frame {
+    max-width: 280px;
+    width: 100%;
   }
 
   /* Mobile styles for floating icons */
@@ -2321,7 +2364,7 @@ h4 {
   /* background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 50%, #f5f7fa 100%); */
   position: relative;
   overflow: hidden;
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
 
 /* Enhanced Header Styling */
@@ -2374,7 +2417,7 @@ h4 {
 /* Pain Points Grid */
 .pain-points-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
   margin-top: 3rem;
   position: relative;
@@ -2399,6 +2442,14 @@ h4 {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Mobile: Always show pain point cards without animation */
+/* @media (max-width: 768px) {
+  .pain-point-card {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
 
 .pain-point-card::before {
   content: '';
@@ -2728,6 +2779,10 @@ h4 {
 /* Responsive Design */
 @media (max-width: 768px) {
 
+  .pain-section {
+    padding: 4rem 0 0 0;
+  }
+
   .pain-heading {
     font-size: 2.2rem;
   }
@@ -2739,10 +2794,12 @@ h4 {
   .pain-points-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    margin-top: 2rem;
   }
   
   .pain-point-card {
     padding: 1.5rem;
+    margin-bottom: 1rem;
   }
   
   .pain-stats {
@@ -2760,6 +2817,12 @@ h4 {
   
   .bg-circle {
     display: none;
+  }
+
+  /* Ensure pain point cards are always visible on mobile */
+  .pain-point-card {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
   }
 }
 

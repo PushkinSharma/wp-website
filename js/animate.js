@@ -42,27 +42,48 @@ lazyImages.forEach(img => {
   imageObserver.observe(img);
 });
 
-// Pain Points Animation
-const painSection = document.querySelector('#pain-points');
-const painCards = document.querySelectorAll('.pain-point-card');
-
-const painObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      // Animate pain cards with staggered delay
-      painCards.forEach((card, index) => {
-        setTimeout(() => {
-          card.classList.add('animate');
-        }, index * 200); // 200ms delay between each card
+// Pain Points Animation - Desktop Only
+function animatePainPoints() {
+  // Only animate on desktop (screen width > 768px)
+  if (window.innerWidth > 768) {
+    const painCards = document.querySelectorAll('.pain-point-card');
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          // Stagger the animation
+          setTimeout(() => {
+            entry.target.classList.add('animate');
+          }, index * 200);
+        }
       });
-      painObserver.unobserve(painSection); // Stop observing after animation
-    }
-  });
-}, { threshold: 0.4 }); // Trigger animation when 40% of the section is visible
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    });
 
-if (painSection) {
-  painObserver.observe(painSection);
+    painCards.forEach(card => {
+      observer.observe(card);
+    });
+  }
 }
+
+// Initialize pain points animation
+document.addEventListener('DOMContentLoaded', function() {
+  animatePainPoints();
+});
+
+// Re-initialize on window resize
+window.addEventListener('resize', function() {
+  // Remove all animate classes on resize
+  const painCards = document.querySelectorAll('.pain-point-card');
+  painCards.forEach(card => {
+    card.classList.remove('animate');
+  });
+  
+  // Re-initialize animation
+  animatePainPoints();
+});
 
 const contactSection = document.querySelector('#contact');
 const leftCol = document.querySelector('.form-section');
