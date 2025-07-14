@@ -37,8 +37,8 @@
     <main class="pharma-main">
         <!-- navbar -->
         <nav
-        class="navbar navbar-expand-lg bg-body-tertiary px-5 py-4"
-        
+        class="navbar navbar-expand-lg bg-body-tertiary px-5 py-3 mb-lg-5"
+        style="background: linear-gradient(135deg, rgba(249, 249, 249, 1) 0%, rgba(197, 206, 240, 1) 40%, rgba(88, 90, 232, 0.653) 100%);"
     >
         <div class="container-fluid">
         <a class="navbar-brand" href="/index.html">
@@ -92,7 +92,7 @@
         <!-- Hero Section -->
         <section class="pharma-hero">
             <div class="container">
-                <div class="row align-items-center">
+                <div class="row align-items-center" style="row-gap: 2rem;"">
                     <div class="col-lg-6 hero-content-container">
                         <div class="hero-badge">
                             🎯 Patient Adherence Programs
@@ -204,10 +204,82 @@
             </div>
         </section>
     </main>
+
+    <section id="digital" class="digital-section py-lg-5 mb-lg-4">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h1 class="digital-heading mb-4">
+              Why Traditional Methods Fail
+            </h1>
+            <p class="digital-parag mb-0" style="max-width: 600px; margin: 0 auto;">
+              Understanding the gap between conventional approaches and what pharma actually needs
+            </p>
+          </div>
+          
+          <!-- Connected Cards -->
+          <div class="row px-4">
+            <div class="col-12">
+              <div class="connected-cards-wrapper">
+                <div class="vertical-card">
+                  <div class="card-container">
+                    <div class="card-header">
+                      <div class="card-icon" style="background: linear-gradient(135deg, #dc3545, #ff6b6b);">
+                        <!-- <i class="fas fa-pills"></i> -->
+                        <i class="fas fa-exclamation-triangle"></i>
+                      </div>
+                      <h3 class="card-title">Generic Programs</h3>
+                      <p class="card-subtitle" style="padding:0 2rem;">Conventional adherence programs struggle with low engagement, lack of trust, and poor analytics.</p>
+                    </div>
+                    
+                    <div class="feature-points" style="align-items: center; margin-top: 1.75rem;">
+                      <ul>
+                        <li><i class="fas fa-sad-tear"></i>Low engagement</li>
+                        <li><i class="fas fa-user-times"></i>Lack of trust</li>
+                        <li><i class="fas fa-chart-line"></i>Poor analytics</li>
+                        <li><i class="fas fa-comment-slash"></i>One-way communication</li> 
+                      </ul>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+                <div class="vertical-card">
+                  <div class="card-container">
+                    <div class="card-header">
+                      <div class="card-icon" style="background: linear-gradient(135deg, #28a745, #51cf66);">
+                        <i class="fas fa-hospital"></i>
+                      </div>
+                      <h3 class="card-title">Healthfort PEP</h3>
+                      <p class="card-subtitle" style="padding:0 2rem;">Doctor-led WhatsApp engagement with personalized content, real-time analytics, and proven results.</p>
+                    </div>
+                    
+                    <div class="feature-points" style="align-items: center; margin-top: 1.75rem;">
+                      <ul>
+                        <li><i class="fas fa-stethoscope"></i>Doctor-led</li>
+                        <li><i class="fas fa-language"></i>Multi-lingual</li>
+                        <li><i class="fas fa-comments"></i>Interactive</li>
+                        <li><i class="fas fa-tachometer-alt"></i>Live analytics</li>
+                      </ul>
+                    </div>
+                    
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+          
+          <!-- Bottom CTA -->
+          <!-- <div class="text-center mt-5">
+            <p class="digital-parag mb-3">Ready to transform your patient engagement?</p>
+            <a href="#contact" class="btn btn-cta">Get in Touch</a>
+          </div> -->
+        </div>
+      </section>
    
 
     <!-- Problem vs Solution Section -->
-    <section class="problem-solution-section">
+    <!-- <section class="problem-solution-section">
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="cta-heading">Why Traditional Methods Fail</h2>
@@ -276,10 +348,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Patient Journey Illustration Section -->
-    <section id="patient-journey" class="patient-journey-section py-5">
+    <section id="patient-journey" class="patient-journey-section">
     <div class="container-fluid px-4">
         <h1 class="journey-heading text-center mb-4">
         Patient Engagement Journey
@@ -332,7 +404,7 @@
     <section class="py-5">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-6 pe-lg-5">
                     <h2 class="cta-heading">Where <span class="heading-span">Healthfort PEP</span> Comes In</h2>
                     <p class="hero-subtext mb-5">
                         Our comprehensive solution addresses every pain point in traditional adherence programs.
@@ -386,15 +458,10 @@
                     </div>
                 </div>
                 
-                <div class="col-lg-6">
+                <div class="col-lg-6 ps-lg-5">
                     <!-- IMAGE PLACEHOLDER 2: Features Demo -->
-                    <div class="image-placeholder">
-                        <div>
-                            <i class="fas fa-mobile-alt" style="font-size: 3rem; margin-bottom: 1rem; color: #386ee5;"></i>
-                            <br>
-                            <strong>Features Demo</strong><br>
-                            <small>Show WhatsApp interface with patient engagement features</small>
-                        </div>
+                    <div class="hero-image-container">
+                        <img style="max-width: 520px;" class="pharma-hero-img" src="img/pharma-second-2.png" alt="z">
                     </div>
                 </div>
             </div>
@@ -443,7 +510,7 @@
                         Comprehensive Digital Solutions for Healthcare Providers built by
                         Professionals
                     </p>
-                    <a href="#contact" class="btn btn-cta">Get in touch</a>
+                    <a href="/#contact" class="btn btn-cta">Get in touch</a>
                 </div>
                 <div class="col-md-3 col-6 pb-3 ps-3">
                     <div class="footer-links row">

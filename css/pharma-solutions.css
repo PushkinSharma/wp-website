@@ -6,7 +6,7 @@
 
 .pharma-hero {
     color: #433c6e;
-    padding: 6rem 0;
+    padding: 5rem 0;
     position: relative;
     overflow: hidden;
 }
@@ -95,7 +95,7 @@
     box-shadow: 0 15px 35px rgba(0,0,0,0.12);
 }
 
-.card-icon {
+/* .card-icon {
     width: 50px;
     height: 50px;
     border-radius: 12px;
@@ -114,10 +114,10 @@
 .solution-card .card-icon {
     background: linear-gradient(135deg, #28a745, #51cf66);
     color: white;
-}
+} */
 
 .card-title {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #433c6e;
     margin-bottom: 0.75rem;
@@ -129,6 +129,29 @@
     margin-bottom: 1rem;
     font-size: 0.95rem;
 }
+
+
+.feature-points li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+    color: #433c6e;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .feature-points li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .feature-points li i {
+    color: #386ee5;
+    font-size: 1rem;
+    margin-right: 0.75rem;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+  }
 
 .feature-grid {
     display: grid;
@@ -191,7 +214,7 @@
     text-align: center;
 }
 
-.cta-heading {
+/* .cta-heading {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
@@ -205,7 +228,7 @@
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 .btn-cta-large {
     background: #386ee5;
@@ -482,18 +505,6 @@
     animation-delay: 2.5s;
 }
 
-/* Patient Journey Section */
-.patient-journey-section {
-    /* background-color: #f5f7fa; */
-    background: linear-gradient(
-      135deg,
-      rgba(249, 249, 249, 1) 0%,
-      rgba(197, 206, 240, 1) 40%,
-      rgba(88, 90, 232, 0.653) 100%
-    );
-    overflow: hidden;
-  }
-  
   .journey-heading {
     font-family: "Overpass", sans-serif;
     font-weight: 700;
@@ -517,6 +528,8 @@
       rgba(88, 90, 232, 0.653) 100%
     );
     overflow: hidden;
+    margin: 5rem 0;
+    padding: 2rem;
   }
   
   .journey-timeline {
@@ -772,10 +785,10 @@
 }
 
 @media (max-width: 480px) {
-    .hero-image-container {
-        margin: 0 -15px; /* Full width on mobile */
+    /* .hero-image-container {
+        margin: 0 -15px; 
     }
-    
+     */
     .pharma-hero-img {
         border-radius: 8px;
     }

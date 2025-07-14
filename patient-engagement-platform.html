@@ -33,7 +33,7 @@
   </head>
   <body>
     <!-- Navbar (same as other pages) -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary px-5 py-2 mb-5"
+    <nav class="navbar navbar-expand-lg bg-body-tertiary px-5 py-3 mb-lg-5"
       style="background: linear-gradient(135deg, rgba(249, 249, 249, 1) 0%, rgba(197, 206, 240, 1) 40%, rgba(88, 90, 232, 0.653) 100%);">
       <div class="container-fluid">
         <a class="navbar-brand" href="/index.html">
@@ -70,7 +70,7 @@
     <!-- Hero Section -->
     <section class="pep-hero py-5">
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center" style="row-gap: 2rem;">
           <div class="col-lg-6">
             <h1 class="display-4 fw-bold mb-4">Engage Patients, Grow Your Practice.</h1>
             <p class="lead mb-4">
@@ -83,11 +83,11 @@
               <li><i class="fas fa-check-circle text-success"></i> Customizable video content</li>
             </ul>
             <div class="d-flex gap-3">
-              <a href="https://bit.ly/pep-trial" target="_blank" class="btn btn-cta">
+              <a href="/#contact" target="_blank" class="btn btn-cta">
                 Start Growing Your Practice
                 <!-- <small class="d-block">14-Day Free Trial, No Credit Card Required</small> -->
               </a>
-              <a href="https://bit.ly/pep-intro" target="_blank" class="btn btn-hero">
+              <!-- <a href="https://bit.ly/pep-intro" target="_blank" class="btn btn-hero">
                 Watch Demo
                 <span>
                   <svg class="video-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -95,7 +95,7 @@
                     <path d="M268,384H84a52.15,52.15,0,0,1-52-52V180a52.15,52.15,0,0,1,52-52H268.48A51.68,51.68,0,0,1,320,179.52V332A52.15,52.15,0,0,1,268,384Z" />
                   </svg>
                 </span>
-              </a>
+              </a> -->
             </div>
           </div>
           <div class="col-lg-6">
@@ -122,7 +122,7 @@
     <section class="features py-5 bg-light">
       <div class="container">
         <h2 class="text-center mb-2">Complete Practice Management</h2>
-        <p class="text-center mb-5 lead">One platform for patient engagement, practice analytics, and revenue growth</p>
+        <p class="text-center mb-5 cta-description">One platform for patient engagement, practice analytics, and revenue growth</p>
         <div class="row g-4">
           <!-- Patient Tracking -->
           <div class="col-md-6 col-lg-4">
@@ -213,8 +213,8 @@
     <!-- Video Demo Section -->
     <section class="video-demo py-5">
       <div class="container text-center">
-        <h2 class="mb-4">Experience the Power of PEP</h2>
-        <p class="lead mb-4">Watch how leading healthcare providers are growing their practice with WhatsApp automation</p>
+        <h2 class="cta-heading">Experience the Power of PEP</h2>
+        <p class="cta-description">Watch how leading healthcare providers are growing their practice with WhatsApp automation</p>
         <div class="ratio ratio-16x9 mx-auto" style="max-width: 800px;">
           <iframe src="https://bit.ly/pep-intro" title="PEP Demo Video" allowfullscreen></iframe>
         </div>
@@ -224,11 +224,101 @@
     <!-- CTA Section -->
     <section class="cta py-5">
       <div class="container text-center">
-        <h2 class="mb-4">Ready to Grow Your Practice?</h2>
-        <p class="lead mb-4">Join hundreds of healthcare providers who are managing their practice effortlessly with PEP</p>
-        <a href="https://bit.ly/pep-trial" target="_blank" class="btn btn-cta">Start Free Trial</a>
+        <h2 class="cta-heading">Ready to Grow Your Practice?</h2>
+        <p class="cta-description">Join hundreds of healthcare providers who are managing their practice effortlessly with PEP</p>
+        <a href="/#contact" target="_blank" class="btn btn-cta">Start Free Trial</a>
       </div>
     </section>
+
+     <!-- footer -->
+     <footer class="footer mt-5">
+      <svg
+          class="curve"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          width="100%"
+          height="100"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+          fill="#f5f7fa"
+      >
+          <path
+              d="M0 100 C 20 0 50 0 100 100 Z"
+              transform="rotate(180, 50, 50)"
+          ></path>
+      </svg>
+      <div class="container pt-5">
+          <div class="row">
+              <div class="col-md-5 me-lg-5 pb-4 text-center text-md-start">
+                  <img
+                      src="img/logo.png"
+                      alt="Brand Logo"
+                      width="250px"
+                      class="d-inline-block align-top pb-3 footer-logo"
+                      loading="lazy"
+                  />
+                  <p style="color: #433c6e; font-weight: 500">
+                      Comprehensive Digital Solutions for Healthcare Providers built by
+                      Professionals
+                  </p>
+                  <a href="/#contact" class="btn btn-cta">Get in touch</a>
+              </div>
+              <div class="col-md-3 col-6 pb-3 ps-3">
+                  <div class="footer-links row">
+                      <a href="/#pain-points">About</a>
+                      <a href="/#digital">Product</a>
+                      <a href="/#blogs">Blogs</a>
+                      <a href="/#contact">Contact</a>
+                      <a href="#">Login</a>
+                  </div>
+              </div>
+              <div class="col-md-3 col-6">
+                  <div class="d-flex footer-contact">
+                      <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-telephone-fill me-2"
+                          viewBox="0 0 16 16"
+                      >
+                          <path
+                              fill-rule="evenodd"
+                              d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
+                          />
+                      </svg>
+                      <p class="footer-parag">+91 9810281169</p>
+                  </div>
+                  <div class="d-flex footer-contact">
+                      <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-envelope me-2"
+                          viewBox="0 0 16 16"
+                      >
+                          <path
+                              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+                          />
+                      </svg>
+                      <p class="footer-parag">hk@healthfort.in</p>
+                  </div>
+              </div>
+          </div>
+          <p
+              class="py-4"
+              style="
+                  color: #433c6e;
+                  font-weight: 600;
+                  text-align: center;
+                  margin-bottom: 0;
+              "
+          >
+              &copy;2025 Healthfort. All rights reserved.
+          </p>
+      </div>
+  </footer>
 
     <!-- Footer -->
     <!-- Copy footer from other pages -->
