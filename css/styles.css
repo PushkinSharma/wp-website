@@ -26,14 +26,6 @@ h4 {
   font-weight: 900;
 }
 
-.service-inner-heading {
-  margin-bottom: 1rem;
-  font-family: "Linden Hill", serif;
-  font-weight: 400;
-  font-size: 3rem;
-  letter-spacing: 2px;
-  color: #386ee5;
-}
 
 /* Home Page */
 
@@ -77,7 +69,7 @@ h4 {
   color: #433c6e;
   font-weight: 600;
   margin-bottom: 0.75rem;
-  letter-spacing: 1px;
+  /* letter-spacing: 0.25px; */
   font-family: "Inter", sans-serif;
 }
 
@@ -106,7 +98,7 @@ h4 {
 .video-icon {
   width: 24px;
   height: 24px;
-  stroke: white;
+  stroke: #386ee5;
   stroke-width: 30px;
   fill: none;
 }
@@ -147,59 +139,17 @@ h4 {
   overflow: hidden;
 }
 
-.about-image img,
-.market-image-1 img,
-.market-image-2 img,
-.about-content,
-.market-content-1,
-.market-content-2 {
-  opacity: 0;
-  transform: translateY(100%);
-  transition: opacity 1s ease, transform 1s ease;
-}
-
-.about-image img.animate,
-.about-content.animate,
-.market-image-1 img.animate,
-.market-image-2 img.animate,
-.market-content-1.animate,
-.market-content-2.animate {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Services Section */
-
-.services-section {
-  background: linear-gradient(
-    135deg,
-    rgba(249, 249, 249, 1) 0%,
-    rgba(197, 206, 240, 1) 40%,
-    rgba(88, 90, 232, 0.653) 100%
-  );
-}
-
-.service-img {
-  width: 50px;
-  height: auto;
-}
-
-.service-parag {
-  color: rgb(82, 82, 82);
-  font-weight: 400;
-}
-
-.service-heading {
-  font-weight: 700;
-  letter-spacing: 1px;
-  font-family: "Overpass", sans-serif;
-}
 
 /* Contact Section */
 
 .form-section {
   max-width: 400px;
   /* box-shadow: 1px 1px 10px 1px #f1f4f8; */
+}
+
+
+.contact-subtitle-main {
+  color: #6f6f6f;
 }
 
 .contact-form {
@@ -541,63 +491,6 @@ h4 {
   margin-bottom: 1rem;
 }
 
-/* Service 1 */
-
-.opm-pic {
-  border-radius: 10px;
-}
-
-/* Service 2 */
-.hcc-pic {
-  border-radius: 10px;
-}
-
-/* Service 3 */
-
-.school-card {
-  background-color: #f1f4f8;
-  border-radius: 10px;
-  border: 1px solid #433c6e;
-}
-
-.school-card img {
-  max-width: 80px;
-  max-height: 80px;
-  padding-bottom: 10px;
-}
-
-.school-card-name {
-  padding-bottom: 0;
-  margin-bottom: 0;
-  font-weight: 700;
-  color: rgb(31, 0, 82);
-}
-.school-content {
-  padding-top: 1rem;
-  color: rgb(31, 0, 82);
-}
-
-/* Service 4 */
-
-.software-card {
-  border: 2px solid #cbcfd4;
-  transition: transform 0.3s ease, border-color 0.8s ease;
-  border-radius: 10px;
-}
-
-.software-card img {
-  max-width: 100px;
-  padding-bottom: 10px;
-}
-
-.software-card-name {
-  margin-top: 15px;
-  color: #386ee5;
-  font-weight: 700;
-}
-.software-content {
-  color: rgb(31, 0, 82);
-}
 
 /* Our Team start */
 
@@ -1125,7 +1018,7 @@ h4 {
   cursor: pointer;
   pointer-events: auto;
   transition: all 0.3s ease;
-  animation: floatUpDown 3s ease-in-out infinite;
+  animation: floatUpDown 13s ease-in-out infinite;
   z-index: 20;
 }
 
@@ -1174,7 +1067,7 @@ h4 {
 
 .icon-5 {
   bottom: 25%;
-  left: 20%;
+  left: 15%;
   animation-delay: 2s;
 }
 
@@ -1585,7 +1478,7 @@ h4 {
   align-items: center;
   gap: 6px;
   transition: all 0.3s ease;
-  opacity: 0.8;
+  /* opacity: 0.8; */
   padding: 8px 16px;
   border-radius: 8px;
   border: 1px solid transparent;
@@ -1597,7 +1490,7 @@ h4 {
 }
 
 .vertical-card:hover .learn-more-btn {
-  opacity: 1;
+  /* opacity: 1; */
   color: #ffffff;
   background: #386ee5;
   border-color: #386ee5;
@@ -1702,7 +1595,7 @@ h4 {
 .feature-item {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.875rem;
   opacity: 0;
   transform: translateX(-30px);
   transition: all 0.6s ease;
@@ -1734,7 +1627,7 @@ h4 {
   font-size: 1.1rem;
   font-weight: 600;
   color: #433c6e;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
   font-family: "Overpass", sans-serif;
 }
 
@@ -2199,7 +2092,7 @@ h4 {
   }
 
   .hero-heading{
-    font-size: 2.5rem;
+    font-size: 2.75rem;
   }
 
   .team-mobile {
@@ -2375,9 +2268,8 @@ h4 {
   font-family: "Overpass", sans-serif;
   font-weight: 800;
   color: #433c6e;
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1.2;
-  margin-bottom: 1rem;
 }
 
 .pain-subtitle {
@@ -2954,7 +2846,7 @@ h4 {
   margin-top: 0.25rem;
 } */
 
-.btn-outline-primary {
+/* .btn-outline-primary {
   background-color: transparent;
   border: 2px solid #386ee5;
   color: #386ee5;
@@ -2970,7 +2862,7 @@ h4 {
   color: white;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(56, 110, 229, 0.3);
-}
+} */
 
 /* Stats Section */
 .stats-section {
