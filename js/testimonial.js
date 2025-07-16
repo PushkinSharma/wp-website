@@ -17,12 +17,12 @@ const testimonials = [
         image: "img/dr.rajeev-jain.jpg",
         content: "We've seen fewer missed appointments and better treatment compliance. Overall, our patient communication is more consistent and efficient—benefiting both our team and our patients."
     },
-    {
-        name: "Rupa Chakravarty",
-        designation: "Suncity School, Gurgaon",
-        image: "img/rupa-chakra.png",
-        content: "The ability to see all the important health information online                  through a student's Electronic Health Record is very helpful for the school as well as parents. We got positive feedback from parents and our school doctors."
-    },
+    // {
+    //     name: "Rupa Chakravarty",
+    //     designation: "Suncity School, Gurgaon",
+    //     image: "img/rupa-chakra.png",
+    //     content: "The ability to see all the important health information online                  through a student's Electronic Health Record is very helpful for the school as well as parents. We got positive feedback from parents and our school doctors."
+    // },
     {
         name: "Dr Yasir Rizvi",
         designation: "Dharamshila Hospital, Delhi",
