@@ -1,170 +1,203 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>
-      Patient Engagement and Support via WhatsApp | Healthfort
-    </title>
-    <meta name="description" content="Healthfort delivers automated WhatsApp patient-engagement, adherence programs for pharma companies, and full practice-management systems for clinics & hospitals.">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Patient Engagement and Support via WhatsApp | Healthfort</title>
+        <meta
+            name="description"
+            content="Healthfort delivers automated WhatsApp patient-engagement, adherence programs for pharma companies, and full practice-management systems for clinics & hospitals."
+        />
 
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/styles.css" />
+        <!-- <link rel="stylesheet" href="css/contact-form.css" /> -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400..700;1,400..700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- <link rel="icon" href="img/favicon.png" type="image/x-icon" /> -->
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <main class="main">
+            <!-- navbar -->
+            <nav
+                class="navbar navbar-hero navbar-index navbar-expand-lg bg-body-tertiary pt-4"
+            >
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/index.html">
+                        <img
+                            src="img/logo.png"
+                            alt="Brand Logo"
+                            width="200px"
+                            class="d-inline-block align-top logo"
+                            loading="lazy"
+                        />
+                    </a>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-    <!-- <link rel="stylesheet" href="css/contact-form.css" /> -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400..700;1,400..700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- <link rel="icon" href="img/favicon.png" type="image/x-icon" /> -->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
+                    <!-- menu for small screens -->
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-    <main class="main">
-      <!-- navbar -->
-      <nav class="navbar navbar-hero navbar-index navbar-expand-lg bg-body-tertiary pt-4">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/index.html">
-            <img
-              src="img/logo.png"
-              alt="Brand Logo"
-              width="200px"
-              class="d-inline-block align-top logo"
-              loading="lazy"
-            />
-          </a>
+                    <div
+                        class="collapse navbar-collapse justify-content-end"
+                        id="navbarSupportedContent"
+                    >
+                        <ul class="navbar-nav">
+                            <li class="nav-item me-2">
+                                <a class="nav-link" href="/#pain-points"
+                                    >About</a
+                                >
+                            </li>
+                            <li class="nav-item me-2">
+                                <a class="nav-link" href="/#digital"
+                                    >Solutions</a
+                                >
+                            </li>
+                            <li class="nav-item me-2">
+                                <a class="nav-link" href="/#testimonials"
+                                    >Clients</a
+                                >
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link" href="/#contact">Contact</a>
+                            </li>
+                            <a
+                                href="https://champs.healthfort.in/Default.aspx"
+                                target="_blank"
+                            >
+                                <button class="btn btn-cta">Login</button>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
-          <!-- menu for small screens -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+            <!-- hero section -->
 
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item me-2">
-                <a class="nav-link" href="/#pain-points">About</a>
-              </li>
-              <li class="nav-item me-2">
-                <a class="nav-link" href="/#digital">Solutions</a>
-              </li>
-              <li class="nav-item me-2">
-                <a class="nav-link" href="/#testimonials">Clients</a>
-              </li>
-              <li class="nav-item me-3">
-                <a class="nav-link" href="/#contact">Contact</a>
-              </li>
-              <a href="https://champs.healthfort.in/Default.aspx" target="_blank">
-                <button class="btn btn-cta">Login</button>
-              </a>
-              
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <!-- hero section -->
-
-    <section class="hero-section" style="margin-bottom: 5rem;">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-6 order-2 order-lg-1">
-            <!-- Left Side: Heading and CTA -->
-            <div class="hero-content text-center text-lg-start">
-              <!-- <h1 class="hero-heading d-flex flex-column align-items-center align-items-lg-start" style="gap: 1.25rem;">
+            <section class="hero-section" style="margin-bottom: 5rem">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6 order-2 order-lg-1">
+                            <!-- Left Side: Heading and CTA -->
+                            <div class="hero-content text-center text-lg-start">
+                                <!-- <h1 class="hero-heading d-flex flex-column align-items-center align-items-lg-start" style="gap: 1.25rem;">
                 <span>Engage Every Patient</span>
                 <span>Ensure Adherence</span>
                 <span>Transform Health Outcomes</span>
               </h1> -->
-              <h1 class="hero-heading d-flex flex-column align-items-center align-items-lg-start" style="gap: 1rem;">
-                <span>Automate Patient Engagement</span>
-                <span>Improve Treatment Adherence</span>
-                <span>Convert More Patients</span>
-              </h1>
-              <br />
-              <h4>
-                for <span class="italics"> doctors</span>, by
-                <span class="italics"> doctors </span>
-              </h4>
-              <br />
-              <!-- <p class="px-5 px-lg-0">
+                                <h1
+                                    class="hero-heading d-flex flex-column align-items-center align-items-lg-start"
+                                    style="gap: 1rem"
+                                >
+                                    <span>Automate Patient Engagement</span>
+                                    <span>Improve Treatment Adherence</span>
+                                    <span>Convert More Patients</span>
+                                </h1>
+                                <br />
+                                <h4>
+                                    for <span class="italics"> doctors</span>,
+                                    by
+                                    <span class="italics"> doctors </span>
+                                </h4>
+                                <br />
+                                <!-- <p class="px-5 px-lg-0">
                 Elevate your healthcare practice with our automated WhatsApp adherence, patient-engagement software, and doctor-led health-content creation.
               </p> -->
-              <p class="px-5 px-lg-0 mb-lg-4">
-                Healthfort helps hospitals and pharma teams convert leads, improve treatment adherence, and engage patients using doctor-led content and full WhatsApp automation.
-              </p>
-              <a href="/#contact"  class="btn btn-hero">
-                Request Demo
-              </a>
-              <a href="https://bit.ly/pep-intro" target="_blank" style="border: 1px solid #386ee5; color: #386ee5; background-color: #fff;" class="btn btn-hero">
-                About Us
-                <span>
-                  <svg class="video-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path d="M374.79,308.78,457.5,367A16,16,0,0,0,480,352.38V159.62A16,16,0,0,0,457.5,145l-82.71,58.22A16,16,0,0,0,368,216.3v79.4A16,16,0,0,0,374.79,308.78Z"/>
-                    <path d="M268,384H84a52.15,52.15,0,0,1-52-52V180a52.15,52.15,0,0,1,52-52H268.48A51.68,51.68,0,0,1,320,179.52V332A52.15,52.15,0,0,1,268,384Z" />
-                  </svg>
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2 ps-lg-3">
-            <!-- Right Side: Image -->
-            <div class="hero-image">
-            <img
-              src="img/hero-pic-cropped-new.png"
-              alt="Doctor using WhatsApp patient engagement software dashboard"
-              aria-label="Hero Image"
-              class="img-fluid"
-            />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+                                <p class="px-5 px-lg-0 mb-lg-4">
+                                    Healthfort helps hospitals and pharma teams
+                                    convert leads, improve treatment adherence,
+                                    and engage patients using doctor-led content
+                                    and full WhatsApp automation.
+                                </p>
+                                <a href="/#contact" class="btn btn-hero">
+                                    Request Demo
+                                </a>
+                                <a
+                                    href="https://bit.ly/pep-intro"
+                                    target="_blank"
+                                    style="
+                                        border: 1px solid #386ee5;
+                                        color: #386ee5;
+                                        background-color: #fff;
+                                    "
+                                    class="btn btn-hero"
+                                >
+                                    About Us
+                                    <span>
+                                        <svg
+                                            class="video-icon"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 512 512"
+                                        >
+                                            <path
+                                                d="M374.79,308.78,457.5,367A16,16,0,0,0,480,352.38V159.62A16,16,0,0,0,457.5,145l-82.71,58.22A16,16,0,0,0,368,216.3v79.4A16,16,0,0,0,374.79,308.78Z"
+                                            />
+                                            <path
+                                                d="M268,384H84a52.15,52.15,0,0,1-52-52V180a52.15,52.15,0,0,1,52-52H268.48A51.68,51.68,0,0,1,320,179.52V332A52.15,52.15,0,0,1,268,384Z"
+                                            />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-1 order-lg-2 ps-lg-3">
+                            <!-- Right Side: Image -->
+                            <div class="hero-image">
+                                <img
+                                    src="img/hero-pic-cropped-new.png"
+                                    alt="Doctor using WhatsApp patient engagement software dashboard"
+                                    aria-label="Hero Image"
+                                    class="img-fluid"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-      <svg
-        class="slanted-lines"
-        xmlns="http://www.w3.org/2000/svg"
-        version="1.1"
-        width="100%"
-        height="100"
-        viewBox="0 0 100 100"
-        preserveAspectRatio="none"
-        fill="#f5f7fa"
-      >
-        <path d="M0 20 L100 100 L0 100 Z"></path>
-      </svg>
-    </main>
-    
-    <!-- Social Icons -->
-    <!-- <div class="mf-social-side-list">
+            <svg
+                class="slanted-lines"
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                width="100%"
+                height="100"
+                viewBox="0 0 100 100"
+                preserveAspectRatio="none"
+                fill="#f5f7fa"
+            >
+                <path d="M0 20 L100 100 L0 100 Z"></path>
+            </svg>
+        </main>
+
+        <!-- Social Icons -->
+        <!-- <div class="mf-social-side-list">
       <ul>
         <li>
           <a
@@ -187,140 +220,244 @@
       </ul>
     </div> -->
 
-    <!-- WhatsApp Demo Section -->
-    <section id="whatsapp-demo" class="whatsapp-demo-section py-4">
-      <div class="container">
-        <div class="row align-items-center px-4" style="row-gap: 2rem;">
-          <div class="col-lg-6 pe-lg-5 order-2 order-lg-1">
-            <div class="whatsapp-content">
-              <h1 class="whatsapp-heading mb-4">
-                <span class="heading-span">End-to-End </span> WhatsApp Patient Engagement Platform
-              </h1>
-              <div class="whatsapp-text-container">
-                <div class="whatsapp-text-item active" data-index="0">
-                  <h4 class="whatsapp-subheading">Interactive WhatsApp Flows</h4>
-                  <p class="whatsapp-description">
-                    Smart conversational flows for capturing patient details, conducting surveys, and collecting feedback. Streamline adherence monitoring with interactive forms and questionnaires.Features include multi-step forms, conditional logic, and seamless integration with your business logic.
-                  </p>
-                </div>
-                <div class="whatsapp-text-item" data-index="1">
-                  <h4 class="whatsapp-subheading">Appointment Reminders with Location</h4>
-                  <p class="whatsapp-description">
-                    Automated appointment confirmation and reminders with clinic location and directions attached. Reduce no-shows by making it easy for patients to find and reach your practice on time.
-                  </p>
-                </div>
-                
-                <div class="whatsapp-text-item" data-index="2">
-                  <h4 class="whatsapp-subheading">Medication Reminders</h4>
-                  <p class="whatsapp-description">
-                    Personalized medication reminders with dosage instructions and timing alerts. Improve treatment adherence by ensuring patients never miss their medications.Ideal for chronic disease management, post-operative care, and pharmaceutical companies looking to enhance patient compliance rates and medication adherence programs.
-                  </p>
-                </div>
-                <div class="whatsapp-text-item" data-index="3">
-                  <h4 class="whatsapp-subheading">Multi-lingual Educational Content</h4>
-                  <p class="whatsapp-description">
-                    Condition-specific educational content in multiple languages. Help patients understand their diagnosis and treatment plan in their preferred language for better health outcomes. Our doctor-led content team creates engaging health education videos, infographics, and interactive content in regional languages. 
-                  </p>
-                </div>
-                <div class="whatsapp-text-item" data-index="4">
-                  <h4 class="whatsapp-subheading">Digital Medical Documents</h4>
-                  <p class="whatsapp-description">
-                    Instant delivery of digital bills, prescriptions, and medical reports via WhatsApp. Provide patients with secure, accessible medical documents they can easily share and store.Essential for modern healthcare practices, hospitals, and diagnostic centers looking to digitize their patient communication and reduce paper-based workflows.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2">
-            <div class="iphone-mockup">
-              <!-- Floating Healthcare Icons -->
-              <div class="floating-icons">
-                <div class="floating-icon icon-1" data-content="Educational Videos">
-                  <i class="fas fa-play-circle"></i>
-                </div>
-                <div class="floating-icon icon-2" data-content="Appointment Reminders">
-                  <i class="fas fa-calendar-check"></i>
-                </div>
-                <div class="floating-icon icon-3" data-content="Health Monitoring">
-                  <i class="fas fa-heartbeat"></i>
-                </div>
-                <div class="floating-icon icon-4" data-content="Medical Documents">
-                  <i class="fas fa-file-medical"></i>
-                </div>
-                <div class="floating-icon icon-5" data-content="Medication Alerts">
-                  <i class="fas fa-pills"></i>
-                </div>
-              </div>
-              
-              <!-- Gradient Background Effects -->
-              <div class="iphone-background-effects">
-                <div class="gradient-circle circle-1"></div>
-                <div class="gradient-circle circle-2"></div>
-                <div class="gradient-circle circle-3"></div>
-              </div>
-              
-              <div class="iphone-frame">
-                <div class="whatsapp-image-container">
-                  <img src="img/whatsapp/scroll-1.png" alt="WhatsApp Interactive Flows" class="whatsapp-screenshot active" data-index="0">
-                  <img src="img/whatsapp/scroll-2.png" alt="WhatsApp Appointment Reminder with Location" class="whatsapp-screenshot" data-index="1">
-                  <img src="img/whatsapp/scroll-3.png" alt="WhatsApp Medication Reminders" class="whatsapp-screenshot" data-index="2">
-                  <img src="img/whatsapp/scroll-4.png" alt="WhatsApp Multi-lingual Content" class="whatsapp-screenshot" data-index="3">
-                  <img src="img/whatsapp/scroll-5.png" alt="WhatsApp Digital Medical Documents" class="whatsapp-screenshot" data-index="4">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        <!-- WhatsApp Demo Section -->
+        <section id="whatsapp-demo" class="whatsapp-demo-section py-4">
+            <div class="container">
+                <div class="row align-items-center px-4" style="row-gap: 2rem">
+                    <div class="col-lg-6 pe-lg-5 order-2 order-lg-1">
+                        <div class="whatsapp-content">
+                            <h1 class="whatsapp-heading mb-4">
+                                <span class="heading-span">End-to-End </span>
+                                WhatsApp Patient Engagement Platform
+                            </h1>
+                            <div class="whatsapp-text-container">
+                                <div
+                                    class="whatsapp-text-item active"
+                                    data-index="0"
+                                >
+                                    <h4 class="whatsapp-subheading">
+                                        Interactive WhatsApp Flows
+                                    </h4>
+                                    <p class="whatsapp-description">
+                                        Smart conversational flows for capturing
+                                        patient details, conducting surveys, and
+                                        collecting feedback. Streamline
+                                        adherence monitoring with interactive
+                                        forms and questionnaires.Features
+                                        include multi-step forms, conditional
+                                        logic, and seamless integration with
+                                        your business logic.
+                                    </p>
+                                </div>
+                                <div class="whatsapp-text-item" data-index="1">
+                                    <h4 class="whatsapp-subheading">
+                                        Appointment Reminders with Location
+                                    </h4>
+                                    <p class="whatsapp-description">
+                                        Automated appointment confirmation and
+                                        reminders with clinic location and
+                                        directions attached. Reduce no-shows by
+                                        making it easy for patients to find and
+                                        reach your practice on time.
+                                    </p>
+                                </div>
 
-    <!-- Pain-Point Section -->
-    <section id="pain-points" class="pain-section">
-      <div class="container">
-        <!-- Enhanced Header with Visual Elements -->
-        <div class="pain-header text-center mb-5">
-          <div class="pain-badge mb-3">
-            <span class="badge-text">Why Choose Us</span>
-          </div>
-          <h2 class="pain-heading mb-3">
-            Addressing Top Healthcare <span class="heading-span healthfort-highlight">Pain Points</span>
-          </h2>
-          <p class="pain-subtitle">How Healthfort solves key challenges in pharma, hospitals & clinics</p>
-        </div>
+                                <div class="whatsapp-text-item" data-index="2">
+                                    <h4 class="whatsapp-subheading">
+                                        Medication Reminders
+                                    </h4>
+                                    <p class="whatsapp-description">
+                                        Personalized medication reminders with
+                                        dosage instructions and timing alerts.
+                                        Improve treatment adherence by ensuring
+                                        patients never miss their
+                                        medications.Ideal for chronic disease
+                                        management, post-operative care, and
+                                        pharmaceutical companies looking to
+                                        enhance patient compliance rates and
+                                        medication adherence programs.
+                                    </p>
+                                </div>
+                                <div class="whatsapp-text-item" data-index="3">
+                                    <h4 class="whatsapp-subheading">
+                                        Multi-lingual Educational Content
+                                    </h4>
+                                    <p class="whatsapp-description">
+                                        Condition-specific educational content
+                                        in multiple languages. Help patients
+                                        understand their diagnosis and treatment
+                                        plan in their preferred language for
+                                        better health outcomes. Our doctor-led
+                                        content team creates engaging health
+                                        education videos, infographics, and
+                                        interactive content in regional
+                                        languages.
+                                    </p>
+                                </div>
+                                <div class="whatsapp-text-item" data-index="4">
+                                    <h4 class="whatsapp-subheading">
+                                        Digital Medical Documents
+                                    </h4>
+                                    <p class="whatsapp-description">
+                                        Instant delivery of digital bills,
+                                        prescriptions, and medical reports via
+                                        WhatsApp. Provide patients with secure,
+                                        accessible medical documents they can
+                                        easily share and store.Essential for
+                                        modern healthcare practices, hospitals,
+                                        and diagnostic centers looking to
+                                        digitize their patient communication and
+                                        reduce paper-based workflows.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2">
+                        <div class="iphone-mockup">
+                            <!-- Floating Healthcare Icons -->
+                            <div class="floating-icons">
+                                <div
+                                    class="floating-icon icon-1"
+                                    data-content="Educational Videos"
+                                >
+                                    <i class="fas fa-play-circle"></i>
+                                </div>
+                                <div
+                                    class="floating-icon icon-2"
+                                    data-content="Appointment Reminders"
+                                >
+                                    <i class="fas fa-calendar-check"></i>
+                                </div>
+                                <div
+                                    class="floating-icon icon-3"
+                                    data-content="Health Monitoring"
+                                >
+                                    <i class="fas fa-heartbeat"></i>
+                                </div>
+                                <div
+                                    class="floating-icon icon-4"
+                                    data-content="Medical Documents"
+                                >
+                                    <i class="fas fa-file-medical"></i>
+                                </div>
+                                <div
+                                    class="floating-icon icon-5"
+                                    data-content="Medication Alerts"
+                                >
+                                    <i class="fas fa-pills"></i>
+                                </div>
+                            </div>
 
-        <!-- Redesigned Pain Points Grid -->
-        <div class="pain-points-grid">
-          <!-- Pain Point 1: Pharma Adherence -->
-          <div class="pain-point-card" data-category="pharma">
-            <div class="pain-point-header">
-              <div class="pain-icon-wrapper">
-                <div class="pain-icon-bg"></div>
-                <i class="fas fa-pills"></i>
-              </div>
-              <div class="pain-number">01</div>
+                            <!-- Gradient Background Effects -->
+                            <div class="iphone-background-effects">
+                                <div class="gradient-circle circle-1"></div>
+                                <div class="gradient-circle circle-2"></div>
+                                <div class="gradient-circle circle-3"></div>
+                            </div>
+
+                            <div class="iphone-frame">
+                                <div class="whatsapp-image-container">
+                                    <img
+                                        src="img/whatsapp/scroll-1.png"
+                                        alt="WhatsApp Interactive Flows"
+                                        class="whatsapp-screenshot active"
+                                        data-index="0"
+                                    />
+                                    <img
+                                        src="img/whatsapp/scroll-2.png"
+                                        alt="WhatsApp Appointment Reminder with Location"
+                                        class="whatsapp-screenshot"
+                                        data-index="1"
+                                    />
+                                    <img
+                                        src="img/whatsapp/scroll-3.png"
+                                        alt="WhatsApp Medication Reminders"
+                                        class="whatsapp-screenshot"
+                                        data-index="2"
+                                    />
+                                    <img
+                                        src="img/whatsapp/scroll-4.png"
+                                        alt="WhatsApp Multi-lingual Content"
+                                        class="whatsapp-screenshot"
+                                        data-index="3"
+                                    />
+                                    <img
+                                        src="img/whatsapp/scroll-5.png"
+                                        alt="WhatsApp Digital Medical Documents"
+                                        class="whatsapp-screenshot"
+                                        data-index="4"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <div class="pain-content">
-              <h3 class="pain-title">Pharma - Patient Support and Adherence</h3>
-              <div class="pain-problem">
-                <div class="problem-indicator">
-                  <i class="fas fa-exclamation-triangle"></i>
-                  <span>Industry Problem</span>
+        </section>
+
+        <!-- Pain-Point Section -->
+        <section id="pain-points" class="pain-section">
+            <div class="container">
+                <!-- Enhanced Header with Visual Elements -->
+                <div class="pain-header text-center mb-5">
+                    <div class="pain-badge mb-3">
+                        <span class="badge-text">Why Choose Us</span>
+                    </div>
+                    <h2 class="pain-heading mb-3">
+                        Addressing Top Healthcare
+                        <span class="heading-span healthfort-highlight"
+                            >Pain Points</span
+                        >
+                    </h2>
+                    <p class="pain-subtitle">
+                        How Healthfort solves key challenges in pharma,
+                        hospitals & clinics
+                    </p>
                 </div>
-                <p> Poor treatment adherence impacts therapy effectiveness and revenue goals.
-                </p>
-              </div>
-              
-              <div class="pain-solution">
-                <div class="solution-indicator">
-                  <i class="fas fa-check-circle"></i>
-                  <span>Our Solution</span>
-                </div>
-                <p>End‑to‑end patient engagement and support via WhatsApp—delivering condition‑specific content, medication reminders, and care‑journey automation to boost adherence and ROI.
-                </p>
-              </div>
-              
-              <!-- <div class="pain-stats">
+
+                <!-- Redesigned Pain Points Grid -->
+                <div class="pain-points-grid">
+                    <!-- Pain Point 1: Pharma Adherence -->
+                    <div class="pain-point-card" data-category="pharma">
+                        <div class="pain-point-header">
+                            <div class="pain-icon-wrapper">
+                                <div class="pain-icon-bg"></div>
+                                <i class="fas fa-pills"></i>
+                            </div>
+                            <div class="pain-number">01</div>
+                        </div>
+
+                        <div class="pain-content">
+                            <h3 class="pain-title">
+                                Pharma - Patient Support and Adherence
+                            </h3>
+                            <div class="pain-problem">
+                                <div class="problem-indicator">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <span>Industry Problem</span>
+                                </div>
+                                <p>
+                                    Poor treatment adherence impacts therapy
+                                    effectiveness and revenue goals.
+                                </p>
+                            </div>
+
+                            <div class="pain-solution">
+                                <div class="solution-indicator">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Our Solution</span>
+                                </div>
+                                <p>
+                                    End‑to‑end patient engagement and support
+                                    via WhatsApp—delivering condition‑specific
+                                    content, medication reminders, and
+                                    care‑journey automation to boost adherence
+                                    and ROI.
+                                </p>
+                            </div>
+
+                            <!-- <div class="pain-stats">
                 <div class="stat-item">
                   <span class="stat-number">85%</span>
                   <span class="stat-label">Better Adherence</span>
@@ -330,46 +467,55 @@
                   <span class="stat-label">Refill Rates</span>
                 </div>
               </div> -->
-            </div>
-            
-            <!-- <div class="pain-cta">
+                        </div>
+
+                        <!-- <div class="pain-cta">
               <a target="_blank" href="/pharma-solutions.html" class="pain-learn-more">
                 Learn More <i class="fas fa-arrow-right"></i>
               </a>
             </div> -->
-          </div>
+                    </div>
 
-          <!-- Pain Point 2: Clinic Workflows -->
-          <div class="pain-point-card" data-category="clinic">
-            <div class="pain-point-header">
-              <div class="pain-icon-wrapper">
-                <div class="pain-icon-bg"></div>
-                <i class="fas fa-hospital-user"></i>
-              </div>
-              <div class="pain-number">02</div>
-            </div>
-            
-            <div class="pain-content">
-              <h3 class="pain-title">Hospitals – Patient Engagement & Conversion</h3>
-              <div class="pain-problem">
-                <div class="problem-indicator">
-                  <i class="fas fa-exclamation-triangle"></i>
-                  <span>Industry Problem</span>
-                </div>
-                <p>Manual outreach drains staff time, increases no‑shows, and limits new patient conversion.
-                </p>
-              </div>
-              
-              <div class="pain-solution">
-                <div class="solution-indicator">
-                  <i class="fas fa-check-circle"></i>
-                  <span>Our Solution</span>
-                </div>
-                <p>Automated WhatsApp‑led engagement: drip marketing, reminders, doctor‑led content & outcome tracking—freeing hospital teams to focus on care while driving patient conversion and growth.
-                </p>
-              </div>
-              
-              <!-- <div class="pain-stats">
+                    <!-- Pain Point 2: Clinic Workflows -->
+                    <div class="pain-point-card" data-category="clinic">
+                        <div class="pain-point-header">
+                            <div class="pain-icon-wrapper">
+                                <div class="pain-icon-bg"></div>
+                                <i class="fas fa-hospital-user"></i>
+                            </div>
+                            <div class="pain-number">02</div>
+                        </div>
+
+                        <div class="pain-content">
+                            <h3 class="pain-title">
+                                Hospitals – Patient Engagement & Conversion
+                            </h3>
+                            <div class="pain-problem">
+                                <div class="problem-indicator">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <span>Industry Problem</span>
+                                </div>
+                                <p>
+                                    Manual outreach drains staff time, increases
+                                    no‑shows, and limits new patient conversion.
+                                </p>
+                            </div>
+
+                            <div class="pain-solution">
+                                <div class="solution-indicator">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Our Solution</span>
+                                </div>
+                                <p>
+                                    Automated WhatsApp‑led engagement: drip
+                                    marketing, reminders, doctor‑led content &
+                                    outcome tracking—freeing hospital teams to
+                                    focus on care while driving patient
+                                    conversion and growth.
+                                </p>
+                            </div>
+
+                            <!-- <div class="pain-stats">
                 <div class="stat-item">
                   <span class="stat-number">60%</span>
                   <span class="stat-label">Time Saved</span>
@@ -379,45 +525,55 @@
                   <span class="stat-label">Missed Patients</span>
                 </div>
               </div> -->
-            </div>
-            
-            <!-- <div class="pain-cta">
+                        </div>
+
+                        <!-- <div class="pain-cta">
               <a target="_blank" href="/patient-engagement-platform.html" class="pain-learn-more">
                 Learn More <i class="fas fa-arrow-right"></i>
               </a>
             </div> -->
-          </div>
+                    </div>
 
-          <!-- Pain Point 3: Content Creation -->
-          <div class="pain-point-card" data-category="content">
-            <div class="pain-point-header">
-              <div class="pain-icon-wrapper">
-                <div class="pain-icon-bg"></div>
-                <i class="fas fa-user-md"></i>
-              </div>
-              <div class="pain-number">03</div>
-            </div>
-            
-            <div class="pain-content">
-              <h3 class="pain-title">Doctors – Practice Growth & Management</h3>
-              <div class="pain-problem">
-                <div class="problem-indicator">
-                  <i class="fas fa-exclamation-triangle"></i>
-                  <span>Industry Problem</span>
-                </div>
-                <p>Generic messaging fails to engage patients, reducing appointment retention and practice revenue.
-                </p>
-              </div>
-              
-              <div class="pain-solution">
-                <div class="solution-indicator">
-                  <i class="fas fa-check-circle"></i>
-                  <span>Our Solution</span>
-                </div>
-                <p>Engage patients with branded WhatsApp reminders, personalized health content, and clinical document sharing—boosting engagement, loyalty & practice growth.</p>
-              </div>
-              
-              <!-- <div class="pain-stats">
+                    <!-- Pain Point 3: Content Creation -->
+                    <div class="pain-point-card" data-category="content">
+                        <div class="pain-point-header">
+                            <div class="pain-icon-wrapper">
+                                <div class="pain-icon-bg"></div>
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <div class="pain-number">03</div>
+                        </div>
+
+                        <div class="pain-content">
+                            <h3 class="pain-title">
+                                Doctors – Practice Growth & Management
+                            </h3>
+                            <div class="pain-problem">
+                                <div class="problem-indicator">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <span>Industry Problem</span>
+                                </div>
+                                <p>
+                                    Generic messaging fails to engage patients,
+                                    reducing appointment retention and practice
+                                    revenue.
+                                </p>
+                            </div>
+
+                            <div class="pain-solution">
+                                <div class="solution-indicator">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Our Solution</span>
+                                </div>
+                                <p>
+                                    Engage patients with branded WhatsApp
+                                    reminders, personalized health content, and
+                                    clinical document sharing—boosting
+                                    engagement, loyalty & practice growth.
+                                </p>
+                            </div>
+
+                            <!-- <div class="pain-stats">
                 <div class="stat-item">
                   <span class="stat-number">5000+</span>
                   <span class="stat-label">Videos Created</span>
@@ -427,242 +583,349 @@
                   <span class="stat-label">Languages</span>
                 </div>
               </div> -->
-            </div>
-            
-            <!-- <div class="pain-cta">
+                        </div>
+
+                        <!-- <div class="pain-cta">
               <a target="_blank" href="/healthcare-content-creation.html" class="pain-learn-more">
                 Learn More <i class="fas fa-arrow-right"></i>
               </a>
             </div> -->
-          </div>
-        </div>
-
-        <!-- Bottom CTA Section -->
-        <div class="pain-cta-section text-center mt-5">
-          <div class="cta-content">
-            <h3 class="cta-heading-sm">Ready to Transform Your Practice?</h3>
-            <p class="cta-description-sm">Join healthcare leaders who trust Healthfort for their patient engagement needs</p>
-            <div class="cta-buttons">
-              <!-- <a href="#contact" class="btn btn-cta btn-lg me-3">Get Started Today</a> -->
-              <a href="#contact" class="btn btn-outline-primary">Start Engaging</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Background Decorative Elements -->
-      <div class="pain-bg-elements">
-        <div class="bg-circle bg-circle-1"></div>
-        <div class="bg-circle bg-circle-3"></div>
-        <div class="bg-pattern"></div>
-      </div>
-    </section>
-
-    <!-- Process Flow Section -->
-    <section id="process-flow" class="process-flow-section py-5">
-      <div class="container">
-        <div class="row align-items-center px-4">
-          <div class="col-lg-7 pe-md-4 order-1">
-            <div class="process-content">
-              <h1 class="process-heading mb-4">
-                Implementation That<span class="heading-span healthfort-highlight"> Delivers</span>
-              </h1>
-              <p class="process-description mb-4 lh-lg">
-                We handle everything from consultation to optimization, ensuring your WhatsApp patient engagement strategy delivers maximum impact while you focus on patient care.
-              </p>
-              
-              <!-- What We Handle List -->
-              <div class="service-features">
-                <div class="feature-item">
-                  <div class="feature-icon-process">
-                    <i class="fas fa-route"></i>
-                  </div>
-                  <div class="feature-content">
-                    <h4>Journey Design & Setup</h4>
-                    <p>We create personalized patient communication flows tailored to your specific goals</p>
-                  </div>
-                </div>
-                
-                <div class="feature-item">
-                  <div class="feature-icon-process">
-                    <i class="fas fa-cogs"></i>
-                  </div>
-                  <div class="feature-content">
-                    <h4>Hassle-free Implementation</h4>
-                    <p>Our team handles all the technical setup, integrations, and content creation</p>
-                  </div>
-                </div>
-                
-                <div class="feature-item">
-                  <div class="feature-icon-process">
-                    <i class="fas fa-chart-line"></i>
-                  </div>
-                  <div class="feature-content">
-                    <h4>Analytics & Optimization</h4>
-                    <p>Continuous monitoring, reporting, and strategy refinement for maximum impact</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-5 order-2 d-flex align-items-center">
-            <div class="process-visual">
-              <!-- Process Flow Visualization -->
-              <div class="process-flow">
-                <div class="flow-step active" data-step="1">
-                  <div class="step-number">1</div>
-                  <div class="step-content">
-                    <h5>Consultation</h5>
-                    <p>Understanding your practice needs</p>
-                  </div>
-                  <div class="step-connector"></div>
-                </div>
-
-                <div class="flow-step" data-step="2">
-                  <div class="step-number">2</div>
-                  <div class="step-content">
-                    <h5>Setup</h5>
-                    <p>Journey design & implementation</p>
-                  </div>
-                  <div class="step-connector"></div>
-                </div>
-                
-                <div class="flow-step" data-step="3">
-                  <div class="step-number">3</div>
-                  <div class="step-content">
-                    <h5>Launch</h5>
-                    <p>Patient engagement & activation</p>
-                  </div>
-                  <div class="step-connector"></div>
-                </div>
-                
-                <div class="flow-step" data-step="4">
-                  <div class="step-number">4</div>
-                  <div class="step-content">
-                    <h5>Optimize</h5>
-                    <p>Analytics & continuous improvement</p>
-                  </div>
-                </div>
-                
-                <!-- Central WhatsApp Icon -->
-                <div class="central-icon">
-                  <i class="fab fa-whatsapp"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- digital section - Three Verticals -->
-    <section id="digital" class="digital-section py-5 mb-lg-4">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h1 class="digital-heading mb-4">
-            Three <span class="heading-span healthfort-highlight">Specialized Solutions</span>
-          </h1>
-          <p class="digital-parag mb-0" style="max-width: 600px; margin: 0 auto;">
-            Tailored WhatsApp engagement strategies for different healthcare needs - from individual practitioners to large pharmaceutical companies.
-          </p>
-        </div>
-        
-        <!-- Connected Cards -->
-        <div class="row px-4">
-          <div class="col-12">
-            <div class="connected-cards-wrapper">
-              <div class="vertical-card">
-                <div class="card-container">
-                  <div class="card-header">
-                    <div class="card-icon">
-                      <i class="fas fa-pills"></i>
                     </div>
-                    <h3 class="card-title">Pharma Companies</h3>
-                    <p class="card-subtitle">Patient Adherence Programs</p>
-                  </div>
-                  
-                  <div class="feature-points">
-                    <ul>
-                      <li><i class="fas fa-arrow-right"></i>Multi-lingual health content</li>
-                      <li><i class="fas fa-arrow-right"></i>Medication reminders</li>
-                      <li><i class="fas fa-arrow-right"></i>Comprehensive adherence analytics</li>
-                    </ul>
-                  </div>
-                  
-                  <div class="card-footer">
-                    <a href="/pharma-solutions.html" class="learn-more-btn">
-                      Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                  </div>
                 </div>
-              </div>
-              
-              <div class="vertical-card">
-                <div class="card-container">
-                  <div class="card-header">
-                    <div class="card-icon">
-                      <i class="fas fa-hospital"></i>
+
+                <!-- Bottom CTA Section -->
+                <div class="pain-cta-section text-center mt-5">
+                    <div class="cta-content">
+                        <h3 class="cta-heading-sm">
+                            Ready to Transform Your Practice?
+                        </h3>
+                        <p class="cta-description-sm">
+                            Join healthcare leaders who trust Healthfort for
+                            their patient engagement needs
+                        </p>
+                        <div class="cta-buttons">
+                            <!-- <a href="#contact" class="btn btn-cta btn-lg me-3">Get Started Today</a> -->
+                            <a href="#contact" class="btn btn-outline-primary"
+                                >Start Engaging</a
+                            >
+                        </div>
                     </div>
-                    <h3 class="card-title">Clinics & Hospitals</h3>
-                    <p class="card-subtitle">Full CRM + Engagement</p>
-                  </div>
-                  
-                  <div class="feature-points">
-                    <ul>
-                      <li><i class="fas fa-arrow-right"></i>Patient engagement & practice management</li>
-                      <li><i class="fas fa-arrow-right"></i> Automated drip campaigns</li>
-                      <li><i class="fas fa-arrow-right"></i>Comprehensive lead management</li>
-                    </ul>
-                  </div>
-                  
-                  <div class="card-footer">
-                    <a href="/patient-engagement-platform.html" class="learn-more-btn">
-                      Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                  </div>
                 </div>
-              </div>
-              
-              <div class="vertical-card">
-                <div class="card-container">
-                  <div class="card-header">
-                    <div class="card-icon">
-                      <i class="fas fa-user-md"></i>
-                    </div>
-                    <h3 class="card-title">Home Health Providers</h3>
-                    <p class="card-subtitle">From Hospital to Recovery</p>
-                  </div>
-                  
-                  <div class="feature-points">
-                    <ul>
-                      <li><i class="fas fa-arrow-right"></i>Lead capture via QR code and WhatsApp Flows</li>
-                      <li><i class="fas fa-arrow-right"></i>Automated drip campaigns for each service</li>
-                      <li><i class="fas fa-arrow-right"></i>Call scheduling and follow-ups</li>
-                    </ul>
-                  </div>
-                  
-                  <div class="card-footer">
-                    <a href="/home-healthcare.html" class="learn-more-btn">
-                      Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-        
-        <!-- Bottom CTA -->
-        <!-- <div class="text-center mt-5">
+
+            <!-- Background Decorative Elements -->
+            <div class="pain-bg-elements">
+                <div class="bg-circle bg-circle-1"></div>
+                <div class="bg-circle bg-circle-3"></div>
+                <div class="bg-pattern"></div>
+            </div>
+        </section>
+
+        <!-- Process Flow Section -->
+        <section id="process-flow" class="process-flow-section py-5">
+            <div class="container">
+                <div class="row align-items-center px-4">
+                    <div class="col-lg-7 pe-md-4 order-1">
+                        <div class="process-content">
+                            <h1 class="process-heading mb-4">
+                                Implementation That<span
+                                    class="heading-span healthfort-highlight"
+                                    > Delivers</span
+                                >
+                            </h1>
+                            <p class="process-description mb-4 lh-lg">
+                                We handle everything from consultation to
+                                optimization, ensuring your WhatsApp patient
+                                engagement strategy delivers maximum impact
+                                while you focus on patient care.
+                            </p>
+
+                            <!-- What We Handle List -->
+                            <div class="service-features">
+                                <div class="feature-item">
+                                    <div class="feature-icon-process">
+                                        <i class="fas fa-route"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h4>Journey Design & Setup</h4>
+                                        <p>
+                                            We create personalized patient
+                                            communication flows tailored to your
+                                            specific goals
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="feature-item">
+                                    <div class="feature-icon-process">
+                                        <i class="fas fa-cogs"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h4>Hassle-free Implementation</h4>
+                                        <p>
+                                            Our team handles all the technical
+                                            setup, integrations, and content
+                                            creation
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="feature-item">
+                                    <div class="feature-icon-process">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h4>Analytics & Optimization</h4>
+                                        <p>
+                                            Continuous monitoring, reporting,
+                                            and strategy refinement for maximum
+                                            impact
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 order-2 d-flex align-items-center">
+                        <div class="process-visual">
+                            <!-- Process Flow Visualization -->
+                            <div class="process-flow">
+                                <div class="flow-step active" data-step="1">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h5>Consultation</h5>
+                                        <p>Understanding your practice needs</p>
+                                    </div>
+                                    <div class="step-connector"></div>
+                                </div>
+
+                                <div class="flow-step" data-step="2">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h5>Setup</h5>
+                                        <p>Journey design & implementation</p>
+                                    </div>
+                                    <div class="step-connector"></div>
+                                </div>
+
+                                <div class="flow-step" data-step="3">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h5>Launch</h5>
+                                        <p>Patient engagement & activation</p>
+                                    </div>
+                                    <div class="step-connector"></div>
+                                </div>
+
+                                <div class="flow-step" data-step="4">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h5>Optimize</h5>
+                                        <p>
+                                            Analytics & continuous improvement
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Central WhatsApp Icon -->
+                                <div class="central-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- digital section - Three Verticals -->
+        <section id="digital" class="digital-section py-5 mb-lg-4">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h1 class="digital-heading mb-4">
+                        Three
+                        <span class="heading-span healthfort-highlight"
+                            >Specialized Solutions</span
+                        >
+                    </h1>
+                    <p
+                        class="digital-parag mb-0"
+                        style="max-width: 600px; margin: 0 auto"
+                    >
+                        Tailored WhatsApp engagement strategies for different
+                        healthcare needs - from individual practitioners to
+                        large pharmaceutical companies.
+                    </p>
+                </div>
+
+                <!-- Connected Cards -->
+                <div class="row px-4">
+                    <div class="col-12">
+                        <div class="connected-cards-wrapper">
+                            <div class="vertical-card">
+                                <div class="card-container">
+                                    <div class="card-header">
+                                        <div class="card-icon">
+                                            <i class="fas fa-pills"></i>
+                                        </div>
+                                        <h3 class="card-title">
+                                            Pharma Companies
+                                        </h3>
+                                        <p class="card-subtitle">
+                                            Patient Adherence Programs
+                                        </p>
+                                    </div>
+
+                                    <div class="feature-points">
+                                        <ul>
+                                            <li>
+                                                <i
+                                                    class="fas fa-arrow-right"
+                                                ></i
+                                                >Multi-lingual health content
+                                            </li>
+                                            <li>
+                                                <i
+                                                    class="fas fa-arrow-right"
+                                                ></i
+                                                >Medication reminders
+                                            </li>
+                                            <li>
+                                                <i
+                                                    class="fas fa-arrow-right"
+                                                ></i
+                                                >Comprehensive adherence
+                                                analytics
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="card-footer">
+                                        <a
+                                            href="/pharma-solutions.html"
+                                            class="learn-more-btn"
+                                        >
+                                            Learn More
+                                            <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="vertical-card">
+                                <div class="card-container">
+                                    <div class="card-header">
+                                        <div class="card-icon">
+                                            <i class="fas fa-hospital"></i>
+                                        </div>
+                                        <h3 class="card-title">
+                                            Clinics & Hospitals
+                                        </h3>
+                                        <p class="card-subtitle">
+                                            Full CRM + Engagement
+                                        </p>
+                                    </div>
+
+                                    <div class="feature-points">
+                                        <ul>
+                                            <li>
+                                                <i
+                                                    class="fas fa-arrow-right"
+                                                ></i
+                                                >Patient engagement & practice
+                                                management
+                                            </li>
+                                            <li>
+                                                <i
+                                                    class="fas fa-arrow-right"
+                                                ></i>
+                                                Automated drip campaigns
+                                            </li>
+                                            <li>
+                                                <i
+                                                    class="fas fa-arrow-right"
+                                                ></i
+                                                >Comprehensive lead management
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="card-footer">
+                                        <a
+                                            href="/patient-engagement-platform.html"
+                                            class="learn-more-btn"
+                                        >
+                                            Learn More
+                                            <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="vertical-card">
+                                <div class="card-container">
+                                    <div class="card-header">
+                                        <div class="card-icon">
+                                            <i class="fas fa-user-md"></i>
+                                        </div>
+                                        <h3 class="card-title">
+                                            Home Health Providers
+                                        </h3>
+                                        <p class="card-subtitle">
+                                            From Hospital to Recovery
+                                        </p>
+                                    </div>
+
+                                    <div class="feature-points">
+                                        <ul>
+                                            <li>
+                                                <i
+                                                    class="fas fa-arrow-right"
+                                                ></i
+                                                >Lead capture via QR code and
+                                                WhatsApp Flows
+                                            </li>
+                                            <li>
+                                                <i
+                                                    class="fas fa-arrow-right"
+                                                ></i
+                                                >Automated drip campaigns for
+                                                each service
+                                            </li>
+                                            <li>
+                                                <i
+                                                    class="fas fa-arrow-right"
+                                                ></i
+                                                >Call scheduling and follow-ups
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="card-footer">
+                                        <a
+                                            href="/home-healthcare.html"
+                                            class="learn-more-btn"
+                                        >
+                                            Learn More
+                                            <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom CTA -->
+                <!-- <div class="text-center mt-5">
           <p class="digital-parag mb-3">Ready to transform your patient engagement?</p>
           <a href="#contact" class="btn btn-cta">Get in Touch</a>
         </div> -->
-      </div>
-    </section>
+            </div>
+        </section>
 
-  
-    <!-- Statistics Banner -->
-    <!-- <section id="stats-banner" class="stats-banner py-5">
+        <!-- Statistics Banner -->
+        <!-- <section id="stats-banner" class="stats-banner py-5">
       <div class="container">
         <div class="row text-center g-4">
           <div class="col-6 col-md-3">
@@ -693,8 +956,8 @@
       </div>
     </section> -->
 
-    <!-- Our Team -->
-    <!-- <section id="team">
+        <!-- Our Team -->
+        <!-- <section id="team">
       <div class="wrapper py-5">
         <div class="container-fluid">
           <div class="test_Container">
@@ -736,12 +999,12 @@
                           </li>
                         </ul>
                       </div>
-                      
+
                     </div>
                     <div class="team-mobile">
                       <p> Dr. Hemant Kumar </p>
                     </div>
-                   
+
                   </div>
                   <div class="col-lg-6">
                     <div class="test">
@@ -873,389 +1136,459 @@
       </div>
     </section> -->
 
-   <!-- Testimonial Section -->
-    <div class="testimonial-container py-lg-5 py-3 my-3" id="testimonials">
-      <h1 class="testimonial-heading text-center pb-lg-4 px-4">
-        Trusted by Healthcare <span class="heading-span healthfort-highlight">Leaders</span>
-      </h1>
-      <div id="testimonialContainer" class="testimonial-wrapper">
-        <div id="testimonialScroll" class="testimonial-scroll">
-          <!-- Testimonials will be inserted here by JavaScript -->
-        </div>
-      </div>
-    </div>
-
-    <!--contact section-->
-    <section id="contact" class="contact-section py-lg-5 py-3">
-      <div class="container">
-        <div
-          class="row align-items-center justify-content-center justify-content-md-around px-lg-5"
-        >
-          <div class="col-md-6 form-section pb-5 pe-md-4 pe-lg-1">
-            <div class="contact-form" style="background-color: white">
-              <img
-                data-src="img/contact-image.png"
-                class="img-fluid contact-img lazy-image"
-                alt="Contact Doctor Photo"
-                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23999'%3ELoading...%3C/text%3E%3C/svg%3E"
-              />
-              <div class="contact-body">
-                <form class="form" action="whatsapp/send-whatsapp.php" method="post" enctype="multipart/form-data" id="contact-form-whatsapp">
-                  <div class="form-floating">
-                    <input type="text" class="form-control" id="name" placeholder="Name" name="name" autocomplete="on" />
-                    <label style="color: #5c5c5f" for="name"
-                      >Name</label
-                    >
-                    </div>
-                    <div class="form-floating">
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="Email"
-                      name="email"
-                      required
-                      autocomplete="on"
-                    />
-                    <label style="color: #5c5c5f" for="email"
-                      >Email</label
-                    >
-                    </div>
-                    <div class="form-floating">
-                      <input type="text" name="honeypot" class="form-control" style="display:none;">
-                    </div>
-                    <div class="form-floating">
-                    <input
-                      type="tel"
-                      class="form-control"
-                      id="phone"
-                      placeholder="Phone"
-                      name="phone"
-                      autocomplete="on"
-                    />
-                    <label style="color: #5c5c5f" for="phone"
-                      >Phone</label
-                    >
-                    </div>
-                    <div class="form-floating">
-                    <textarea
-                      type="text"
-                      class="form-control"
-                      id="message"
-                      placeholder="Message"
-                      name="message"
-                      rows="3"
-                      required
-                      autocomplete="on"
-                    ></textarea>
-                    <label style="color: #5c5c5f" for="message"
-                      >Message</label
-                    >
-                    </div>
-                    <div class="mt-4">
-                    <button id="contactBtn" type="submit" class="btn btn-cta w-100">Submit</button>
-                    </div>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 contact-extra">
-            <h1>
-              Let's Talk Patient 
-              <span class="heading-span healthfort-highlight"> Outcomes</span>
+        <!-- Testimonial Section -->
+        <div class="testimonial-container py-lg-5 py-3 my-3" id="testimonials">
+            <h1 class="testimonial-heading text-center pb-lg-4 px-4">
+                Trusted by Healthcare
+                <span class="heading-span healthfort-highlight">Leaders</span>
             </h1>
-            <p class="contact-subtitle-main mt-4">
-              Partner with a doctor-led team that understands your clinical and business goals.
-            </p>
-            <p class="contact-subtitle-main">
-              Whether you’re driving vaccine adherence, chronic disease management, or post-discharge engagement—we’ll help you build measurable patient programs with precision.
-
-            </p>
-            <div class="row features py-4">
-              <div class="col-6">
-                <div class="d-flex feature-list">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-arrow-right-circle-fill feature-icon"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
-                    />
-                  </svg>
-                  <p>Patient Engagement</p>
+            <div id="testimonialContainer" class="testimonial-wrapper">
+                <div id="testimonialScroll" class="testimonial-scroll">
+                    <!-- Testimonials will be inserted here by JavaScript -->
                 </div>
-                <div class="d-flex feature-list">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-arrow-right-circle-fill feature-icon"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
-                    />
-                  </svg>
-                  <p>Whatsapp Automation</p>
-                </div>
-                <div class="d-flex feature-list">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-arrow-right-circle-fill feature-icon"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
-                    />
-                  </svg>
-                  <p>Adherence Programs</p>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="d-flex feature-list">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-arrow-right-circle-fill feature-icon"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
-                    />
-                  </svg>
-                  <p>Content Creation</p>
-                </div>
-                <div class="d-flex feature-list">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-arrow-right-circle-fill feature-icon"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
-                    />
-                  </svg>
-                  <p>Drip Campaigns</p>
-                </div>
-                <div class="d-flex feature-list">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-arrow-right-circle-fill feature-icon"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
-                    />
-                  </svg>
-                  <p>Practice Management</p>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- blogs section-->
-    <section id="blogs" class="blogs-section py-5">
-      <div class="container">
-        <h1 class="blogs-heading text-center pb-5">Read Our Latest Articles</h1>
-        <div class="row justify-content-between blog-posts">
-          <article class="col-lg-4 col-md-6 mb-4 px-4">
-            <div class="card">
-              <img
-                data-src="img/blog-4.png"
-                class="card-img-top lazy-image"
-                alt="Blog Image 4"
-                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23999'%3ELoading...%3C/text%3E%3C/svg%3E"
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  Telemedicine in India: A Transformative Journey
-                </h6>
-                <p class="card-text">
-                  Telemedicine, with its roots tracing back to the early days of
-                  satellite communication, has...
-                </p>
-                <div class="blog-bottom-flex d-flex">
-                  <a href="/telemedicine-in-india.html" target="_blank" class="">Read More</a>
-                  <p class="ms-auto">March 27, 2024</p>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="col-lg-4 col-md-6 mb-4 px-4">
-            <div class="card">
-              <img
-                data-src="img/blog-1.jpg"
-                class="card-img-top lazy-image"
-                alt="Blog Image 3"
-                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23999'%3ELoading...%3C/text%3E%3C/svg%3E"
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  Essential Website Elements for Doctors in the Digital Era
-                </h6>
-                <p class="card-text">
-                  In the fast-paced world of healthcare, having a strong online
-                  presence is no longer a luxury but...
-                </p>
-                <div class="blog-bottom-flex d-flex">
-                  <a href="/essential-website-elements-for-doctors.html" target="_blank" class="">Read More</a>
-                  <p class="ms-auto">December 14, 2023</p>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="col-lg-4 col-md-6 mb-4 px-4">
-            <div class="card">
-              <img
-                data-src="img/blog-2.jpg"
-                class="card-img-top lazy-image"
-                alt="Blog Image 2"
-                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23999'%3ELoading...%3C/text%3E%3C/svg%3E"
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  Social Media for Healthcare Providers: Bridging Gaps,
-                  Enhancing Care
-                </h6>
-                <p class="card-text fs-7">
-                  In today's interconnected world, social media has transcended
-                  its initial purpose and...
-                </p>
-                <div class="blog-bottom-flex d-flex">
-                  <a href="/social-media-for-healthcare-providers.html" class="" target="_blank">Read More</a>
-                  <p class="ms-auto">October 28, 2023</p>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="col-lg-4 col-md-6 mb-4 px-4">
-            <div class="card">
-              <img
-                data-src="img/blog-3.jpg"
-                class="card-img-top lazy-image"
-                alt="Blog Image 1"
-                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23999'%3ELoading...%3C/text%3E%3C/svg%3E"
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  The Evolving Patient Journey in Modern Healthcare
-                </h6>
-                <p class="card-text">
-                  In today's digital age, the patient's journey through the
-                  healthcare system has undergone a profound...
-                </p>
-                <div class="blog-bottom-flex d-flex">
-                  <a href="/evolving-patient-journey.html" class="" target="_blank">Read More</a>
-                  <p class="ms-auto">October 2, 2023</p>
-                </div>
-              </div>
-            </div>
-          </article>
         </div>
 
-        <!-- Navigation arrows -->
-        <div class="arrow-container mt-3">
-          <div class="btn-container text-center d-flex">
-            <button class="arrow-left">
-              <svg
+        <!--contact section-->
+        <section id="contact" class="contact-section py-lg-5 py-3">
+            <div class="container">
+                <div
+                    class="row align-items-center justify-content-center justify-content-md-around px-lg-5"
+                >
+                    <div class="col-md-6 form-section pb-5 pe-md-4 pe-lg-1">
+                        <div
+                            class="contact-form"
+                            style="background-color: white"
+                        >
+                            <img
+                                data-src="img/contact-image.png"
+                                class="img-fluid contact-img lazy-image"
+                                alt="Contact Doctor Photo"
+                                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23999'%3ELoading...%3C/text%3E%3C/svg%3E"
+                            />
+                            <div class="contact-body">
+                                <form
+                                    class="form"
+                                    action="whatsapp/send-whatsapp.php"
+                                    method="post"
+                                    enctype="multipart/form-data"
+                                    id="contact-form-whatsapp"
+                                >
+                                    <div class="form-floating">
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="name"
+                                            placeholder="Name"
+                                            name="name"
+                                            autocomplete="on"
+                                        />
+                                        <label style="color: #5c5c5f" for="name"
+                                            >Name</label
+                                        >
+                                    </div>
+                                    <div class="form-floating">
+                                        <input
+                                            type="email"
+                                            class="form-control"
+                                            id="email"
+                                            placeholder="Email"
+                                            name="email"
+                                            required
+                                            autocomplete="on"
+                                        />
+                                        <label
+                                            style="color: #5c5c5f"
+                                            for="email"
+                                            >Email</label
+                                        >
+                                    </div>
+                                    <div class="form-floating">
+                                        <input
+                                            type="text"
+                                            name="honeypot"
+                                            class="form-control"
+                                            style="display: none"
+                                        />
+                                    </div>
+                                    <div class="form-floating">
+                                        <input
+                                            type="tel"
+                                            class="form-control"
+                                            id="phone"
+                                            placeholder="Phone"
+                                            name="phone"
+                                            autocomplete="on"
+                                        />
+                                        <label
+                                            style="color: #5c5c5f"
+                                            for="phone"
+                                            >Phone</label
+                                        >
+                                    </div>
+                                    <div class="form-floating">
+                                        <textarea
+                                            type="text"
+                                            class="form-control"
+                                            id="message"
+                                            placeholder="Message"
+                                            name="message"
+                                            rows="3"
+                                            required
+                                            autocomplete="on"
+                                        ></textarea>
+                                        <label
+                                            style="color: #5c5c5f"
+                                            for="message"
+                                            >Message</label
+                                        >
+                                    </div>
+                                    <div class="mt-4">
+                                        <button
+                                            id="contactBtn"
+                                            type="submit"
+                                            class="btn btn-cta w-100"
+                                        >
+                                            Submit
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 contact-extra">
+                        <h1>
+                            Let's Talk Patient
+                            <span class="heading-span healthfort-highlight">
+                                Outcomes</span
+                            >
+                        </h1>
+                        <p class="contact-subtitle-main mt-4">
+                            Partner with a doctor-led team that understands your
+                            clinical and business goals.
+                        </p>
+                        <p class="contact-subtitle-main">
+                            Whether you’re driving vaccine adherence, chronic
+                            disease management, or post-discharge
+                            engagement—we’ll help you build measurable patient
+                            programs with precision.
+                        </p>
+                        <div class="row features py-4">
+                            <div class="col-6">
+                                <div class="d-flex feature-list">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-arrow-right-circle-fill feature-icon"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+                                        />
+                                    </svg>
+                                    <p>Patient Engagement</p>
+                                </div>
+                                <div class="d-flex feature-list">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-arrow-right-circle-fill feature-icon"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+                                        />
+                                    </svg>
+                                    <p>Whatsapp Automation</p>
+                                </div>
+                                <div class="d-flex feature-list">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-arrow-right-circle-fill feature-icon"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+                                        />
+                                    </svg>
+                                    <p>Adherence Programs</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex feature-list">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-arrow-right-circle-fill feature-icon"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+                                        />
+                                    </svg>
+                                    <p>Content Creation</p>
+                                </div>
+                                <div class="d-flex feature-list">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-arrow-right-circle-fill feature-icon"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+                                        />
+                                    </svg>
+                                    <p>Drip Campaigns</p>
+                                </div>
+                                <div class="d-flex feature-list">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-arrow-right-circle-fill feature-icon"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+                                        />
+                                    </svg>
+                                    <p>Practice Management</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- blogs section-->
+        <section id="blogs" class="blogs-section py-5">
+            <div class="container">
+                <h1 class="blogs-heading text-center pb-5">
+                    Read Our Latest Articles
+                </h1>
+                <div class="row justify-content-between blog-posts">
+                    <article class="col-lg-4 col-md-6 mb-4 px-4">
+                        <div class="card">
+                            <img
+                                data-src="img/blog-4.png"
+                                class="card-img-top lazy-image"
+                                alt="Blog Image 4"
+                                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23999'%3ELoading...%3C/text%3E%3C/svg%3E"
+                            />
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    Telemedicine in India: A Transformative
+                                    Journey
+                                </h6>
+                                <p class="card-text">
+                                    Telemedicine, with its roots tracing back to
+                                    the early days of satellite communication,
+                                    has...
+                                </p>
+                                <div class="blog-bottom-flex d-flex">
+                                    <a
+                                        href="/telemedicine-in-india.html"
+                                        target="_blank"
+                                        class=""
+                                        >Read More</a
+                                    >
+                                    <p class="ms-auto">March 27, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-lg-4 col-md-6 mb-4 px-4">
+                        <div class="card">
+                            <img
+                                data-src="img/blog-1.jpg"
+                                class="card-img-top lazy-image"
+                                alt="Blog Image 3"
+                                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23999'%3ELoading...%3C/text%3E%3C/svg%3E"
+                            />
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    Essential Website Elements for Doctors in
+                                    the Digital Era
+                                </h6>
+                                <p class="card-text">
+                                    In the fast-paced world of healthcare,
+                                    having a strong online presence is no longer
+                                    a luxury but...
+                                </p>
+                                <div class="blog-bottom-flex d-flex">
+                                    <a
+                                        href="/essential-website-elements-for-doctors.html"
+                                        target="_blank"
+                                        class=""
+                                        >Read More</a
+                                    >
+                                    <p class="ms-auto">December 14, 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-lg-4 col-md-6 mb-4 px-4">
+                        <div class="card">
+                            <img
+                                data-src="img/blog-2.jpg"
+                                class="card-img-top lazy-image"
+                                alt="Blog Image 2"
+                                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23999'%3ELoading...%3C/text%3E%3C/svg%3E"
+                            />
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    Social Media for Healthcare Providers:
+                                    Bridging Gaps, Enhancing Care
+                                </h6>
+                                <p class="card-text fs-7">
+                                    In today's interconnected world, social
+                                    media has transcended its initial purpose
+                                    and...
+                                </p>
+                                <div class="blog-bottom-flex d-flex">
+                                    <a
+                                        href="/social-media-for-healthcare-providers.html"
+                                        class=""
+                                        target="_blank"
+                                        >Read More</a
+                                    >
+                                    <p class="ms-auto">October 28, 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-lg-4 col-md-6 mb-4 px-4">
+                        <div class="card">
+                            <img
+                                data-src="img/blog-3.jpg"
+                                class="card-img-top lazy-image"
+                                alt="Blog Image 1"
+                                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23999'%3ELoading...%3C/text%3E%3C/svg%3E"
+                            />
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    The Evolving Patient Journey in Modern
+                                    Healthcare
+                                </h6>
+                                <p class="card-text">
+                                    In today's digital age, the patient's
+                                    journey through the healthcare system has
+                                    undergone a profound...
+                                </p>
+                                <div class="blog-bottom-flex d-flex">
+                                    <a
+                                        href="/evolving-patient-journey.html"
+                                        class=""
+                                        target="_blank"
+                                        >Read More</a
+                                    >
+                                    <p class="ms-auto">October 2, 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Navigation arrows -->
+                <div class="arrow-container mt-3">
+                    <div class="btn-container text-center d-flex">
+                        <button class="arrow-left">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="48"
+                                height="48"
+                                fill="#386ee5"
+                                class="bi bi-arrow-left"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
+                                />
+                            </svg>
+                        </button>
+
+                        <button class="arrow-right">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="48"
+                                height="48"
+                                fill="#386ee5"
+                                class="bi bi-arrow-right"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="footer mt-5">
+            <svg
+                class="curve"
                 xmlns="http://www.w3.org/2000/svg"
-                width="48"
-                height="48"
-                fill="#386ee5"
-                class="bi bi-arrow-left"
-                viewBox="0 0 16 16"
-              >
+                version="1.1"
+                width="100%"
+                height="100"
+                viewBox="0 0 100 100"
+                preserveAspectRatio="none"
+                fill="#f5f7fa"
+            >
                 <path
-                  fill-rule="evenodd"
-                  d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
-                />
-              </svg>
-            </button>
-
-            <button class="arrow-right">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="48"
-                height="48"
-                fill="#386ee5"
-                class="bi bi-arrow-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- footer -->
-    <footer class="footer mt-5">
-      <svg
-        class="curve"
-        xmlns="http://www.w3.org/2000/svg"
-        version="1.1"
-        width="100%"
-        height="100"
-        viewBox="0 0 100 100"
-        preserveAspectRatio="none"
-        fill="#f5f7fa"
-      >
-        <path
-          d="M0 100 C 20 0 50 0 100 100 Z"
-          transform="rotate(180, 50, 50)"
-        ></path>
-      </svg>
-      <div class="container pt-5">
-        <div class="row">
-          <div class="col-md-5 me-lg-5 pb-4 text-center text-md-start">
-            <img
-              src="img/logo.png"
-              alt="Brand Logo"
-              width="250px"
-              class="d-inline-block align-top pb-3 footer-logo"
-              loading="lazy"
-            />
-            <p style="color: #433c6e; font-weight: 500">
-              Comprehensive Digital Solutions for Healthcare Providers built by
-              Professionals
-            </p>
-            <a href="#contact" class="btn btn-cta">Get in touch</a>
-          </div>
-          <div class="col-md-3 col-6 pb-3 ps-3">
-            <!-- <h3 class="footer-heading">Quick Links</h3> -->
-            <div class="footer-links row">
-              <a href="/#pain-points">About</a>
-              <a href="/#digital">Solutions</a>
-              <a href="/#blogs">Blogs</a>
-              <a href="/#contact">Contact</a>
-              <a href="#">Login</a>
-            </div>
-          </div>
-          <div class="col-md-3 col-6">
-            <!-- <div class="d-flex footer-contact">
+                    d="M0 100 C 20 0 50 0 100 100 Z"
+                    transform="rotate(180, 50, 50)"
+                ></path>
+            </svg>
+            <div class="container pt-5">
+                <div class="row">
+                    <div
+                        class="col-md-5 me-lg-5 pb-4 text-center text-md-start"
+                    >
+                        <img
+                            src="img/logo.png"
+                            alt="Brand Logo"
+                            width="250px"
+                            class="d-inline-block align-top pb-3 footer-logo"
+                            loading="lazy"
+                        />
+                        <p style="color: #433c6e; font-weight: 500">
+                            Comprehensive Digital Solutions for Healthcare
+                            Providers built by Professionals
+                        </p>
+                        <a href="#contact" class="btn btn-cta">Get in touch</a>
+                    </div>
+                    <div class="col-md-3 col-6 pb-3 ps-3">
+                        <!-- <h3 class="footer-heading">Quick Links</h3> -->
+                        <div class="footer-links row">
+                            <a href="/#pain-points">About</a>
+                            <a href="/#digital">Solutions</a>
+                            <a href="/#blogs">Blogs</a>
+                            <a href="/#contact">Contact</a>
+                            <a href="#">Login</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <!-- <div class="d-flex footer-contact">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -1278,73 +1611,73 @@
                 New Delhi, Delhi 110048<br />
               </p>
             </div> -->
-            <div class="d-flex footer-contact">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-telephone-fill me-2"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
-                />
-              </svg>
-              <p class="footer-parag">+91 9810281169</p>
-            </div>
-            <div class="d-flex footer-contact">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-envelope me-2"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
-                />
-              </svg>
-              <p class="footer-parag">hk@healthfort.in</p>
-            </div>
-            <div class="d-flex footer-contact">
-              <a href="/terms-of-use.html" target="_blank"
-                >Terms of Use</a
-              >
-            </div>
-            <div class="d-flex footer-contact">
-              <a href="/privacy-policy.html" target="_blank"
-                >Privacy Policy</a
-              >
-            </div>
+                        <div class="d-flex footer-contact">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-telephone-fill me-2"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
+                                />
+                            </svg>
+                            <p class="footer-parag">+91 9810281169</p>
+                        </div>
+                        <div class="d-flex footer-contact">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-envelope me-2"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+                                />
+                            </svg>
+                            <p class="footer-parag">hk@healthfort.in</p>
+                        </div>
+                        <div class="d-flex footer-contact">
+                            <a href="/terms-of-use.html" target="_blank"
+                                >Terms of Use</a
+                            >
+                        </div>
+                        <div class="d-flex footer-contact">
+                            <a href="/privacy-policy.html" target="_blank"
+                                >Privacy Policy</a
+                            >
+                        </div>
 
-            <div class="d-flex footer-contact">
-              <a href="https://storyset.com/people"
-                >People illustrations by Storyset</a
-              >
-            </div>
+                        <div class="d-flex footer-contact">
+                            <a href="https://storyset.com/people"
+                                >People illustrations by Storyset</a
+                            >
+                        </div>
 
-            <div class="footer-socials mb-2">
-              <a
-                href="https://www.linkedin.com/company/healthfort/"
-                target="_blank"
-                class="footer-social-links"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  class="bi bi-linkedin me-2"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
-                  />
-                </svg>
-              </a>
-              <!-- <a
+                        <div class="footer-socials mb-2">
+                            <a
+                                href="https://www.linkedin.com/company/healthfort/"
+                                target="_blank"
+                                class="footer-social-links"
+                                ><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    fill="currentColor"
+                                    class="bi bi-linkedin me-2"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                                    />
+                                </svg>
+                            </a>
+                            <!-- <a
                 href="https://www.instagram.com/healthfort.ai/"
                 target="_blank"
                 class="footer-social-links"
@@ -1361,35 +1694,34 @@
                   />
                 </svg>
               </a> -->
+                        </div>
+                    </div>
+                </div>
+                <p
+                    class="py-4"
+                    style="
+                        color: #433c6e;
+                        font-weight: 600;
+                        text-align: center;
+                        margin-bottom: 0;
+                    "
+                >
+                    &copy;2026 Healthfort. All rights reserved.
+                </p>
             </div>
-          </div>
-        </div>
-        <p
-          class="py-4"
-          style="
-            color: #433c6e;
-            font-weight: 600;
-            text-align: center;
-            margin-bottom: 0;
-          "
-        >
-          &copy;2025 Healthfort. All rights reserved.
-        </p>
-      </div>
-    </footer>
+        </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/animate.js"></script>
-    <script src="js/blog.js"></script>
-    <script src="js/validateForm.js" defer></script>
-    <script src="js/testimonial.js"></script>
-    <script src="js/whatsapp-carousel.js"></script>
-    <script src="js/counter-animation.js"></script>
-    <!-- <script src=js/gradient.js></script> -->
-  </body>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+        ></script>
+        <script src="js/animate.js"></script>
+        <script src="js/blog.js"></script>
+        <script src="js/validateForm.js" defer></script>
+        <script src="js/testimonial.js"></script>
+        <script src="js/whatsapp-carousel.js"></script>
+        <script src="js/counter-animation.js"></script>
+        <!-- <script src=js/gradient.js></script> -->
+    </body>
 </html>
-
